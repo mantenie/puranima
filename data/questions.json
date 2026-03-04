@@ -1,0 +1,1227 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "date": "2026-03-04",
+    "sources": [
+      "Karl Wallner, Beichtspiegel Stift Heiligenkreuz (10. Auflage, 2001, kirchl. Druckerlaubnis)",
+      "Gotteslob Nr. 598–601 (Hilfen zur Gewissenserforschung)",
+      "YOUCAT-Beichtspiegel",
+      "Martin Ramm FSSP, Praktische Beichthilfe für Erwachsene (9. Auflage, 2013)",
+      "Beichtspiegel für Priester (katholisch-informiert.ch)"
+    ],
+    "status": "ENTWURF — Theologische Abnahme durch Priester steht noch aus",
+    "lifestates": [
+      "allgemein",
+      "single",
+      "verheiratet",
+      "jugendlich",
+      "kinder",
+      "priester"
+    ],
+    "categories": [
+      { "id": "gottesverhältnis", "label": "Mein Verhältnis zu Gott", "order": 1 },
+      { "id": "nächstenliebe", "label": "Mein Verhältnis zu den Mitmenschen", "order": 2 },
+      { "id": "familie", "label": "Ehe, Familie und Erziehung", "order": 3 },
+      { "id": "selbst", "label": "Mein Verhältnis zu mir selbst", "order": 4 },
+      { "id": "geschlechtlichkeit", "label": "Reinheit und Geschlechtlichkeit", "order": 5 },
+      { "id": "beruf", "label": "Beruf und Gesellschaft", "order": 6 },
+      { "id": "priesterlich", "label": "Priesterlicher Dienst", "order": 7 }
+    ]
+  },
+  "prayers": {
+    "opening": {
+      "title": "Gebet vor der Gewissenserforschung",
+      "text": "Herr, mein Gott, ich danke Dir, dass Du mich liebst und mir immer wieder neu die Chance gibst, umzukehren. Sende mir Deinen Heiligen Geist, damit ich meine Sünden erkenne und den Mut finde, sie aufrichtig zu bekennen. Amen."
+    },
+    "contrition": {
+      "title": "Reuegebet",
+      "text": "Ich bereue, dass ich Böses getan und Gutes unterlassen habe. Herr, erbarme Dich meiner."
+    },
+    "thanksgiving": {
+      "title": "Dankgebet nach der Beichte",
+      "text": "Herr Jesus Christus, ich danke Dir für Deine Barmherzigkeit und Vergebung. Hilf mir, ein neues Leben zu beginnen und Deinen Willen zu tun. Amen."
+    }
+  },
+  "questions": [
+    {
+      "id": "gott-001",
+      "category": "gottesverhältnis",
+      "subcategory": "Ehrfurcht vor Gott",
+      "question": "War mir Gott gleichgültig?",
+      "explanation": "Das erste Gebot ruft dazu auf, Gott den ersten Platz im Leben einzuräumen.",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "gott-002",
+      "category": "gottesverhältnis",
+      "subcategory": "Ehrfurcht vor Gott",
+      "question": "Habe ich mir ein Gottesbild nach meinen eigenen Wünschen und Vorstellungen gebaut?",
+      "explanation": "Gott lässt sich nicht auf unsere Ideen reduzieren. Er ist größer als unser Denken.",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "gott-003",
+      "category": "gottesverhältnis",
+      "subcategory": "Ehrfurcht vor Gott",
+      "question": "Habe ich über Gott gespottet oder gelästert?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "schwer",
+      "source": "wallner"
+    },
+    {
+      "id": "gott-004",
+      "category": "gottesverhältnis",
+      "subcategory": "Ehrfurcht vor Gott",
+      "question": "Habe ich Magie, Spiritismus oder Okkultismus betrieben?",
+      "explanation": "Das erste Gebot verbietet Aberglauben und alle Formen des Okkultismus, einschließlich Horoskope, Wahrsagerei und Pendeln.",
+      "tags": ["allgemein"],
+      "severity": "schwer",
+      "source": "wallner"
+    },
+    {
+      "id": "gott-005",
+      "category": "gottesverhältnis",
+      "subcategory": "Ehrfurcht vor Gott",
+      "question": "Bin ich abergläubisch? Habe ich an Horoskope geglaubt oder gependelt?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "youcat"
+    },
+    {
+      "id": "gott-006",
+      "category": "gottesverhältnis",
+      "subcategory": "Ehrfurcht vor Gott",
+      "question": "Diene ich den Götzen dieser Welt: Macht, Reichtum, Ansehen?",
+      "explanation": "Was im Leben den ersten Platz einnimmt, wird zum Gott. Das können Karriere, Geld oder Anerkennung sein.",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "gott-007",
+      "category": "gottesverhältnis",
+      "subcategory": "Ehrfurcht vor Gott",
+      "question": "Habe ich mich meines Glaubens geschämt?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "gott-008",
+      "category": "gottesverhältnis",
+      "subcategory": "Ehrfurcht vor Gott",
+      "question": "Tue ich mich schwer, mich als Christ zu outen?",
+      "explanation": "",
+      "tags": ["jugendlich"],
+      "severity": "normal",
+      "source": "youcat"
+    },
+    {
+      "id": "gott-009",
+      "category": "gottesverhältnis",
+      "subcategory": "Ehrfurcht vor Gott",
+      "question": "Zweifle ich an der Barmherzigkeit Gottes?",
+      "explanation": "Gott ist unendlich barmherzig. An seiner Barmherzigkeit zu zweifeln kann zur Verzweiflung führen.",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "gott-010",
+      "category": "gottesverhältnis",
+      "subcategory": "Gebet und persönliche Beziehung",
+      "question": "Bete ich? Bete ich regelmäßig und gerne?",
+      "explanation": "Das Gebet ist das Gespräch mit Gott. Ohne Gebet verkümmert die Beziehung zu ihm.",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "gott-011",
+      "category": "gottesverhältnis",
+      "subcategory": "Gebet und persönliche Beziehung",
+      "question": "Vertraue ich mehr auf mich selbst als auf Gott?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "gott-012",
+      "category": "gottesverhältnis",
+      "subcategory": "Gebet und persönliche Beziehung",
+      "question": "Bete ich nur, wenn ich etwas von Gott brauche?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "youcat"
+    },
+    {
+      "id": "gott-013",
+      "category": "gottesverhältnis",
+      "subcategory": "Gebet und persönliche Beziehung",
+      "question": "Folge ich Christus nach, wohin er mich führt — oder gestalte ich mein Leben nur nach meinen eigenen Vorstellungen?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "gott-014",
+      "category": "gottesverhältnis",
+      "subcategory": "Gebet und persönliche Beziehung",
+      "question": "Bin ich verzagt, weil ich zu wenig auf Gott vertraue?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "gott-015",
+      "category": "gottesverhältnis",
+      "subcategory": "Gebet und persönliche Beziehung",
+      "question": "Liebst Du Gott? Was tust Du dafür?",
+      "explanation": "",
+      "tags": ["kinder"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "gott-020",
+      "category": "gottesverhältnis",
+      "subcategory": "Sakramente und Kirche",
+      "question": "Habe ich die Sonntagsmesse ohne schwerwiegenden Grund versäumt?",
+      "explanation": "Die Teilnahme an der Sonntagsmesse ist für Katholiken eine schwere Pflicht.",
+      "tags": ["allgemein"],
+      "severity": "schwer",
+      "source": "ramm"
+    },
+    {
+      "id": "gott-021",
+      "category": "gottesverhältnis",
+      "subcategory": "Sakramente und Kirche",
+      "question": "Habe ich Ausreden gesucht, um die Sonntagsmesse nicht zu besuchen?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "gott-022",
+      "category": "gottesverhältnis",
+      "subcategory": "Sakramente und Kirche",
+      "question": "Ist mir die Begegnung mit Jesus in der Kommunion wichtig?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "gott-023",
+      "category": "gottesverhältnis",
+      "subcategory": "Sakramente und Kirche",
+      "question": "Feierst Du gerne die Heilige Messe mit?",
+      "explanation": "",
+      "tags": ["kinder"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "gott-024",
+      "category": "gottesverhältnis",
+      "subcategory": "Sakramente und Kirche",
+      "question": "Lese ich die Heilige Schrift?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "gott-025",
+      "category": "gottesverhältnis",
+      "subcategory": "Sakramente und Kirche",
+      "question": "Kritisiere ich in liebloser Weise die Kirche, den Papst, die Bischöfe oder die Priester?",
+      "explanation": "Kritik an der Kirche darf sein — aber sie sollte aufbauend sein, nicht destruktiv.",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "gott-026",
+      "category": "gottesverhältnis",
+      "subcategory": "Sakramente und Kirche",
+      "question": "Bemühe ich mich, andere zum Glauben zu führen? Bete ich für jene, die nicht glauben?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "gott-027",
+      "category": "gottesverhältnis",
+      "subcategory": "Sakramente und Kirche",
+      "question": "Bin ich bereit, aus Liebe zu Gott zu fasten und andere Opfer zu bringen?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "gott-028",
+      "category": "gottesverhältnis",
+      "subcategory": "Sakramente und Kirche",
+      "question": "Kann ich Leiden und Schmerzen aus Liebe zum gekreuzigten Herrn annehmen?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "gott-029",
+      "category": "gottesverhältnis",
+      "subcategory": "Sakramente und Kirche",
+      "question": "Habe ich den Namen Gottes leichtfertig ausgesprochen? Habe ich geflucht?",
+      "explanation": "Das zweite Gebot verbietet den Missbrauch des Namens Gottes.",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "ramm"
+    },
+    {
+      "id": "gott-030",
+      "category": "gottesverhältnis",
+      "subcategory": "Sakramente und Kirche",
+      "question": "Habe ich Sonn- und Feiertage durch unnötige Arbeit entweiht?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "ramm"
+    },
+    {
+      "id": "naechste-001",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "Gibt es Menschen, die ich verachte?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-002",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "Gibt es Menschen, denen ich etwas neide?",
+      "explanation": "Neid ist eine der sieben Hauptsünden und vergiftet die Beziehung zu den Mitmenschen.",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-003",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "Hasse ich jemanden?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "schwer",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-004",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "Kann ich Böses, das andere mir zugefügt haben, verzeihen?",
+      "explanation": "Vergebung ist ein Kernstück des christlichen Lebens. Jesus selbst hat seinen Feinden vergeben.",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-005",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "Schaue ich auf andere herab?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-006",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "Möchte ich immer der Beste sein? Muss ich vor den Menschen etwas gelten?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-007",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "Warst Du zu jemandem gemein?",
+      "explanation": "",
+      "tags": ["kinder"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-008",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "Ärgerst Du absichtlich Deine Eltern oder Lehrer?",
+      "explanation": "",
+      "tags": ["kinder"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-009",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "Bist Du neidisch auf andere?",
+      "explanation": "",
+      "tags": ["kinder"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-010",
+      "category": "nächstenliebe",
+      "subcategory": "Wahrhaftigkeit",
+      "question": "Belüge ich andere?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-011",
+      "category": "nächstenliebe",
+      "subcategory": "Wahrhaftigkeit",
+      "question": "Habe ich jemanden schlecht gemacht oder über ihn gelästert?",
+      "explanation": "Üble Nachrede verletzt den Ruf eines Menschen und ist eine Sünde gegen die Gerechtigkeit.",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-012",
+      "category": "nächstenliebe",
+      "subcategory": "Wahrhaftigkeit",
+      "question": "Bringe ich Menschen gegeneinander auf?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-013",
+      "category": "nächstenliebe",
+      "subcategory": "Wahrhaftigkeit",
+      "question": "Bin ich zynisch und spöttisch?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-014",
+      "category": "nächstenliebe",
+      "subcategory": "Wahrhaftigkeit",
+      "question": "Hast Du jemanden belogen?",
+      "explanation": "",
+      "tags": ["kinder"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-015",
+      "category": "nächstenliebe",
+      "subcategory": "Wahrhaftigkeit",
+      "question": "Bist Du angeberisch?",
+      "explanation": "",
+      "tags": ["kinder"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-016",
+      "category": "nächstenliebe",
+      "subcategory": "Wahrhaftigkeit",
+      "question": "Verwendest Du unanständige und ordinäre Ausdrücke?",
+      "explanation": "",
+      "tags": ["kinder", "jugendlich"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-020",
+      "category": "nächstenliebe",
+      "subcategory": "Taten der Barmherzigkeit",
+      "question": "Habe ich jemanden körperlich oder seelisch verletzt?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "schwer",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-021",
+      "category": "nächstenliebe",
+      "subcategory": "Taten der Barmherzigkeit",
+      "question": "Habe ich Notleidenden nach meinen Möglichkeiten geholfen?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-022",
+      "category": "nächstenliebe",
+      "subcategory": "Taten der Barmherzigkeit",
+      "question": "Bin ich hilfsbereit, ohne sofort Gegenleistung zu erwarten?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-023",
+      "category": "nächstenliebe",
+      "subcategory": "Taten der Barmherzigkeit",
+      "question": "Kann ich Fehler gegenüber anderen eingestehen und um Entschuldigung bitten?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-024",
+      "category": "nächstenliebe",
+      "subcategory": "Taten der Barmherzigkeit",
+      "question": "Habe ich etwas gestohlen?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "schwer",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-025",
+      "category": "nächstenliebe",
+      "subcategory": "Taten der Barmherzigkeit",
+      "question": "Hast Du etwas gestohlen?",
+      "explanation": "",
+      "tags": ["kinder"],
+      "severity": "schwer",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-026",
+      "category": "nächstenliebe",
+      "subcategory": "Taten der Barmherzigkeit",
+      "question": "Habe ich gefundene oder geliehene Sachen behalten, statt sie zurückzugeben?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "youcat"
+    },
+    {
+      "id": "naechste-027",
+      "category": "nächstenliebe",
+      "subcategory": "Taten der Barmherzigkeit",
+      "question": "Habe ich abgetrieben, dazu gedrängt oder dazu geraten?",
+      "explanation": "Abtreibung ist die Tötung eines unschuldigen Menschen und eine besonders schwere Sünde.",
+      "tags": ["allgemein"],
+      "severity": "schwer",
+      "source": "wallner"
+    },
+    {
+      "id": "naechste-028",
+      "category": "nächstenliebe",
+      "subcategory": "Taten der Barmherzigkeit",
+      "question": "Streitest Du mit Deinen Geschwistern oder Kameraden?",
+      "explanation": "",
+      "tags": ["kinder"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "fam-001",
+      "category": "familie",
+      "subcategory": "Eheleben",
+      "question": "Liebe ich meinen Ehepartner auch trotz seiner Fehler und Schwächen?",
+      "explanation": "",
+      "tags": ["verheiratet"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "fam-002",
+      "category": "familie",
+      "subcategory": "Eheleben",
+      "question": "Achte und ehre ich meinen Ehepartner?",
+      "explanation": "",
+      "tags": ["verheiratet"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "fam-003",
+      "category": "familie",
+      "subcategory": "Eheleben",
+      "question": "Habe ich die Ehe gebrochen und meinen Ehepartner betrogen?",
+      "explanation": "Ehebruch ist eine schwere Sünde gegen das sechste Gebot und gegen die eheliche Treue.",
+      "tags": ["verheiratet"],
+      "severity": "schwer",
+      "source": "wallner"
+    },
+    {
+      "id": "fam-004",
+      "category": "familie",
+      "subcategory": "Eheleben",
+      "question": "Bin ich dem Ehepartner im ehelichen Umgang mit Achtung und Liebe begegnet — oder habe ich nur meine eigene Lust gesucht?",
+      "explanation": "",
+      "tags": ["verheiratet"],
+      "severity": "normal",
+      "source": "youcat"
+    },
+    {
+      "id": "fam-005",
+      "category": "familie",
+      "subcategory": "Eheleben",
+      "question": "Habe ich den Willen zum Kind? Bin ich offen für das Geschenk neuen Lebens?",
+      "explanation": "Die Offenheit für Kinder gehört wesentlich zur christlichen Ehe.",
+      "tags": ["verheiratet"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "fam-006",
+      "category": "familie",
+      "subcategory": "Eheleben",
+      "question": "Habe ich künstlich verhütet?",
+      "explanation": "Die katholische Kirche lehrt, dass künstliche Empfängnisverhütung dem Sinn der ehelichen Vereinigung widerspricht.",
+      "tags": ["verheiratet"],
+      "severity": "normal",
+      "source": "ramm"
+    },
+    {
+      "id": "fam-007",
+      "category": "familie",
+      "subcategory": "Eheleben",
+      "question": "Nehme ich mir ausreichend Zeit für meine Familie?",
+      "explanation": "",
+      "tags": ["verheiratet"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "fam-010",
+      "category": "familie",
+      "subcategory": "Erziehung",
+      "question": "Erziehe ich meine Kinder in Liebe?",
+      "explanation": "",
+      "tags": ["verheiratet"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "fam-011",
+      "category": "familie",
+      "subcategory": "Erziehung",
+      "question": "Bin ich zu streng — oder verwöhne ich meine Kinder zu sehr?",
+      "explanation": "",
+      "tags": ["verheiratet"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "fam-012",
+      "category": "familie",
+      "subcategory": "Erziehung",
+      "question": "Bemühe ich mich, in meinen Kindern die Liebe zu Gott zu wecken?",
+      "explanation": "",
+      "tags": ["verheiratet"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "fam-013",
+      "category": "familie",
+      "subcategory": "Erziehung",
+      "question": "Gebe ich meinen Kindern ein gutes Vorbild im Glauben?",
+      "explanation": "",
+      "tags": ["verheiratet"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "fam-014",
+      "category": "familie",
+      "subcategory": "Erziehung",
+      "question": "Müssen meine Kinder unter meinen Launen leiden?",
+      "explanation": "",
+      "tags": ["verheiratet"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "fam-015",
+      "category": "familie",
+      "subcategory": "Erziehung",
+      "question": "Sehe ich in meinen Kindern ein Geschenk Gottes — auch wenn eines schwieriger ist?",
+      "explanation": "",
+      "tags": ["verheiratet"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "fam-020",
+      "category": "familie",
+      "subcategory": "Eltern und Familie",
+      "question": "Ehre ich meine Eltern? Bin ich dankbar für sie?",
+      "explanation": "Das vierte Gebot ruft dazu auf, Vater und Mutter zu ehren.",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "ramm"
+    },
+    {
+      "id": "fam-021",
+      "category": "familie",
+      "subcategory": "Eltern und Familie",
+      "question": "Hast Du Deine Eltern lieb? Machst Du ihnen unnötige Sorgen?",
+      "explanation": "",
+      "tags": ["kinder"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "fam-022",
+      "category": "familie",
+      "subcategory": "Eltern und Familie",
+      "question": "Redest Du ehrfürchtig mit Deinen Eltern und Geschwistern?",
+      "explanation": "",
+      "tags": ["kinder"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "fam-023",
+      "category": "familie",
+      "subcategory": "Eltern und Familie",
+      "question": "Folgst Du Deinen Eltern?",
+      "explanation": "",
+      "tags": ["kinder"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "fam-024",
+      "category": "familie",
+      "subcategory": "Eltern und Familie",
+      "question": "Betest Du für Deine Eltern?",
+      "explanation": "",
+      "tags": ["kinder"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "selbst-001",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "Halte ich mich für besser als die anderen?",
+      "explanation": "Hochmut ist die Wurzel vieler anderer Sünden.",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "selbst-002",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "Oder halte ich mich für minderwertig?",
+      "explanation": "Auch die Verachtung der eigenen Würde widerspricht Gottes Plan. Er hat dich als sein geliebtes Kind geschaffen.",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "selbst-003",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "Bin ich egoistisch? Möchte ich gerne im Mittelpunkt stehen?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "selbst-004",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "Bin ich überheblich und stolz?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "selbst-005",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "Betrüge ich mich selbst mit Lebenslügen?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "selbst-006",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "Bin ich wahrhaftig und ehrlich — auch mir selbst gegenüber?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "selbst-007",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "Neige ich zu Rohheit und Härte?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "selbst-008",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "Gebe ich leicht auf?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "selbst-009",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "Neige ich zur Verzweiflung statt zur Hoffnung?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "selbst-010",
+      "category": "selbst",
+      "subcategory": "Gesundheit und Mäßigung",
+      "question": "Schade ich meiner Gesundheit durch Unmäßigkeit: übermäßiges Essen, Trinken, Rauchen, Drogen?",
+      "explanation": "Der Körper ist ein Tempel des Heiligen Geistes. Wir haben die Pflicht, ihn zu pflegen.",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "selbst-011",
+      "category": "selbst",
+      "subcategory": "Gesundheit und Mäßigung",
+      "question": "Lasse ich mich von meinen Begierden beherrschen?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "selbst-012",
+      "category": "selbst",
+      "subcategory": "Gesundheit und Mäßigung",
+      "question": "Habe ich versucht, mein Gewissen abzustumpfen und es zum Schweigen zu bringen?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "selbst-013",
+      "category": "selbst",
+      "subcategory": "Gesundheit und Mäßigung",
+      "question": "Möchte ich nur ein angenehmes Leben haben — und ist mir die Ewigkeit bei Gott egal?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "selbst-014",
+      "category": "selbst",
+      "subcategory": "Gesundheit und Mäßigung",
+      "question": "Sehne ich mich nach Gott?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "selbst-015",
+      "category": "selbst",
+      "subcategory": "Gesundheit und Mäßigung",
+      "question": "Bist Du beim Lernen gewissenhaft?",
+      "explanation": "",
+      "tags": ["kinder", "jugendlich"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "geschl-001",
+      "category": "geschlechtlichkeit",
+      "subcategory": "Reinheit",
+      "question": "Habe ich mich bei unreinen Gedanken oder Erinnerungen aufgehalten?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "youcat"
+    },
+    {
+      "id": "geschl-002",
+      "category": "geschlechtlichkeit",
+      "subcategory": "Reinheit",
+      "question": "Habe ich sexuelle Erregung in Filmen, Büchern, im Internet oder in Unterhaltungen gesucht?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "youcat"
+    },
+    {
+      "id": "geschl-003",
+      "category": "geschlechtlichkeit",
+      "subcategory": "Reinheit",
+      "question": "Reize ich meine Phantasie und Begierde durch pornographische Inhalte?",
+      "explanation": "Pornographie entmenschlicht und macht unfähig zu wahrer Liebe. Sie ist Sünde gegen die Keuschheit und gegen die Würde des anderen.",
+      "tags": ["allgemein"],
+      "severity": "schwer",
+      "source": "wallner"
+    },
+    {
+      "id": "geschl-004",
+      "category": "geschlechtlichkeit",
+      "subcategory": "Reinheit",
+      "question": "Habe ich Selbstbefriedigung getan?",
+      "explanation": "",
+      "tags": ["single", "jugendlich"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "geschl-005",
+      "category": "geschlechtlichkeit",
+      "subcategory": "Reinheit",
+      "question": "Habe ich andere verführt?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "schwer",
+      "source": "wallner"
+    },
+    {
+      "id": "geschl-006",
+      "category": "geschlechtlichkeit",
+      "subcategory": "Reinheit",
+      "question": "Bin ich in meinem Benehmen und Reden ordinär?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "geschl-007",
+      "category": "geschlechtlichkeit",
+      "subcategory": "Reinheit",
+      "question": "Habe ich vorehelichen Geschlechtsverkehr gehabt?",
+      "explanation": "Die Kirche lehrt, dass Geschlechtsverkehr seinen Ort in der Ehe hat.",
+      "tags": ["single"],
+      "severity": "schwer",
+      "source": "wallner"
+    },
+    {
+      "id": "geschl-008",
+      "category": "geschlechtlichkeit",
+      "subcategory": "Reinheit",
+      "question": "Lasse ich mich von meinen Trieben beherrschen oder benutze ich andere zur Befriedigung meiner Begierde?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "youcat"
+    },
+    {
+      "id": "beruf-001",
+      "category": "beruf",
+      "subcategory": "Arbeit und Gerechtigkeit",
+      "question": "Setze ich mich im Beruf für das Wohl der anderen ein — oder geht es mir nur um mich selbst?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "beruf-002",
+      "category": "beruf",
+      "subcategory": "Arbeit und Gerechtigkeit",
+      "question": "Betrüge ich im Beruf oder in der Arbeit?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "beruf-003",
+      "category": "beruf",
+      "subcategory": "Arbeit und Gerechtigkeit",
+      "question": "Hinterziehe ich Steuern?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "beruf-004",
+      "category": "beruf",
+      "subcategory": "Arbeit und Gerechtigkeit",
+      "question": "Gefährde ich andere im Straßenverkehr durch Missachtung der Sicherheitsregeln?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "beruf-005",
+      "category": "beruf",
+      "subcategory": "Arbeit und Gerechtigkeit",
+      "question": "Drücke ich mich vor sozialen Aufgaben und Verantwortung?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "beruf-006",
+      "category": "beruf",
+      "subcategory": "Arbeit und Gerechtigkeit",
+      "question": "Bin ich streitsüchtig und rechthaberisch?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "wallner"
+    },
+    {
+      "id": "beruf-007",
+      "category": "beruf",
+      "subcategory": "Arbeit und Gerechtigkeit",
+      "question": "War ich gierig nach Geld? War ich geizig, neidisch, verschwenderisch?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "youcat"
+    },
+    {
+      "id": "beruf-008",
+      "category": "beruf",
+      "subcategory": "Arbeit und Gerechtigkeit",
+      "question": "Kann ich meinen Lebensstil angesichts der Not anderer verantworten?",
+      "explanation": "",
+      "tags": ["allgemein"],
+      "severity": "normal",
+      "source": "youcat"
+    },
+    {
+      "id": "jugend-001",
+      "category": "selbst",
+      "subcategory": "Jugendspezifisch",
+      "question": "Habe ich mich von der Gruppe zu Dingen drängen lassen, die ich eigentlich nicht wollte?",
+      "explanation": "Gott hat Dir ein Gewissen geschenkt. Es ist kein Zeichen von Schwäche, Nein zu sagen.",
+      "tags": ["jugendlich"],
+      "severity": "normal",
+      "source": "eigen"
+    },
+    {
+      "id": "jugend-002",
+      "category": "selbst",
+      "subcategory": "Jugendspezifisch",
+      "question": "Verbringe ich zu viel Zeit mit Medien (Handy, Spiele, soziale Netzwerke) auf Kosten meiner Beziehungen und Pflichten?",
+      "explanation": "",
+      "tags": ["jugendlich"],
+      "severity": "normal",
+      "source": "eigen"
+    },
+    {
+      "id": "jugend-003",
+      "category": "nächstenliebe",
+      "subcategory": "Jugendspezifisch",
+      "question": "Habe ich andere im Internet, in sozialen Medien oder per Nachricht gemobbt oder bloßgestellt?",
+      "explanation": "",
+      "tags": ["jugendlich"],
+      "severity": "normal",
+      "source": "eigen"
+    },
+    {
+      "id": "jugend-004",
+      "category": "selbst",
+      "subcategory": "Jugendspezifisch",
+      "question": "Habe ich Alkohol oder Drogen konsumiert?",
+      "explanation": "",
+      "tags": ["jugendlich"],
+      "severity": "normal",
+      "source": "eigen"
+    },
+    {
+      "id": "jugend-005",
+      "category": "nächstenliebe",
+      "subcategory": "Jugendspezifisch",
+      "question": "Habe ich meine Eltern belogen oder ihnen wichtige Dinge verschwiegen?",
+      "explanation": "",
+      "tags": ["jugendlich"],
+      "severity": "normal",
+      "source": "eigen"
+    },
+    {
+      "id": "priester-001",
+      "category": "priesterlich",
+      "subcategory": "Geistliches Leben",
+      "question": "Feiere ich die Heilige Messe mit echter innerer Beteiligung und nach den approbierten liturgischen Büchern?",
+      "explanation": "",
+      "tags": ["priester"],
+      "severity": "normal",
+      "source": "priester-beichtspiegel"
+    },
+    {
+      "id": "priester-002",
+      "category": "priesterlich",
+      "subcategory": "Geistliches Leben",
+      "question": "Bete ich täglich das Stundengebet?",
+      "explanation": "Das Stundengebet ist eine schwere Pflicht für jeden Priester und Ordensmann.",
+      "tags": ["priester"],
+      "severity": "schwer",
+      "source": "priester-beichtspiegel"
+    },
+    {
+      "id": "priester-003",
+      "category": "priesterlich",
+      "subcategory": "Geistliches Leben",
+      "question": "Pflege ich meine persönliche Gebetszeit, geistliche Lesung und Betrachtung?",
+      "explanation": "",
+      "tags": ["priester"],
+      "severity": "normal",
+      "source": "priester-beichtspiegel"
+    },
+    {
+      "id": "priester-004",
+      "category": "priesterlich",
+      "subcategory": "Geistliches Leben",
+      "question": "Gehe ich selbst regelmäßig zur Beichte?",
+      "explanation": "",
+      "tags": ["priester"],
+      "severity": "normal",
+      "source": "priester-beichtspiegel"
+    },
+    {
+      "id": "priester-005",
+      "category": "priesterlich",
+      "subcategory": "Gehorsam und Gemeinschaft",
+      "question": "Habe ich die Anweisungen und Zurechtweisungen meines Bischofs gehorsam angenommen?",
+      "explanation": "",
+      "tags": ["priester"],
+      "severity": "normal",
+      "source": "priester-beichtspiegel"
+    },
+    {
+      "id": "priester-006",
+      "category": "priesterlich",
+      "subcategory": "Gehorsam und Gemeinschaft",
+      "question": "Bete ich für den Heiligen Vater und stehe ich in Übereinstimmung mit seinen Lehren?",
+      "explanation": "",
+      "tags": ["priester"],
+      "severity": "normal",
+      "source": "priester-beichtspiegel"
+    },
+    {
+      "id": "priester-007",
+      "category": "priesterlich",
+      "subcategory": "Gehorsam und Gemeinschaft",
+      "question": "Habe ich meine Mitbrüder im Priesterstand kritisiert statt sie zu unterstützen?",
+      "explanation": "",
+      "tags": ["priester"],
+      "severity": "normal",
+      "source": "priester-beichtspiegel"
+    },
+    {
+      "id": "priester-008",
+      "category": "priesterlich",
+      "subcategory": "Seelsorge und Dienst",
+      "question": "Kenne ich die Lehren der Kirche und verkünde ich sie treu?",
+      "explanation": "",
+      "tags": ["priester"],
+      "severity": "normal",
+      "source": "priester-beichtspiegel"
+    },
+    {
+      "id": "priester-009",
+      "category": "priesterlich",
+      "subcategory": "Seelsorge und Dienst",
+      "question": "War ich verfügbar, wenn Menschen Rat suchten, ein Beichtgespräch wollten oder Beistand brauchten?",
+      "explanation": "",
+      "tags": ["priester"],
+      "severity": "normal",
+      "source": "priester-beichtspiegel"
+    },
+    {
+      "id": "priester-010",
+      "category": "priesterlich",
+      "subcategory": "Seelsorge und Dienst",
+      "question": "Habe ich das Beichtgeheimnis gewahrt — ausnahmslos und unter allen Umständen?",
+      "explanation": "Die Verletzung des Beichtgeheimnisses ist eine der schwersten Sünden eines Priesters und zieht die Exkommunikation nach sich.",
+      "tags": ["priester"],
+      "severity": "schwer",
+      "source": "priester-beichtspiegel"
+    },
+    {
+      "id": "priester-011",
+      "category": "priesterlich",
+      "subcategory": "Armut und Lebensführung",
+      "question": "Lebe ich die christliche Armut? Bin ich innerlich losgelöst von Komfort und Besitz?",
+      "explanation": "",
+      "tags": ["priester"],
+      "severity": "normal",
+      "source": "priester-beichtspiegel"
+    },
+    {
+      "id": "priester-012",
+      "category": "priesterlich",
+      "subcategory": "Armut und Lebensführung",
+      "question": "Bin ich in meinem Verhalten und meiner Sprache meinem Priesterstand angemessen?",
+      "explanation": "",
+      "tags": ["priester"],
+      "severity": "normal",
+      "source": "priester-beichtspiegel"
+    },
+    {
+      "id": "priester-013",
+      "category": "priesterlich",
+      "subcategory": "Armut und Lebensführung",
+      "question": "Habe ich den Zölibat treu gelebt?",
+      "explanation": "",
+      "tags": ["priester"],
+      "severity": "schwer",
+      "source": "priester-beichtspiegel"
+    }
+  ]
+}

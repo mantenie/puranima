@@ -1,0 +1,82 @@
+/**
+ * Main entry point — bootstraps the app.
+ * Initializes storage, loads catalog, checks auto-wipe, registers routes.
+ */
+
+import { storage } from './storage.js';
+import { registerRoute, startRouter, navigate, getCurrentRoute } from './router.js';
+import { loadCatalog } from './questions.js';
+import { render as renderWelcome } from './screens/welcome.js';
+import { render as renderExamination } from './screens/examination.js';
+import { render as renderSummary } from './screens/summary.js';
+import { render as renderCompletion } from './screens/completion.js';
+
+const AUTO_WIPE_HOURS = 24;
+
+async function init() {
+  // Show loading state
+  const app = document.getElementById('app');
+  app.innerHTML = `
+    <div class="min-h-screen flex items-center justify-center">
+      <p class="text-stone-400 text-sm">Lädt...</p>
+    </div>
+  `;
+
+  // Initialize storage and load catalog in parallel
+  await Promise.all([
+    storage.init(),
+    loadCatalog(),
+  ]);
+
+  // Check auto-wipe: clear session data if older than threshold
+  await checkAutoWipe();
+
+  // Register routes
+  registerRoute('/welcome', renderWelcome);
+  registerRoute('/examination', renderExamination);
+  registerRoute('/summary', renderSummary);
+  registerRoute('/completion', renderCompletion);
+
+  // Start the router (must happen before any navigate calls)
+  startRouter();
+
+  // If no route is set, determine the correct starting screen
+  const currentRoute = getCurrentRoute();
+  if (currentRoute === '/welcome' && !window.location.hash) {
+    const lifeState = await storage.get('lifeState');
+    const sessionTimestamp = await storage.get('sessionTimestamp');
+    if (lifeState && sessionTimestamp) {
+      navigate('/examination');
+    }
+  }
+}
+
+async function checkAutoWipe() {
+  const timestamp = await storage.get('sessionTimestamp');
+  if (!timestamp) return;
+
+  const hoursElapsed = (Date.now() - timestamp) / (1000 * 60 * 60);
+  if (hoursElapsed >= AUTO_WIPE_HOURS) {
+    await storage.clearSession();
+  }
+}
+
+// Register Service Worker for offline capability
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').catch(err => {
+    console.warn('Service Worker registration failed:', err);
+  });
+}
+
+// Bootstrap
+init().catch(err => {
+  console.error('App initialization failed:', err);
+  document.getElementById('app').innerHTML = `
+    <div class="min-h-screen flex items-center justify-center p-6 text-center">
+      <div>
+        <p class="text-stone-800 font-medium mb-2">Die App konnte nicht geladen werden.</p>
+        <p class="text-stone-500 text-sm">Bitte lade die Seite neu.</p>
+      </div>
+    </div>
+  `;
+});

@@ -1,0 +1,62 @@
+/*
+ * Custom styles beyond Tailwind utilities.
+ * Keep this file minimal — Tailwind handles the heavy lifting.
+ */
+
+/* Screen transition animation */
+.screen-enter {
+  animation: screenFadeIn 0.25s ease-out;
+}
+
+@keyframes screenFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark scrollbar for summary screen */
+.dark-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.dark-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dark-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+}
+
+/* Prevent overscroll bounce on iOS */
+html {
+  overscroll-behavior: none;
+}
+
+/* Smooth touch scrolling */
+.scroll-smooth {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Tap highlight removal for mobile */
+button,
+a,
+[role="button"] {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Focus-visible for keyboard navigation only */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid #d97706;
+  outline-offset: 2px;
+  border-radius: 4px;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Puranima — Gewissenserforschung",
+  "short_name": "Puranima",
+  "description": "Dein diskreter Begleiter zur Gewissenserforschung. Rein lokal, keine Daten verlassen Dein Gerät.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fffbeb",
+  "theme_color": "#92400e",
+  "lang": "de",
+  "categories": ["lifestyle", "education"],
+  "icons": [
+    {
+      "src": "/assets/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
