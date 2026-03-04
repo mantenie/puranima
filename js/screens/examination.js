@@ -8,6 +8,7 @@ import { navigate } from '../router.js';
 import { getFilteredQuestions, getCategories } from '../questions.js';
 import { icons } from '../components/icons.js';
 import { escapeHtml } from '../utils.js';
+import { headerActionsHtml, attachHeaderActions } from '../components/header-actions.js';
 
 /**
  * Render the examination screen.
@@ -49,10 +50,13 @@ export async function render(container) {
           <span class="text-sm font-medium text-stone-400">
             ${currentIndex + 1} / ${questions.length}
           </span>
-          <button id="btn-to-summary" class="p-2 -mr-2 text-stone-400 hover:text-stone-600"
-                  aria-label="Zur Zusammenfassung">
-            ${icons.list}
-          </button>
+          <div class="flex items-center">
+            <button id="btn-to-summary" class="p-2 text-stone-400 hover:text-stone-600"
+                    aria-label="Zur Zusammenfassung">
+              ${icons.list}
+            </button>
+            ${headerActionsHtml({ showHome: true, showLock: true })}
+          </div>
         </header>
 
         <!-- Card Content -->
@@ -148,6 +152,7 @@ export async function render(container) {
     container.querySelector('#btn-back').addEventListener('click', goBack);
     container.querySelector('#btn-to-summary').addEventListener('click', () => navigate('/summary'));
     container.querySelector('#btn-summary-link').addEventListener('click', () => navigate('/summary'));
+    attachHeaderActions(container);
   }
 
   async function handleAnswer(answer) {

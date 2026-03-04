@@ -7,6 +7,7 @@ import { storage } from '../storage.js';
 import { navigate } from '../router.js';
 import { icons } from '../components/icons.js';
 import { footerHtml, attachFooterListeners } from '../components/footer.js';
+import { lockApp } from './pin-lock.js';
 
 const LIFE_STATE_OPTIONS = [
   { id: 'allgemein', label: 'Allgemein', desc: 'Kernfragen des Glaubens' },
@@ -24,15 +25,18 @@ const LIFE_STATE_OPTIONS = [
 export async function render(container) {
   const savedLifeState = await storage.get('lifeState');
   const hasPin = !!(await storage.get('pinHash'));
+  const sessionTimestamp = await storage.get('sessionTimestamp');
+  const currentIndex = await storage.get('currentIndex') || 0;
+  const hasActiveSession = savedLifeState && sessionTimestamp && currentIndex > 0;
 
   container.innerHTML = `
     <div class="screen-enter min-h-screen flex flex-col px-5 py-6 relative">
 
-      <!-- PIN Settings (top-right) -->
+      <!-- Lock/PIN (top-right) -->
       <div class="absolute top-5 right-4">
-        <button id="btn-pin-settings"
+        <button id="btn-lock"
                 class="p-2 ${hasPin ? 'text-amber-600' : 'text-stone-300'} hover:text-stone-500 transition-colors"
-                aria-label="PIN-Einstellungen">
+                aria-label="${hasPin ? 'App sperren' : 'PIN festlegen'}">
           ${hasPin ? icons.lock : icons.lockOpen}
         </button>
         ${!hasPin ? `
@@ -83,18 +87,29 @@ export async function render(container) {
         </div>
       </section>
 
-      <!-- Start Button -->
+      <!-- Action Buttons -->
       <footer class="pt-6 pb-2">
-        <button
-          id="btn-start"
-          class="w-full py-4 rounded-xl bg-amber-700 text-white font-bold text-lg
-                 transition-opacity duration-150
-                 disabled:opacity-30 disabled:cursor-not-allowed
-                 hover:bg-amber-800 active:bg-amber-900"
-          ${!savedLifeState ? 'disabled' : ''}
-        >
-          Gewissenserforschung beginnen
-        </button>
+        ${hasActiveSession ? `
+          <button id="btn-continue"
+                  class="w-full py-4 rounded-xl bg-amber-700 text-white font-bold text-lg
+                         hover:bg-amber-800 active:bg-amber-900 transition-colors mb-3">
+            Weiterarbeiten
+          </button>
+          <button id="btn-start"
+                  class="w-full py-3 rounded-xl bg-white text-amber-800 font-medium border border-amber-200
+                         hover:bg-amber-50 active:bg-amber-100 transition-colors">
+            Neu beginnen
+          </button>
+        ` : `
+          <button id="btn-start"
+                  class="w-full py-4 rounded-xl bg-amber-700 text-white font-bold text-lg
+                         transition-opacity duration-150
+                         disabled:opacity-30 disabled:cursor-not-allowed
+                         hover:bg-amber-800 active:bg-amber-900"
+                  ${!savedLifeState ? 'disabled' : ''}>
+            Gewissenserforschung beginnen
+          </button>
+        `}
 
         <!-- FAQ Link -->
         <button id="btn-faq"
@@ -127,17 +142,35 @@ export async function render(container) {
         b.setAttribute('aria-pressed', isSelected);
       });
 
-      container.querySelector('#btn-start').disabled = false;
+      // Enable start button if no active session
+      const startBtn = container.querySelector('#btn-start');
+      if (startBtn) startBtn.disabled = false;
     });
   });
 
+  // Continue existing session
+  const continueBtn = container.querySelector('#btn-continue');
+  if (continueBtn) {
+    continueBtn.addEventListener('click', () => navigate('/examination'));
+  }
+
+  // Start new / begin examination
   container.querySelector('#btn-start').addEventListener('click', async () => {
     if (!selectedLifeState) return;
     navigate('/preparation');
   });
 
   container.querySelector('#btn-faq').addEventListener('click', () => navigate('/faq'));
-  container.querySelector('#btn-pin-settings').addEventListener('click', () => navigate('/pin-setup'));
+
+  // Lock icon: instant-lock if PIN set, otherwise go to PIN setup
+  container.querySelector('#btn-lock').addEventListener('click', async () => {
+    if (hasPin) {
+      await lockApp();
+    } else {
+      navigate('/pin-setup');
+    }
+  });
+
   attachFooterListeners(container);
 
   // Show tooltip for PIN icon if no PIN is set (auto-fade after 4s)

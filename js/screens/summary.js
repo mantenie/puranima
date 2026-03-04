@@ -8,6 +8,7 @@ import { navigate } from '../router.js';
 import { getFilteredQuestions, getCategories, getPrayers } from '../questions.js';
 import { icons } from '../components/icons.js';
 import { escapeHtml } from '../utils.js';
+import { headerActionsHtml, attachHeaderActions } from '../components/header-actions.js';
 
 /**
  * Render the summary screen.
@@ -45,7 +46,7 @@ export async function render(container) {
           ${icons.arrowLeft}
         </button>
         <h1 class="text-base font-semibold text-stone-200">Dein Spickzettel</h1>
-        <div class="w-10"></div>
+        ${headerActionsHtml({ dark: true })}
       </header>
 
       <main class="px-5 pb-8">
@@ -133,6 +134,7 @@ export async function render(container) {
   let panicTimer = null;
 
   container.querySelector('#btn-back').addEventListener('click', () => navigate('/examination'));
+  attachHeaderActions(container);
 
   container.querySelector('#btn-panic').addEventListener('click', async () => {
     await storage.clearAll();

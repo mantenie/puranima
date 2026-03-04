@@ -7,6 +7,7 @@ import { storage } from '../storage.js';
 import { navigate } from '../router.js';
 import { icons } from '../components/icons.js';
 import { hashPin, verifyPin, dotsHtml, numpadHtml, attachNumpad } from '../pin.js';
+import { headerActionsHtml, attachHeaderActions } from '../components/header-actions.js';
 
 /**
  * Render the PIN setup screen.
@@ -46,12 +47,15 @@ export async function render(container) {
     if (step === 'choose') {
       container.innerHTML = `
         <div class="screen-enter min-h-screen flex flex-col px-5 py-6">
-          <header class="flex items-center gap-3 mb-8">
-            <button id="btn-back" class="p-2 -ml-2 text-stone-400 hover:text-stone-600 transition-colors"
-                    aria-label="Zurück">
-              ${icons.arrowLeft}
-            </button>
-            <h1 class="text-xl font-bold text-stone-800">${config.title}</h1>
+          <header class="flex items-center justify-between mb-8">
+            <div class="flex items-center gap-3">
+              <button id="btn-back" class="p-2 -ml-2 text-stone-400 hover:text-stone-600 transition-colors"
+                      aria-label="Zurück">
+                ${icons.arrowLeft}
+              </button>
+              <h1 class="text-xl font-bold text-stone-800">${config.title}</h1>
+            </div>
+            ${headerActionsHtml({ showLock: false })}
           </header>
 
           <div class="flex-1 flex flex-col items-center justify-center gap-4">
@@ -79,6 +83,7 @@ export async function render(container) {
       `;
 
       container.querySelector('#btn-back').addEventListener('click', () => navigate('/welcome'));
+      attachHeaderActions(container);
       container.querySelector('#btn-change-pin').addEventListener('click', () => {
         step = 'enter';
         digits = [];
@@ -97,15 +102,16 @@ export async function render(container) {
     container.innerHTML = `
       <div class="screen-enter min-h-screen flex flex-col">
         <!-- Header -->
-        <header class="flex items-center gap-3 px-5 py-4">
+        <header class="flex items-center justify-between px-5 py-4">
           <button id="btn-back" class="p-2 -ml-2 text-stone-400 hover:text-stone-600 transition-colors"
                   aria-label="Zurück">
             ${icons.arrowLeft}
           </button>
+          ${headerActionsHtml({ showLock: false })}
         </header>
 
         <!-- Top: title, dots -->
-        <div class="flex-1 flex flex-col items-center justify-end pb-8">
+        <div class="flex-1 flex flex-col items-center justify-center pb-4">
           <h2 class="text-lg font-semibold text-stone-800 mb-1">${config.title}</h2>
           <p class="text-sm text-stone-400 mb-1 h-5">${config.subtitle}</p>
           <p id="pin-msg" class="text-sm h-5 mb-6 text-center ${messageColor}">${message}</p>
@@ -113,7 +119,7 @@ export async function render(container) {
         </div>
 
         <!-- Bottom: numpad -->
-        <div class="pb-8 pt-6">
+        <div class="pb-6 pt-4">
           ${numpadHtml()}
         </div>
       </div>
@@ -132,6 +138,7 @@ export async function render(container) {
     });
 
     attachNumpad(container, { onDigit, onDelete });
+    attachHeaderActions(container);
   }
 
   function updateDots() {

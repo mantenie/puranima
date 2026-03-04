@@ -5,17 +5,21 @@
 import { navigate } from '../router.js';
 import { icons } from '../components/icons.js';
 import { footerHtml, attachFooterListeners } from '../components/footer.js';
+import { headerActionsHtml, attachHeaderActions } from '../components/header-actions.js';
 
 export async function render(container) {
   container.innerHTML = `
     <div class="screen-enter min-h-screen flex flex-col px-5 py-6">
 
-      <header class="flex items-center gap-3 mb-6">
-        <button id="btn-back" class="p-2 -ml-2 text-stone-400 hover:text-stone-600"
-                aria-label="Zurück">
-          ${icons.arrowLeft}
-        </button>
-        <h1 class="text-xl font-bold text-stone-800">Datenschutz</h1>
+      <header class="flex items-center justify-between mb-6">
+        <div class="flex items-center gap-3">
+          <button id="btn-back" class="p-2 -ml-2 text-stone-400 hover:text-stone-600"
+                  aria-label="Zurück">
+            ${icons.arrowLeft}
+          </button>
+          <h1 class="text-xl font-bold text-stone-800">Datenschutz</h1>
+        </div>
+        ${headerActionsHtml()}
       </header>
 
       <main class="space-y-6">
@@ -106,5 +110,6 @@ export async function render(container) {
   `;
 
   container.querySelector('#btn-back').addEventListener('click', () => navigate('/welcome'));
+  attachHeaderActions(container);
   attachFooterListeners(container);
 }

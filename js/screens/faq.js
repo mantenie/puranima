@@ -5,6 +5,7 @@
 import { navigate } from '../router.js';
 import { icons } from '../components/icons.js';
 import { footerHtml, attachFooterListeners } from '../components/footer.js';
+import { headerActionsHtml, attachHeaderActions } from '../components/header-actions.js';
 
 const FAQ_ITEMS = [
   {
@@ -91,9 +92,9 @@ const FAQ_ITEMS = [
   },
   {
     question: 'Was bedeutet der Name Puranima?',
-    answer: `Puranima kommt aus dem Sanskrit und bedeutet „Vollmond" — der Moment, in dem das Licht die Dunkelheit vollständig überwindet.
-      So wie der Vollmond die Nacht erhellt, so erhellt die Beichte das Gewissen.
-      Nach der Gewissenserforschung und der Lossprechung wird es wieder hell — Puranima.`
+    answer: `Puranima kommt vom lateinischen „Pura Anima" — die reine Seele.
+      Genau das ist das Ziel der Beichte: Durch die Lossprechung wird die Seele gereinigt
+      und wieder ganz. Du trittst als neuer Mensch aus dem Beichtstuhl — mit einer Pura Anima.`
   }
 ];
 
@@ -101,12 +102,15 @@ export async function render(container) {
   container.innerHTML = `
     <div class="screen-enter min-h-screen flex flex-col px-5 py-6">
 
-      <header class="flex items-center gap-3 mb-6">
-        <button id="btn-back" class="p-2 -ml-2 text-stone-400 hover:text-stone-600"
-                aria-label="Zurück">
-          ${icons.arrowLeft}
-        </button>
-        <h1 class="text-xl font-bold text-stone-800">Rund um die Beichte</h1>
+      <header class="flex items-center justify-between mb-6">
+        <div class="flex items-center gap-3">
+          <button id="btn-back" class="p-2 -ml-2 text-stone-400 hover:text-stone-600"
+                  aria-label="Zurück">
+            ${icons.arrowLeft}
+          </button>
+          <h1 class="text-xl font-bold text-stone-800">Rund um die Beichte</h1>
+        </div>
+        ${headerActionsHtml()}
       </header>
 
       <p class="text-stone-600 text-sm mb-6 leading-relaxed">
@@ -145,5 +149,6 @@ export async function render(container) {
 
   container.querySelector('#btn-back').addEventListener('click', () => navigate('/welcome'));
   container.querySelector('#btn-start-examination').addEventListener('click', () => navigate('/welcome'));
+  attachHeaderActions(container);
   attachFooterListeners(container);
 }

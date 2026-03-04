@@ -1,8 +1,9 @@
 /**
  * PIN lock screen — blocks app startup until the correct PIN is entered.
- * Returns a Promise that resolves when the user authenticates.
+ * Also provides lockApp() for instant-lock from any screen.
  */
 
+import { storage } from '../storage.js';
 import { verifyPin, dotsHtml, numpadHtml, attachNumpad } from '../pin.js';
 
 const LOCK_ICON = `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>`;
@@ -16,6 +17,23 @@ const COOLDOWN_MS = 30_000;
  * @param {string} pinHash - Stored SHA-256 hash.
  * @returns {Promise<void>} Resolves on successful authentication.
  */
+/**
+ * Show lock overlay on top of the current page. Resolves when unlocked.
+ * The current screen stays intact underneath.
+ */
+export async function lockApp() {
+  const pinHash = await storage.get('pinHash');
+  if (!pinHash) return;
+
+  const overlay = document.createElement('div');
+  overlay.id = 'pin-lock-overlay';
+  overlay.className = 'fixed inset-0 z-50 bg-stone-50';
+  document.body.appendChild(overlay);
+
+  await showPinLock(overlay, pinHash);
+  overlay.remove();
+}
+
 export function showPinLock(container, pinHash) {
   return new Promise((resolve) => {
     let digits = [];
@@ -26,7 +44,7 @@ export function showPinLock(container, pinHash) {
       container.innerHTML = `
         <div class="min-h-screen flex flex-col">
           <!-- Top: icon, title, dots -->
-          <div class="flex-1 flex flex-col items-center justify-end pb-8">
+          <div class="flex-1 flex flex-col items-center justify-center pb-4">
             <div class="text-amber-600 mb-5">${LOCK_ICON}</div>
             <h1 class="text-xl font-bold text-stone-800 mb-1">PIN eingeben</h1>
             <p id="pin-msg" class="text-sm h-5 mb-6 text-center text-stone-400"></p>
@@ -34,7 +52,7 @@ export function showPinLock(container, pinHash) {
           </div>
 
           <!-- Bottom: numpad -->
-          <div class="pb-8 pt-6">
+          <div class="pb-6 pt-4">
             ${numpadHtml()}
             <div class="text-center mt-6">
               <button id="btn-forgot" class="text-xs text-stone-400 hover:text-stone-500 transition-colors">
