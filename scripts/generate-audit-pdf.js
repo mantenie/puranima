@@ -3,6 +3,7 @@
  * for theological review by a priest.
  *
  * Usage:
+ *   node scripts/generate-audit-pdf.js --initial          # All questions marked as new (first review)
  *   node scripts/generate-audit-pdf.js                    # Diff against HEAD~1
  *   node scripts/generate-audit-pdf.js --baseline v1.0.0  # Diff against tag/commit
  */
@@ -86,12 +87,16 @@ function loadBaselineCatalog(ref) {
 function parseArgs() {
   const args = process.argv.slice(2);
   let baseline = 'HEAD~1';
+  let initial = false;
   for (let i = 0; i < args.length; i++) {
     if (args[i] === '--baseline' && args[i + 1]) {
       baseline = args[i + 1];
     }
+    if (args[i] === '--initial') {
+      initial = true;
+    }
   }
-  return { baseline };
+  return { baseline, initial };
 }
 
 // --- Changelog computation ---
@@ -101,7 +106,8 @@ const COMPARE_FIELDS = [
   'category', 'subcategory', 'confessionText',
 ];
 
-function computeChangelog(current, baseline) {
+function computeChangelog(current, baseline, initial = false) {
+  if (initial) return { added: current.questions, removed: [], changed: [] };
   if (!baseline) return { added: [], removed: [], changed: [] };
 
   const currMap = new Map(current.questions.map(q => [q.id, q]));
@@ -286,9 +292,15 @@ function buildChangelogSection(changelog, baselineRef) {
   const { added, removed, changed } = changelog;
   const total = added.length + removed.length + changed.length;
 
+  const isInitial = baselineRef === 'Erstversion';
   const content = [
-    { text: 'Changelog', style: 'h1' },
-    { text: `Vergleich gegen: ${baselineRef}`, fontSize: 9, color: C.muted, margin: [0, 0, 0, 10] },
+    { text: isInitial ? 'Alle Fragen (Erstversion)' : 'Changelog', style: 'h1' },
+    {
+      text: isInitial
+        ? 'Vollständiger Katalog — alle Fragen zur theologischen Erstprüfung'
+        : `Vergleich gegen: ${baselineRef}`,
+      fontSize: 9, color: C.muted, margin: [0, 0, 0, 10],
+    },
   ];
 
   if (total === 0) {
@@ -553,22 +565,31 @@ function generatePdf(printer, docDefinition, outputPath) {
 // --- Main ---
 
 async function main() {
-  const { baseline } = parseArgs();
+  const { baseline, initial } = parseArgs();
 
   console.log('Lade aktuellen Fragenkatalog...');
   const catalog = loadCurrentCatalog();
   console.log(`  ${catalog.questions.length} Fragen geladen (v${catalog.meta.version})`);
 
-  console.log(`Lade Baseline '${baseline}'...`);
-  const baselineCatalog = loadBaselineCatalog(baseline);
+  let baselineCatalog = null;
+  let changelogLabel;
+
+  if (initial) {
+    console.log('Modus: Erstversion — alle Fragen als neu markiert');
+    changelogLabel = 'Erstversion';
+  } else {
+    console.log(`Lade Baseline '${baseline}'...`);
+    baselineCatalog = loadBaselineCatalog(baseline);
+    changelogLabel = baseline;
+  }
 
   console.log('Berechne Changelog...');
-  const changelog = computeChangelog(catalog, baselineCatalog);
+  const changelog = computeChangelog(catalog, baselineCatalog, initial);
   console.log(`  ${changelog.added.length} neu, ${changelog.removed.length} entfernt, ${changelog.changed.length} geändert`);
 
   console.log('Erstelle PDF...');
   const printer = createPrinter();
-  const docDefinition = buildDocDefinition(catalog, changelog, baseline);
+  const docDefinition = buildDocDefinition(catalog, changelog, changelogLabel);
 
   const outputFilename = `puranima-audit-v${catalog.meta.version}-${catalog.meta.date}.pdf`;
   const outputPath = resolve(ROOT, outputFilename);

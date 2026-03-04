@@ -24,6 +24,10 @@ Der Fragenkatalog (`data/questions.json`) muss theologisch von einem Priester ab
 ### PDF generieren
 
 ```sh
+# Erstversion — alle Fragen als neu markiert (für die erste Abnahme)
+npm run audit-pdf -- --initial
+
+# Mit Diff — Vergleich gegen den letzten Commit
 npm run audit-pdf
 ```
 
@@ -40,6 +44,9 @@ Das Tool vergleicht automatisch den aktuellen Fragenkatalog mit einer früheren 
 Standardmässig wird gegen den letzten Commit verglichen (`HEAD~1`). Für andere Vergleichspunkte:
 
 ```sh
+# Erstversion (alle Fragen als neu, kein Git-Diff)
+npm run audit-pdf -- --initial
+
 # Vergleich gegen einen bestimmten Commit
 npm run audit-pdf -- --baseline abc1234
 
