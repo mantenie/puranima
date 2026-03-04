@@ -69,6 +69,12 @@ a,
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Prevent text selection (app-like feel, protects sensitive content) */
+body {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 /* Focus-visible for keyboard navigation only */
 :focus:not(:focus-visible) {
   outline: none;
