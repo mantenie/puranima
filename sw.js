@@ -3,7 +3,7 @@
  * Caches all app assets on install. Updates on new version deployment.
  */
 
-const CACHE_NAME = 'puranima-v1';
+const CACHE_NAME = 'puranima-v2';
 
 const LOCAL_ASSETS = [
   '/',
@@ -22,6 +22,9 @@ const LOCAL_ASSETS = [
   '/data/questions.json',
   '/manifest.json',
   '/assets/icons/icon.svg',
+  '/assets/icons/apple-touch-icon.png',
+  '/assets/icons/icon-192.png',
+  '/assets/icons/icon-512.png',
 ];
 
 const CDN_ASSETS = [
