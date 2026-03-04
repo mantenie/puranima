@@ -75,6 +75,15 @@ const FAQ_ITEMS = [
       Alles bleibt auf Deinem Gerät. Niemand außer Dir sieht Deine Antworten.`
   },
   {
+    question: 'Ist Puranima ein vollständiger Beichtspiegel?',
+    answer: `Puranima ist ein digitaler Beichtspiegel — eine Hilfe zur Gewissenserforschung. Die Fragen basieren auf bewährten
+      katholischen Quellen (u.a. Karl Wallner, Gotteslob, YOUCAT), erheben aber keinen Anspruch auf Vollständigkeit.
+      Es gibt verschiedene Beichtspiegel mit unterschiedlichen Schwerpunkten. Je nach Lebenssituation, Beruf oder
+      geistlichem Weg kann ein anderer Beichtspiegel besser zu Dir passen.
+      Puranima ersetzt kein Seelsorgegespräch. Wenn Du unsicher bist oder tiefere Fragen hast, sprich mit einem Priester —
+      er kann Dir persönlich weiterhelfen. Die App möchte Dir den Einstieg erleichtern, nicht das persönliche Gespräch ersetzen.`
+  },
+  {
     question: 'Was ist nach der Beichte?',
     answer: `Nach der Absolution sind Deine Sünden vergeben — wirklich und vollständig.
       Du kannst Deinen Spickzettel in Puranima löschen, denn Jesus hat Deine Sünden vergessen.
