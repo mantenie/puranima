@@ -778,7 +778,7 @@
       "category": "selbst",
       "subcategory": "Charakter und Haltung",
       "question": "Betrüge ich mich selbst mit Lebenslügen?",
-      "explanation": "Zum Beispiel: „Ich kann jederzeit aufhören", „Das hat keine Konsequenzen", „Alle machen das so", „Ich bin nicht verantwortlich", „Es macht mich nicht abhängig", „Das verdiene ich mir" oder „Ich brauche niemanden".",
+      "explanation": "Zum Beispiel: \u201EIch kann jederzeit aufhören\u201C, \u201EDas hat keine Konsequenzen\u201C, \u201EAlle machen das so\u201C, \u201EIch bin nicht verantwortlich\u201C, \u201EEs macht mich nicht abhängig\u201C, \u201EDas verdiene ich mir\u201C oder \u201EIch brauche niemanden\u201C.",
       "tags": ["allgemein"],
       "severity": "normal",
       "source": "wallner"
