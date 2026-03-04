@@ -75,6 +75,11 @@ body {
   user-select: none;
 }
 
+/* Disable double-tap zoom (iOS/Safari) while keeping single-tap and scroll */
+* {
+  touch-action: manipulation;
+}
+
 /* Focus-visible for keyboard navigation only */
 :focus:not(:focus-visible) {
   outline: none;
