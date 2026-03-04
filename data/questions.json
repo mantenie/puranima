@@ -410,6 +410,45 @@
       "confessionText": "Ich habe Sonn- und Feiertage durch unnötige Arbeit entweiht"
     },
     {
+      "id": "gott-031",
+      "category": "gottesverhältnis",
+      "subcategory": "Sakramente und Kirche",
+      "question": "Habe ich die heilige Kommunion empfangen, obwohl ich mich einer schweren Sünde bewusst war?",
+      "explanation": "Wer sich einer schweren Sünde bewusst ist, darf die Kommunion nicht empfangen, ohne vorher das Sakrament der Versöhnung empfangen zu haben (CIC can. 916).",
+      "tags": [
+        "allgemein"
+      ],
+      "severity": "schwer",
+      "source": "ramm",
+      "confessionText": "Ich habe die heilige Kommunion im Stand der schweren Sünde empfangen"
+    },
+    {
+      "id": "gott-032",
+      "category": "gottesverhältnis",
+      "subcategory": "Sakramente und Kirche",
+      "question": "Habe ich es versäumt, wenigstens einmal im Jahr zu beichten?",
+      "explanation": "Die Kirche verpflichtet jeden Gläubigen, wenigstens einmal im Jahr seine schweren Sünden zu beichten (CIC can. 989).",
+      "tags": [
+        "allgemein"
+      ],
+      "severity": "normal",
+      "source": "ramm",
+      "confessionText": "Ich habe es versäumt, wenigstens einmal im Jahr zu beichten"
+    },
+    {
+      "id": "gott-033",
+      "category": "gottesverhältnis",
+      "subcategory": "Sakramente und Kirche",
+      "question": "Habe ich die Fasten- und Abstinenzgebote der Kirche missachtet?",
+      "explanation": "Aschermittwoch und Karfreitag sind strenge Fast- und Abstinenztage. An den Freitagen des Jahres soll ein Opfer der Buße gebracht werden (CIC can. 1251).",
+      "tags": [
+        "allgemein"
+      ],
+      "severity": "normal",
+      "source": "ramm",
+      "confessionText": "Ich habe die Fasten- und Abstinenzgebote der Kirche missachtet"
+    },
+    {
       "id": "naechste-001",
       "category": "nächstenliebe",
       "subcategory": "Liebe und Achtung",
@@ -736,6 +775,32 @@
       "confessionText": "Ich habe mit meinen Geschwistern oder Kameraden gestritten"
     },
     {
+      "id": "naechste-029",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "Habe ich jemanden falsch beschuldigt oder unter Eid die Unwahrheit gesagt?",
+      "explanation": "Das achte Gebot verbietet Meineid und falsche Anschuldigung, die dem Nächsten schweren Schaden zufügen können.",
+      "tags": [
+        "allgemein"
+      ],
+      "severity": "schwer",
+      "source": "wallner",
+      "confessionText": "Ich habe jemanden falsch beschuldigt oder unter Eid die Unwahrheit gesagt"
+    },
+    {
+      "id": "naechste-030",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "Habe ich andere durch mein schlechtes Beispiel zum Sündigen verleitet?",
+      "explanation": "Wer andere durch sein Verhalten zur Sünde verführt, gibt Ärgernis und trägt Mitschuld an deren Sünde (KKK 2284–2287).",
+      "tags": [
+        "allgemein"
+      ],
+      "severity": "schwer",
+      "source": "wallner",
+      "confessionText": "Ich habe andere durch mein schlechtes Beispiel zum Sündigen verleitet"
+    },
+    {
       "id": "fam-001",
       "category": "familie",
       "subcategory": "Eheleben",
@@ -983,6 +1048,32 @@
       "confessionText": "Ich habe vergessen, für meine Eltern zu beten"
     },
     {
+      "id": "fam-025",
+      "category": "familie",
+      "subcategory": "Eltern und Familie",
+      "question": "Habe ich mich um meine alten oder kranken Eltern gekümmert?",
+      "explanation": "Das vierte Gebot verpflichtet erwachsene Kinder, ihren Eltern im Alter und in Krankheit beizustehen und ihnen die nötige Hilfe zu leisten.",
+      "tags": [
+        "allgemein"
+      ],
+      "severity": "normal",
+      "source": "ramm",
+      "confessionText": "Ich habe mich nicht ausreichend um meine alten oder kranken Eltern gekümmert"
+    },
+    {
+      "id": "fam-026",
+      "category": "familie",
+      "subcategory": "Eltern und Familie",
+      "question": "Habe ich dafür gesorgt, dass der Sonntag in meiner Familie ein Tag der Ruhe und der Gemeinschaft war?",
+      "explanation": "Eltern tragen Verantwortung dafür, dass der Sonntag als Tag des Herrn in der Familie gepflegt wird — durch gemeinsamen Gottesdienstbesuch, Ruhe und Familienzeit.",
+      "tags": [
+        "verheiratet"
+      ],
+      "severity": "normal",
+      "source": "ramm",
+      "confessionText": "Ich habe den Sonntag in meiner Familie nicht als Tag der Ruhe und Gemeinschaft gepflegt"
+    },
+    {
       "id": "selbst-001",
       "category": "selbst",
       "subcategory": "Charakter und Haltung",
@@ -1177,6 +1268,19 @@
       "severity": "normal",
       "source": "wallner",
       "confessionText": "Ich war beim Lernen und bei den Hausaufgaben faul oder nachlässig"
+    },
+    {
+      "id": "selbst-016",
+      "category": "selbst",
+      "subcategory": "Gesundheit und Mäßigung",
+      "question": "Habe ich aktive Sterbehilfe befürwortet oder an einem Suizid mitgewirkt?",
+      "explanation": "Das fünfte Gebot schützt das menschliche Leben von der Empfängnis bis zum natürlichen Tod. Aktive Sterbehilfe und Beihilfe zum Suizid sind schwere Sünden (KKK 2280–2283).",
+      "tags": [
+        "allgemein"
+      ],
+      "severity": "schwer",
+      "source": "wallner",
+      "confessionText": "Ich habe aktive Sterbehilfe befürwortet oder an einem Suizid mitgewirkt"
     },
     {
       "id": "geschl-001",
@@ -1399,6 +1503,32 @@
       "severity": "normal",
       "source": "youcat",
       "confessionText": "Ich habe gleichgültig gegenüber der Not anderer Menschen gelebt"
+    },
+    {
+      "id": "beruf-009",
+      "category": "beruf",
+      "subcategory": "Arbeit und Gerechtigkeit",
+      "question": "Habe ich Mitarbeitern oder Angestellten einen gerechten Lohn vorenthalten?",
+      "explanation": "Den Arbeitern einen gerechten Lohn vorzuenthalten ist eine himmelschreiende Sünde (KKK 2434, Jak 5,4).",
+      "tags": [
+        "allgemein"
+      ],
+      "severity": "schwer",
+      "source": "wallner",
+      "confessionText": "Ich habe Mitarbeitern oder Angestellten einen gerechten Lohn vorenthalten"
+    },
+    {
+      "id": "beruf-010",
+      "category": "beruf",
+      "subcategory": "Arbeit und Gerechtigkeit",
+      "question": "Habe ich nach meinen Möglichkeiten zum Unterhalt der Kirche und zur Hilfe für die Armen beigetragen?",
+      "explanation": "Die Gläubigen sind verpflichtet, für die Bedürfnisse der Kirche beizutragen und die Armen zu unterstützen (CIC can. 222).",
+      "tags": [
+        "allgemein"
+      ],
+      "severity": "normal",
+      "source": "ramm",
+      "confessionText": "Ich habe nicht ausreichend zum Unterhalt der Kirche und zur Hilfe für die Armen beigetragen"
     },
     {
       "id": "jugend-001",
