@@ -25,14 +25,91 @@ export async function render(container) {
   let currentIndex = await storage.get('currentIndex') || 0;
 
   // Guard against out-of-bounds index (e.g. after catalog update)
-  if (currentIndex >= questions.length) currentIndex = 0;
+  // Allow questions.length for the notes card (shown after all questions)
+  if (currentIndex > questions.length) currentIndex = 0;
 
   // Set session timestamp if not already set
   if (!(await storage.get('sessionTimestamp'))) {
     await storage.set('sessionTimestamp', Date.now());
   }
 
+  async function renderNotesCard() {
+    const savedNotes = await storage.get('notes') || '';
+
+    container.innerHTML = `
+      <div class="screen-enter min-h-screen flex flex-col bg-white">
+
+        <!-- Header -->
+        <header class="flex items-center justify-between px-4 py-3 border-b border-stone-100">
+          <button id="btn-back" class="p-2 -ml-2 text-stone-400 hover:text-stone-600"
+                  aria-label="Zurück">
+            ${icons.arrowLeft}
+          </button>
+          <span class="text-sm font-medium text-stone-400">Notizen</span>
+          <div class="flex items-center">
+            ${headerActionsHtml({ showHome: true, showLock: true })}
+          </div>
+        </header>
+
+        <!-- Notes Content -->
+        <main class="flex-1 px-6 pt-10 pb-6 overflow-y-auto">
+          <p class="text-xs font-semibold uppercase tracking-widest text-amber-700 mb-3">
+            Persönliche Notizen
+          </p>
+          <p class="text-sm text-stone-400 mb-6">
+            Weitere Gedanken, Erinnerungen oder Vorsätze für die Beichte
+          </p>
+          <textarea id="notes-input"
+                    class="w-full rounded-xl border border-stone-200 bg-stone-50 p-4 text-stone-800
+                           text-base leading-relaxed resize-none focus:outline-none focus:border-amber-400
+                           focus:ring-1 focus:ring-amber-400"
+                    rows="5"
+                    placeholder="z.B. Vorsätze, Umstände, Häufigkeit...">${escapeHtml(savedNotes)}</textarea>
+        </main>
+
+        <!-- Action Button -->
+        <footer class="px-6 pb-6 space-y-3">
+          <button id="btn-to-summary"
+                  class="w-full py-4 rounded-xl bg-amber-700 text-white font-semibold text-lg
+                         hover:bg-amber-800 active:bg-amber-900 transition-colors">
+            Zum Spickzettel
+          </button>
+
+          <!-- Progress Bar (100%) -->
+          <div class="pt-2" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+               aria-label="Alle Fragen beantwortet">
+            <div class="h-1.5 bg-stone-100 rounded-full overflow-hidden">
+              <div class="h-full bg-amber-600 rounded-full" style="width: 100%"></div>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    `;
+
+    container.querySelector('#btn-back').addEventListener('click', () => {
+      currentIndex = questions.length - 1;
+      storage.set('currentIndex', currentIndex);
+      renderCard();
+    });
+    container.querySelector('#btn-to-summary').addEventListener('click', async () => {
+      const notes = container.querySelector('#notes-input').value.trim();
+      if (notes) {
+        await storage.set('notes', notes);
+      } else {
+        await storage.remove('notes');
+      }
+      navigate('/summary');
+    });
+    attachHeaderActions(container);
+  }
+
   function renderCard() {
+    if (currentIndex >= questions.length) {
+      renderNotesCard();
+      return;
+    }
+
     const q = questions[currentIndex];
     const categoryLabel = categoryMap[q.category] || q.category;
     const progress = Math.round(((currentIndex + 1) / questions.length) * 100);
@@ -167,11 +244,7 @@ export async function render(container) {
     currentIndex++;
     await storage.set('currentIndex', currentIndex);
 
-    if (currentIndex >= questions.length) {
-      navigate('/summary');
-    } else {
-      renderCard();
-    }
+    renderCard();
   }
 
   async function goBack() {

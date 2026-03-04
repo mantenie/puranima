@@ -114,6 +114,7 @@ Each screen module exports a single `render(container)` function that:
 | `answers` | object | session | Map of questionId → 'yes' \| 'unsure' |
 | `currentIndex` | number | session | Current question position |
 | `sessionTimestamp` | number | session | When session was started |
+| `notes` | string | session | Free-text personal notes for confession |
 | `pinHash` | string | persistent | SHA-256 hash of PIN (cleared with all data) |
 
 Session = cleared by panic button or explicit user action (e.g. life state change).

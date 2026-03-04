@@ -19,13 +19,41 @@
       "priester"
     ],
     "categories": [
-      { "id": "gottesverhältnis", "label": "Mein Verhältnis zu Gott", "order": 1 },
-      { "id": "nächstenliebe", "label": "Mein Verhältnis zu den Mitmenschen", "order": 2 },
-      { "id": "familie", "label": "Ehe, Familie und Erziehung", "order": 3 },
-      { "id": "selbst", "label": "Mein Verhältnis zu mir selbst", "order": 4 },
-      { "id": "geschlechtlichkeit", "label": "Reinheit und Geschlechtlichkeit", "order": 5 },
-      { "id": "beruf", "label": "Beruf und Gesellschaft", "order": 6 },
-      { "id": "priesterlich", "label": "Priesterlicher Dienst", "order": 7 }
+      {
+        "id": "gottesverhältnis",
+        "label": "Mein Verhältnis zu Gott",
+        "order": 1
+      },
+      {
+        "id": "nächstenliebe",
+        "label": "Mein Verhältnis zu den Mitmenschen",
+        "order": 2
+      },
+      {
+        "id": "familie",
+        "label": "Ehe, Familie und Erziehung",
+        "order": 3
+      },
+      {
+        "id": "selbst",
+        "label": "Mein Verhältnis zu mir selbst",
+        "order": 4
+      },
+      {
+        "id": "geschlechtlichkeit",
+        "label": "Reinheit und Geschlechtlichkeit",
+        "order": 5
+      },
+      {
+        "id": "beruf",
+        "label": "Beruf und Gesellschaft",
+        "order": 6
+      },
+      {
+        "id": "priesterlich",
+        "label": "Priesterlicher Dienst",
+        "order": 7
+      }
     ]
   },
   "prayers": {
@@ -49,9 +77,12 @@
       "subcategory": "Ehrfurcht vor Gott",
       "question": "War mir Gott gleichgültig?",
       "explanation": "Das erste Gebot ruft dazu auf, Gott den ersten Platz im Leben einzuräumen.",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Mir war Gott gleichgültig"
     },
     {
       "id": "gott-002",
@@ -59,9 +90,12 @@
       "subcategory": "Ehrfurcht vor Gott",
       "question": "Habe ich mir ein Gottesbild nach meinen eigenen Wünschen und Vorstellungen gebaut?",
       "explanation": "Gott lässt sich nicht auf unsere Ideen reduzieren. Er ist größer als unser Denken.",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich habe mir ein Gottesbild nach meinen eigenen Wünschen gebaut"
     },
     {
       "id": "gott-003",
@@ -69,9 +103,12 @@
       "subcategory": "Ehrfurcht vor Gott",
       "question": "Habe ich über Gott gespottet oder gelästert?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "schwer",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich habe über Gott gespottet oder gelästert"
     },
     {
       "id": "gott-004",
@@ -79,9 +116,12 @@
       "subcategory": "Ehrfurcht vor Gott",
       "question": "Habe ich Magie, Spiritismus oder Okkultismus betrieben?",
       "explanation": "Das erste Gebot verbietet Aberglauben und alle Formen des Okkultismus, einschließlich Horoskope, Wahrsagerei und Pendeln.",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "schwer",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich habe Magie, Spiritismus oder Okkultismus betrieben"
     },
     {
       "id": "gott-005",
@@ -89,9 +129,12 @@
       "subcategory": "Ehrfurcht vor Gott",
       "question": "Bin ich abergläubisch? Habe ich an Horoskope geglaubt oder gependelt?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "youcat"
+      "source": "youcat",
+      "confessionText": "Ich bin abergläubisch, habe an Horoskope geglaubt oder gependelt"
     },
     {
       "id": "gott-006",
@@ -99,9 +142,12 @@
       "subcategory": "Ehrfurcht vor Gott",
       "question": "Diene ich den Götzen dieser Welt: Macht, Reichtum, Ansehen?",
       "explanation": "Was im Leben den ersten Platz einnimmt, wird zum Gott. Das können Karriere, Geld oder Anerkennung sein.",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich diene den Götzen dieser Welt: Macht, Reichtum, Ansehen"
     },
     {
       "id": "gott-007",
@@ -109,9 +155,12 @@
       "subcategory": "Ehrfurcht vor Gott",
       "question": "Habe ich mich meines Glaubens geschämt?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich habe mich meines Glaubens geschämt"
     },
     {
       "id": "gott-008",
@@ -119,9 +168,12 @@
       "subcategory": "Ehrfurcht vor Gott",
       "question": "Tue ich mich schwer, mich als Christ zu outen?",
       "explanation": "",
-      "tags": ["jugendlich"],
+      "tags": [
+        "jugendlich"
+      ],
       "severity": "normal",
-      "source": "youcat"
+      "source": "youcat",
+      "confessionText": "Ich tue mich schwer, mich als Christ zu outen"
     },
     {
       "id": "gott-009",
@@ -129,9 +181,12 @@
       "subcategory": "Ehrfurcht vor Gott",
       "question": "Zweifle ich an der Barmherzigkeit Gottes?",
       "explanation": "Gott ist unendlich barmherzig. An seiner Barmherzigkeit zu zweifeln kann zur Verzweiflung führen.",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich zweifle an der Barmherzigkeit Gottes"
     },
     {
       "id": "gott-010",
@@ -139,9 +194,12 @@
       "subcategory": "Gebet und persönliche Beziehung",
       "question": "Vernachlässige ich das regelmäßige Gebet?",
       "explanation": "Das Gebet ist das Gespräch mit Gott. Ohne Gebet verkümmert die Beziehung zu ihm.",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich vernachlässige das regelmäßige Gebet"
     },
     {
       "id": "gott-011",
@@ -149,9 +207,12 @@
       "subcategory": "Gebet und persönliche Beziehung",
       "question": "Vertraue ich mehr auf mich selbst als auf Gott?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich vertraue mehr auf mich selbst als auf Gott"
     },
     {
       "id": "gott-012",
@@ -159,9 +220,12 @@
       "subcategory": "Gebet und persönliche Beziehung",
       "question": "Bete ich nur, wenn ich etwas von Gott brauche?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "youcat"
+      "source": "youcat",
+      "confessionText": "Ich bete nur, wenn ich etwas von Gott brauche"
     },
     {
       "id": "gott-013",
@@ -169,9 +233,12 @@
       "subcategory": "Gebet und persönliche Beziehung",
       "question": "Gestalte ich mein Leben nur nach meinen eigenen Vorstellungen — statt Christus nachzufolgen?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich gestalte mein Leben nur nach meinen eigenen Vorstellungen, statt Christus nachzufolgen"
     },
     {
       "id": "gott-014",
@@ -179,9 +246,12 @@
       "subcategory": "Gebet und persönliche Beziehung",
       "question": "Bin ich verzagt, weil ich zu wenig auf Gott vertraue?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich bin verzagt, weil ich zu wenig auf Gott vertraue"
     },
     {
       "id": "gott-015",
@@ -189,9 +259,12 @@
       "subcategory": "Gebet und persönliche Beziehung",
       "question": "Ist Dir Gott gleichgültig?",
       "explanation": "",
-      "tags": ["kinder"],
+      "tags": [
+        "kinder"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Mir ist Gott gleichgültig"
     },
     {
       "id": "gott-020",
@@ -199,9 +272,12 @@
       "subcategory": "Sakramente und Kirche",
       "question": "Habe ich die Sonntagsmesse ohne schwerwiegenden Grund versäumt?",
       "explanation": "Die Teilnahme an der Sonntagsmesse ist für Katholiken eine schwere Pflicht.",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "schwer",
-      "source": "ramm"
+      "source": "ramm",
+      "confessionText": "Ich habe die Sonntagsmesse ohne schwerwiegenden Grund versäumt"
     },
     {
       "id": "gott-021",
@@ -209,9 +285,12 @@
       "subcategory": "Sakramente und Kirche",
       "question": "Habe ich Ausreden gesucht, um die Sonntagsmesse nicht zu besuchen?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich habe Ausreden gesucht, um die Sonntagsmesse nicht zu besuchen"
     },
     {
       "id": "gott-022",
@@ -219,9 +298,12 @@
       "subcategory": "Sakramente und Kirche",
       "question": "Ist mir die Begegnung mit Jesus in der Kommunion gleichgültig geworden?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Mir ist die Begegnung mit Jesus in der Kommunion gleichgültig geworden"
     },
     {
       "id": "gott-023",
@@ -229,9 +311,12 @@
       "subcategory": "Sakramente und Kirche",
       "question": "Gehst Du ungern zur Heiligen Messe?",
       "explanation": "",
-      "tags": ["kinder"],
+      "tags": [
+        "kinder"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich gehe ungern zur Heiligen Messe"
     },
     {
       "id": "gott-024",
@@ -239,9 +324,12 @@
       "subcategory": "Sakramente und Kirche",
       "question": "Vernachlässige ich das Lesen der Heiligen Schrift?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich vernachlässige das Lesen der Heiligen Schrift"
     },
     {
       "id": "gott-025",
@@ -249,9 +337,12 @@
       "subcategory": "Sakramente und Kirche",
       "question": "Kritisiere ich in liebloser Weise die Kirche, den Papst, die Bischöfe oder die Priester?",
       "explanation": "Kritik an der Kirche darf sein — aber sie sollte aufbauend sein, nicht destruktiv.",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich kritisiere in liebloser Weise die Kirche, den Papst, die Bischöfe oder die Priester"
     },
     {
       "id": "gott-026",
@@ -259,9 +350,12 @@
       "subcategory": "Sakramente und Kirche",
       "question": "Versäume ich es, für andere zu beten und sie zum Glauben einzuladen?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich versäume es, für andere zu beten und sie zum Glauben einzuladen"
     },
     {
       "id": "gott-027",
@@ -269,9 +363,12 @@
       "subcategory": "Sakramente und Kirche",
       "question": "Weigere ich mich, aus Liebe zu Gott Opfer zu bringen oder zu fasten?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich weigere mich, aus Liebe zu Gott Opfer zu bringen oder zu fasten"
     },
     {
       "id": "gott-028",
@@ -279,9 +376,12 @@
       "subcategory": "Sakramente und Kirche",
       "question": "Hadere ich mit Gott, wenn Leiden und Schmerzen in mein Leben treten?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich hadere mit Gott, wenn Leiden und Schmerzen in mein Leben treten"
     },
     {
       "id": "gott-029",
@@ -289,9 +389,12 @@
       "subcategory": "Sakramente und Kirche",
       "question": "Habe ich den Namen Gottes leichtfertig ausgesprochen? Habe ich geflucht?",
       "explanation": "Das zweite Gebot verbietet den Missbrauch des Namens Gottes.",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "ramm"
+      "source": "ramm",
+      "confessionText": "Ich habe den Namen Gottes leichtfertig ausgesprochen oder geflucht"
     },
     {
       "id": "gott-030",
@@ -299,9 +402,12 @@
       "subcategory": "Sakramente und Kirche",
       "question": "Habe ich Sonn- und Feiertage durch unnötige Arbeit entweiht?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "ramm"
+      "source": "ramm",
+      "confessionText": "Ich habe Sonn- und Feiertage durch unnötige Arbeit entweiht"
     },
     {
       "id": "naechste-001",
@@ -309,9 +415,12 @@
       "subcategory": "Liebe und Achtung",
       "question": "Gibt es Menschen, die ich verachte?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Es gibt Menschen, die ich verachte"
     },
     {
       "id": "naechste-002",
@@ -319,9 +428,12 @@
       "subcategory": "Liebe und Achtung",
       "question": "Gibt es Menschen, denen ich etwas neide?",
       "explanation": "Neid ist eine der sieben Hauptsünden und vergiftet die Beziehung zu den Mitmenschen.",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Es gibt Menschen, denen ich etwas neide"
     },
     {
       "id": "naechste-003",
@@ -329,9 +441,12 @@
       "subcategory": "Liebe und Achtung",
       "question": "Hasse ich jemanden?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "schwer",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich hasse jemanden"
     },
     {
       "id": "naechste-004",
@@ -339,9 +454,12 @@
       "subcategory": "Liebe und Achtung",
       "question": "Bin ich nachtragend? Fällt es mir schwer, anderen zu vergeben?",
       "explanation": "Vergebung ist ein Kernstück des christlichen Lebens. Jesus selbst hat seinen Feinden vergeben.",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich bin nachtragend und tue mich schwer, anderen zu vergeben"
     },
     {
       "id": "naechste-005",
@@ -349,9 +467,12 @@
       "subcategory": "Liebe und Achtung",
       "question": "Schaue ich auf andere herab?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich schaue auf andere herab"
     },
     {
       "id": "naechste-006",
@@ -359,9 +480,12 @@
       "subcategory": "Liebe und Achtung",
       "question": "Möchte ich immer der Beste sein? Muss ich vor den Menschen etwas gelten?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich möchte immer der Beste sein und vor den Menschen etwas gelten"
     },
     {
       "id": "naechste-007",
@@ -369,9 +493,12 @@
       "subcategory": "Liebe und Achtung",
       "question": "Warst Du zu jemandem gemein?",
       "explanation": "",
-      "tags": ["kinder"],
+      "tags": [
+        "kinder"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich war zu jemandem gemein"
     },
     {
       "id": "naechste-008",
@@ -379,9 +506,12 @@
       "subcategory": "Liebe und Achtung",
       "question": "Ärgerst Du absichtlich Deine Eltern oder Lehrer?",
       "explanation": "",
-      "tags": ["kinder"],
+      "tags": [
+        "kinder"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich ärgere absichtlich meine Eltern oder Lehrer"
     },
     {
       "id": "naechste-009",
@@ -389,9 +519,12 @@
       "subcategory": "Liebe und Achtung",
       "question": "Bist Du neidisch auf andere?",
       "explanation": "",
-      "tags": ["kinder"],
+      "tags": [
+        "kinder"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich bin neidisch auf andere"
     },
     {
       "id": "naechste-010",
@@ -399,9 +532,12 @@
       "subcategory": "Wahrhaftigkeit",
       "question": "Belüge ich andere?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich belüge andere"
     },
     {
       "id": "naechste-011",
@@ -409,9 +545,12 @@
       "subcategory": "Wahrhaftigkeit",
       "question": "Habe ich jemanden schlecht gemacht oder über ihn gelästert?",
       "explanation": "Üble Nachrede verletzt den Ruf eines Menschen und ist eine Sünde gegen die Gerechtigkeit.",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich habe jemanden schlecht gemacht oder über ihn gelästert"
     },
     {
       "id": "naechste-012",
@@ -419,9 +558,12 @@
       "subcategory": "Wahrhaftigkeit",
       "question": "Bringe ich Menschen gegeneinander auf?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich bringe Menschen gegeneinander auf"
     },
     {
       "id": "naechste-013",
@@ -429,9 +571,12 @@
       "subcategory": "Wahrhaftigkeit",
       "question": "Bin ich zynisch und spöttisch?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich bin zynisch und spöttisch"
     },
     {
       "id": "naechste-014",
@@ -439,9 +584,12 @@
       "subcategory": "Wahrhaftigkeit",
       "question": "Hast Du jemanden belogen?",
       "explanation": "",
-      "tags": ["kinder"],
+      "tags": [
+        "kinder"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich habe jemanden belogen"
     },
     {
       "id": "naechste-015",
@@ -449,9 +597,12 @@
       "subcategory": "Wahrhaftigkeit",
       "question": "Bist Du angeberisch?",
       "explanation": "",
-      "tags": ["kinder"],
+      "tags": [
+        "kinder"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich bin angeberisch"
     },
     {
       "id": "naechste-016",
@@ -459,9 +610,13 @@
       "subcategory": "Wahrhaftigkeit",
       "question": "Verwendest Du unanständige und ordinäre Ausdrücke?",
       "explanation": "",
-      "tags": ["kinder", "jugendlich"],
+      "tags": [
+        "kinder",
+        "jugendlich"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich verwende unanständige und ordinäre Ausdrücke"
     },
     {
       "id": "naechste-020",
@@ -469,9 +624,12 @@
       "subcategory": "Taten der Barmherzigkeit",
       "question": "Habe ich jemanden körperlich oder seelisch verletzt?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "schwer",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich habe jemanden körperlich oder seelisch verletzt"
     },
     {
       "id": "naechste-021",
@@ -479,9 +637,12 @@
       "subcategory": "Taten der Barmherzigkeit",
       "question": "Habe ich Notleidende übersehen oder ihnen meine Hilfe verweigert?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich habe Notleidende übersehen oder ihnen meine Hilfe verweigert"
     },
     {
       "id": "naechste-022",
@@ -489,9 +650,12 @@
       "subcategory": "Taten der Barmherzigkeit",
       "question": "Helfe ich anderen nur, wenn ich eine Gegenleistung erwarte?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich helfe anderen nur, wenn ich eine Gegenleistung erwarte"
     },
     {
       "id": "naechste-023",
@@ -499,9 +663,12 @@
       "subcategory": "Taten der Barmherzigkeit",
       "question": "Fällt es mir schwer, Fehler einzugestehen und um Verzeihung zu bitten?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Es fällt mir schwer, Fehler einzugestehen und um Verzeihung zu bitten"
     },
     {
       "id": "naechste-024",
@@ -509,9 +676,12 @@
       "subcategory": "Taten der Barmherzigkeit",
       "question": "Habe ich etwas gestohlen?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "schwer",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich habe etwas gestohlen"
     },
     {
       "id": "naechste-025",
@@ -519,9 +689,12 @@
       "subcategory": "Taten der Barmherzigkeit",
       "question": "Hast Du etwas gestohlen?",
       "explanation": "",
-      "tags": ["kinder"],
+      "tags": [
+        "kinder"
+      ],
       "severity": "schwer",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich habe etwas gestohlen"
     },
     {
       "id": "naechste-026",
@@ -529,9 +702,12 @@
       "subcategory": "Taten der Barmherzigkeit",
       "question": "Habe ich gefundene oder geliehene Sachen behalten, statt sie zurückzugeben?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "youcat"
+      "source": "youcat",
+      "confessionText": "Ich habe gefundene oder geliehene Sachen behalten, statt sie zurückzugeben"
     },
     {
       "id": "naechste-027",
@@ -539,9 +715,12 @@
       "subcategory": "Taten der Barmherzigkeit",
       "question": "Habe ich abgetrieben, dazu gedrängt oder dazu geraten?",
       "explanation": "Abtreibung ist die Tötung eines unschuldigen Menschen und eine besonders schwere Sünde.",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "schwer",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich habe abgetrieben, dazu gedrängt oder dazu geraten"
     },
     {
       "id": "naechste-028",
@@ -549,9 +728,12 @@
       "subcategory": "Taten der Barmherzigkeit",
       "question": "Streitest Du mit Deinen Geschwistern oder Kameraden?",
       "explanation": "",
-      "tags": ["kinder"],
+      "tags": [
+        "kinder"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich streite mit meinen Geschwistern oder Kameraden"
     },
     {
       "id": "fam-001",
@@ -559,9 +741,12 @@
       "subcategory": "Eheleben",
       "question": "Weise ich meinen Ehepartner wegen seiner Fehler und Schwächen zurück?",
       "explanation": "",
-      "tags": ["verheiratet"],
+      "tags": [
+        "verheiratet"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich weise meinen Ehepartner wegen seiner Fehler und Schwächen zurück"
     },
     {
       "id": "fam-002",
@@ -569,9 +754,12 @@
       "subcategory": "Eheleben",
       "question": "Habe ich meinen Ehepartner missachtet oder herabgesetzt?",
       "explanation": "",
-      "tags": ["verheiratet"],
+      "tags": [
+        "verheiratet"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich habe meinen Ehepartner missachtet oder herabgesetzt"
     },
     {
       "id": "fam-003",
@@ -579,9 +767,12 @@
       "subcategory": "Eheleben",
       "question": "Habe ich die Ehe gebrochen und meinen Ehepartner betrogen?",
       "explanation": "Ehebruch ist eine schwere Sünde gegen das sechste Gebot und gegen die eheliche Treue.",
-      "tags": ["verheiratet"],
+      "tags": [
+        "verheiratet"
+      ],
       "severity": "schwer",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich habe die Ehe gebrochen und meinen Ehepartner betrogen"
     },
     {
       "id": "fam-004",
@@ -589,9 +780,12 @@
       "subcategory": "Eheleben",
       "question": "Bin ich dem Ehepartner im ehelichen Umgang mit Achtung und Liebe begegnet — oder habe ich nur meine eigene Lust gesucht?",
       "explanation": "",
-      "tags": ["verheiratet"],
+      "tags": [
+        "verheiratet"
+      ],
       "severity": "normal",
-      "source": "youcat"
+      "source": "youcat",
+      "confessionText": "Ich bin dem Ehepartner nicht mit Achtung und Liebe begegnet, sondern habe nur meine eigene Lust gesucht"
     },
     {
       "id": "fam-005",
@@ -599,9 +793,12 @@
       "subcategory": "Eheleben",
       "question": "Verschließe ich mich dem Geschenk neuen Lebens?",
       "explanation": "Die Offenheit für Kinder gehört wesentlich zur christlichen Ehe.",
-      "tags": ["verheiratet"],
+      "tags": [
+        "verheiratet"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich verschließe mich dem Geschenk neuen Lebens"
     },
     {
       "id": "fam-006",
@@ -609,9 +806,12 @@
       "subcategory": "Eheleben",
       "question": "Habe ich künstlich verhütet?",
       "explanation": "Die katholische Kirche lehrt, dass künstliche Empfängnisverhütung dem Sinn der ehelichen Vereinigung widerspricht.",
-      "tags": ["verheiratet"],
+      "tags": [
+        "verheiratet"
+      ],
       "severity": "normal",
-      "source": "ramm"
+      "source": "ramm",
+      "confessionText": "Ich habe künstlich verhütet"
     },
     {
       "id": "fam-007",
@@ -619,9 +819,12 @@
       "subcategory": "Eheleben",
       "question": "Vernachlässige ich meine Familie?",
       "explanation": "",
-      "tags": ["verheiratet"],
+      "tags": [
+        "verheiratet"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich vernachlässige meine Familie"
     },
     {
       "id": "fam-010",
@@ -629,9 +832,12 @@
       "subcategory": "Erziehung",
       "question": "Fehlt es meiner Erziehung an Liebe und Geduld?",
       "explanation": "",
-      "tags": ["verheiratet"],
+      "tags": [
+        "verheiratet"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Es fehlt meiner Erziehung an Liebe und Geduld"
     },
     {
       "id": "fam-011",
@@ -639,9 +845,12 @@
       "subcategory": "Erziehung",
       "question": "Bin ich zu streng — oder verwöhne ich meine Kinder zu sehr?",
       "explanation": "",
-      "tags": ["verheiratet"],
+      "tags": [
+        "verheiratet"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich bin zu streng oder verwöhne meine Kinder zu sehr"
     },
     {
       "id": "fam-012",
@@ -649,9 +858,12 @@
       "subcategory": "Erziehung",
       "question": "Versäume ich es, meinen Kindern den Glauben zu vermitteln?",
       "explanation": "",
-      "tags": ["verheiratet"],
+      "tags": [
+        "verheiratet"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich versäume es, meinen Kindern den Glauben zu vermitteln"
     },
     {
       "id": "fam-013",
@@ -659,9 +871,12 @@
       "subcategory": "Erziehung",
       "question": "Fehlt es mir als Vorbild im Glauben für meine Kinder?",
       "explanation": "",
-      "tags": ["verheiratet"],
+      "tags": [
+        "verheiratet"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Es fehlt mir als Vorbild im Glauben für meine Kinder"
     },
     {
       "id": "fam-014",
@@ -669,9 +884,12 @@
       "subcategory": "Erziehung",
       "question": "Müssen meine Kinder unter meinen Launen leiden?",
       "explanation": "",
-      "tags": ["verheiratet"],
+      "tags": [
+        "verheiratet"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Meine Kinder müssen unter meinen Launen leiden"
     },
     {
       "id": "fam-015",
@@ -679,9 +897,12 @@
       "subcategory": "Erziehung",
       "question": "Sehe ich meine Kinder als Last statt als Geschenk Gottes?",
       "explanation": "",
-      "tags": ["verheiratet"],
+      "tags": [
+        "verheiratet"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich sehe meine Kinder als Last statt als Geschenk Gottes"
     },
     {
       "id": "fam-020",
@@ -689,9 +910,12 @@
       "subcategory": "Eltern und Familie",
       "question": "Bin ich meinen Eltern gegenüber undankbar oder respektlos?",
       "explanation": "Das vierte Gebot ruft dazu auf, Vater und Mutter zu ehren.",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "ramm"
+      "source": "ramm",
+      "confessionText": "Ich bin meinen Eltern gegenüber undankbar oder respektlos"
     },
     {
       "id": "fam-021",
@@ -699,9 +923,12 @@
       "subcategory": "Eltern und Familie",
       "question": "Machst Du Deinen Eltern unnötige Sorgen?",
       "explanation": "",
-      "tags": ["kinder"],
+      "tags": [
+        "kinder"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich mache meinen Eltern unnötige Sorgen"
     },
     {
       "id": "fam-022",
@@ -709,9 +936,12 @@
       "subcategory": "Eltern und Familie",
       "question": "Bist Du frech oder respektlos zu Deinen Eltern oder Geschwistern?",
       "explanation": "",
-      "tags": ["kinder"],
+      "tags": [
+        "kinder"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich bin frech oder respektlos zu meinen Eltern oder Geschwistern"
     },
     {
       "id": "fam-023",
@@ -719,9 +949,12 @@
       "subcategory": "Eltern und Familie",
       "question": "Bist Du Deinen Eltern ungehorsam?",
       "explanation": "",
-      "tags": ["kinder"],
+      "tags": [
+        "kinder"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich bin meinen Eltern ungehorsam"
     },
     {
       "id": "fam-024",
@@ -729,9 +962,12 @@
       "subcategory": "Eltern und Familie",
       "question": "Vergisst Du, für Deine Eltern zu beten?",
       "explanation": "",
-      "tags": ["kinder"],
+      "tags": [
+        "kinder"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich vergesse, für meine Eltern zu beten"
     },
     {
       "id": "selbst-001",
@@ -739,9 +975,12 @@
       "subcategory": "Charakter und Haltung",
       "question": "Halte ich mich für besser als die anderen?",
       "explanation": "Hochmut ist die Wurzel vieler anderer Sünden.",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich halte mich für besser als die anderen"
     },
     {
       "id": "selbst-002",
@@ -749,9 +988,12 @@
       "subcategory": "Charakter und Haltung",
       "question": "Oder halte ich mich für minderwertig?",
       "explanation": "Auch die Verachtung der eigenen Würde widerspricht Gottes Plan. Er hat dich als sein geliebtes Kind geschaffen.",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich halte mich für minderwertig"
     },
     {
       "id": "selbst-003",
@@ -759,9 +1001,12 @@
       "subcategory": "Charakter und Haltung",
       "question": "Bin ich egoistisch? Möchte ich gerne im Mittelpunkt stehen?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich bin egoistisch und möchte gerne im Mittelpunkt stehen"
     },
     {
       "id": "selbst-004",
@@ -769,19 +1014,25 @@
       "subcategory": "Charakter und Haltung",
       "question": "Bin ich überheblich und stolz?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich bin überheblich und stolz"
     },
     {
       "id": "selbst-005",
       "category": "selbst",
       "subcategory": "Charakter und Haltung",
       "question": "Betrüge ich mich selbst mit Lebenslügen?",
-      "explanation": "Zum Beispiel: \u201EIch kann jederzeit aufhören\u201C, \u201EDas hat keine Konsequenzen\u201C, \u201EAlle machen das so\u201C, \u201EIch bin nicht verantwortlich\u201C, \u201EEs macht mich nicht abhängig\u201C, \u201EDas verdiene ich mir\u201C oder \u201EIch brauche niemanden\u201C.",
-      "tags": ["allgemein"],
+      "explanation": "Zum Beispiel: „Ich kann jederzeit aufhören“, „Das hat keine Konsequenzen“, „Alle machen das so“, „Ich bin nicht verantwortlich“, „Es macht mich nicht abhängig“, „Das verdiene ich mir“ oder „Ich brauche niemanden“.",
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich betrüge mich selbst mit Lebenslügen"
     },
     {
       "id": "selbst-006",
@@ -789,9 +1040,12 @@
       "subcategory": "Charakter und Haltung",
       "question": "Mache ich mir selbst etwas vor? Bin ich unehrlich — auch mir selbst gegenüber?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich mache mir selbst etwas vor und bin unehrlich, auch mir selbst gegenüber"
     },
     {
       "id": "selbst-007",
@@ -799,9 +1053,12 @@
       "subcategory": "Charakter und Haltung",
       "question": "Neige ich zu Rohheit und Härte?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich neige zu Rohheit und Härte"
     },
     {
       "id": "selbst-008",
@@ -809,9 +1066,12 @@
       "subcategory": "Charakter und Haltung",
       "question": "Gebe ich leicht auf?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich gebe leicht auf"
     },
     {
       "id": "selbst-009",
@@ -819,9 +1079,12 @@
       "subcategory": "Charakter und Haltung",
       "question": "Neige ich zur Verzweiflung statt zur Hoffnung?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich neige zur Verzweiflung statt zur Hoffnung"
     },
     {
       "id": "selbst-010",
@@ -829,9 +1092,12 @@
       "subcategory": "Gesundheit und Mäßigung",
       "question": "Schade ich meiner Gesundheit durch Unmäßigkeit: übermäßiges Essen, Trinken, Rauchen, Drogen?",
       "explanation": "Der Körper ist ein Tempel des Heiligen Geistes. Wir haben die Pflicht, ihn zu pflegen.",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich schade meiner Gesundheit durch Unmäßigkeit: übermäßiges Essen, Trinken, Rauchen, Drogen"
     },
     {
       "id": "selbst-011",
@@ -839,9 +1105,12 @@
       "subcategory": "Gesundheit und Mäßigung",
       "question": "Lasse ich mich von meinen Begierden beherrschen?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich lasse mich von meinen Begierden beherrschen"
     },
     {
       "id": "selbst-012",
@@ -849,9 +1118,12 @@
       "subcategory": "Gesundheit und Mäßigung",
       "question": "Habe ich versucht, mein Gewissen abzustumpfen und es zum Schweigen zu bringen?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich habe versucht, mein Gewissen abzustumpfen und zum Schweigen zu bringen"
     },
     {
       "id": "selbst-013",
@@ -859,9 +1131,12 @@
       "subcategory": "Gesundheit und Mäßigung",
       "question": "Möchte ich nur ein angenehmes Leben haben — und ist mir die Ewigkeit bei Gott egal?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich möchte nur ein angenehmes Leben haben und die Ewigkeit bei Gott ist mir egal"
     },
     {
       "id": "selbst-014",
@@ -869,9 +1144,12 @@
       "subcategory": "Gesundheit und Mäßigung",
       "question": "Ist mir die Sehnsucht nach Gott fremd geworden?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Mir ist die Sehnsucht nach Gott fremd geworden"
     },
     {
       "id": "selbst-015",
@@ -879,9 +1157,13 @@
       "subcategory": "Gesundheit und Mäßigung",
       "question": "Bist Du beim Lernen und bei den Hausaufgaben faul oder nachlässig?",
       "explanation": "",
-      "tags": ["kinder", "jugendlich"],
+      "tags": [
+        "kinder",
+        "jugendlich"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich bin beim Lernen und bei den Hausaufgaben faul oder nachlässig"
     },
     {
       "id": "geschl-001",
@@ -889,9 +1171,12 @@
       "subcategory": "Reinheit",
       "question": "Habe ich mich bei unreinen Gedanken oder Erinnerungen aufgehalten?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "youcat"
+      "source": "youcat",
+      "confessionText": "Ich habe mich bei unreinen Gedanken oder Erinnerungen aufgehalten"
     },
     {
       "id": "geschl-002",
@@ -899,9 +1184,12 @@
       "subcategory": "Reinheit",
       "question": "Habe ich sexuelle Erregung in Filmen, Büchern, im Internet oder in Unterhaltungen gesucht?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "youcat"
+      "source": "youcat",
+      "confessionText": "Ich habe sexuelle Erregung in Filmen, Büchern, im Internet oder in Unterhaltungen gesucht"
     },
     {
       "id": "geschl-003",
@@ -909,9 +1197,12 @@
       "subcategory": "Reinheit",
       "question": "Reize ich meine Phantasie und Begierde durch pornographische Inhalte?",
       "explanation": "Pornographie entmenschlicht und macht unfähig zu wahrer Liebe. Sie ist Sünde gegen die Keuschheit und gegen die Würde des anderen.",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "schwer",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich reize meine Phantasie und Begierde durch pornographische Inhalte"
     },
     {
       "id": "geschl-004",
@@ -919,9 +1210,13 @@
       "subcategory": "Reinheit",
       "question": "Habe ich Selbstbefriedigung getan?",
       "explanation": "",
-      "tags": ["single", "jugendlich"],
+      "tags": [
+        "single",
+        "jugendlich"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich habe Selbstbefriedigung getan"
     },
     {
       "id": "geschl-005",
@@ -929,9 +1224,12 @@
       "subcategory": "Reinheit",
       "question": "Habe ich andere verführt?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "schwer",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich habe andere verführt"
     },
     {
       "id": "geschl-006",
@@ -939,9 +1237,12 @@
       "subcategory": "Reinheit",
       "question": "Bin ich in meinem Benehmen und Reden ordinär?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich bin in meinem Benehmen und Reden ordinär"
     },
     {
       "id": "geschl-007",
@@ -949,9 +1250,12 @@
       "subcategory": "Reinheit",
       "question": "Habe ich vorehelichen Geschlechtsverkehr gehabt?",
       "explanation": "Die Kirche lehrt, dass Geschlechtsverkehr seinen Ort in der Ehe hat.",
-      "tags": ["single"],
+      "tags": [
+        "single"
+      ],
       "severity": "schwer",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich habe vorehelichen Geschlechtsverkehr gehabt"
     },
     {
       "id": "geschl-008",
@@ -959,9 +1263,12 @@
       "subcategory": "Reinheit",
       "question": "Lasse ich mich von meinen Trieben beherrschen oder benutze ich andere zur Befriedigung meiner Begierde?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "youcat"
+      "source": "youcat",
+      "confessionText": "Ich lasse mich von meinen Trieben beherrschen oder benutze andere zur Befriedigung meiner Begierde"
     },
     {
       "id": "beruf-001",
@@ -969,9 +1276,12 @@
       "subcategory": "Arbeit und Gerechtigkeit",
       "question": "Setze ich mich im Beruf für das Wohl der anderen ein — oder geht es mir nur um mich selbst?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich setze mich im Beruf nicht für das Wohl der anderen ein, sondern es geht mir nur um mich selbst"
     },
     {
       "id": "beruf-002",
@@ -979,9 +1289,12 @@
       "subcategory": "Arbeit und Gerechtigkeit",
       "question": "Betrüge ich im Beruf oder in der Arbeit?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich betrüge im Beruf oder in der Arbeit"
     },
     {
       "id": "beruf-003",
@@ -989,9 +1302,12 @@
       "subcategory": "Arbeit und Gerechtigkeit",
       "question": "Hinterziehe ich Steuern?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich hinterziehe Steuern"
     },
     {
       "id": "beruf-004",
@@ -999,9 +1315,12 @@
       "subcategory": "Arbeit und Gerechtigkeit",
       "question": "Gefährde ich andere im Straßenverkehr durch Missachtung der Sicherheitsregeln?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich gefährde andere im Straßenverkehr durch Missachtung der Sicherheitsregeln"
     },
     {
       "id": "beruf-005",
@@ -1009,9 +1328,12 @@
       "subcategory": "Arbeit und Gerechtigkeit",
       "question": "Drücke ich mich vor sozialen Aufgaben und Verantwortung?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich drücke mich vor sozialen Aufgaben und Verantwortung"
     },
     {
       "id": "beruf-006",
@@ -1019,9 +1341,12 @@
       "subcategory": "Arbeit und Gerechtigkeit",
       "question": "Bin ich streitsüchtig und rechthaberisch?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "wallner"
+      "source": "wallner",
+      "confessionText": "Ich bin streitsüchtig und rechthaberisch"
     },
     {
       "id": "beruf-007",
@@ -1029,9 +1354,12 @@
       "subcategory": "Arbeit und Gerechtigkeit",
       "question": "War ich gierig nach Geld? War ich geizig, neidisch, verschwenderisch?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "youcat"
+      "source": "youcat",
+      "confessionText": "Ich war gierig nach Geld, geizig, neidisch oder verschwenderisch"
     },
     {
       "id": "beruf-008",
@@ -1039,9 +1367,12 @@
       "subcategory": "Arbeit und Gerechtigkeit",
       "question": "Lebe ich gleichgültig gegenüber der Not anderer Menschen?",
       "explanation": "",
-      "tags": ["allgemein"],
+      "tags": [
+        "allgemein"
+      ],
       "severity": "normal",
-      "source": "youcat"
+      "source": "youcat",
+      "confessionText": "Ich lebe gleichgültig gegenüber der Not anderer Menschen"
     },
     {
       "id": "jugend-001",
@@ -1049,9 +1380,12 @@
       "subcategory": "Jugendspezifisch",
       "question": "Habe ich mich von der Gruppe zu Dingen drängen lassen, die ich eigentlich nicht wollte?",
       "explanation": "Gott hat Dir ein Gewissen geschenkt. Es ist kein Zeichen von Schwäche, Nein zu sagen.",
-      "tags": ["jugendlich"],
+      "tags": [
+        "jugendlich"
+      ],
       "severity": "normal",
-      "source": "eigen"
+      "source": "eigen",
+      "confessionText": "Ich habe mich von der Gruppe zu Dingen drängen lassen, die ich eigentlich nicht wollte"
     },
     {
       "id": "jugend-002",
@@ -1059,9 +1393,12 @@
       "subcategory": "Jugendspezifisch",
       "question": "Verbringe ich zu viel Zeit mit Medien (Handy, Spiele, soziale Netzwerke) auf Kosten meiner Beziehungen und Pflichten?",
       "explanation": "",
-      "tags": ["jugendlich"],
+      "tags": [
+        "jugendlich"
+      ],
       "severity": "normal",
-      "source": "eigen"
+      "source": "eigen",
+      "confessionText": "Ich verbringe zu viel Zeit mit Medien auf Kosten meiner Beziehungen und Pflichten"
     },
     {
       "id": "jugend-003",
@@ -1069,9 +1406,12 @@
       "subcategory": "Jugendspezifisch",
       "question": "Habe ich andere im Internet, in sozialen Medien oder per Nachricht gemobbt oder bloßgestellt?",
       "explanation": "",
-      "tags": ["jugendlich"],
+      "tags": [
+        "jugendlich"
+      ],
       "severity": "normal",
-      "source": "eigen"
+      "source": "eigen",
+      "confessionText": "Ich habe andere im Internet, in sozialen Medien oder per Nachricht gemobbt oder bloßgestellt"
     },
     {
       "id": "jugend-004",
@@ -1079,9 +1419,12 @@
       "subcategory": "Jugendspezifisch",
       "question": "Habe ich Alkohol oder Drogen konsumiert?",
       "explanation": "",
-      "tags": ["jugendlich"],
+      "tags": [
+        "jugendlich"
+      ],
       "severity": "normal",
-      "source": "eigen"
+      "source": "eigen",
+      "confessionText": "Ich habe Alkohol oder Drogen konsumiert"
     },
     {
       "id": "jugend-005",
@@ -1089,9 +1432,12 @@
       "subcategory": "Jugendspezifisch",
       "question": "Habe ich meine Eltern belogen oder ihnen wichtige Dinge verschwiegen?",
       "explanation": "",
-      "tags": ["jugendlich"],
+      "tags": [
+        "jugendlich"
+      ],
       "severity": "normal",
-      "source": "eigen"
+      "source": "eigen",
+      "confessionText": "Ich habe meine Eltern belogen oder ihnen wichtige Dinge verschwiegen"
     },
     {
       "id": "priester-001",
@@ -1099,9 +1445,12 @@
       "subcategory": "Geistliches Leben",
       "question": "Feiere ich die Heilige Messe routiniert oder nachlässig?",
       "explanation": "",
-      "tags": ["priester"],
+      "tags": [
+        "priester"
+      ],
       "severity": "normal",
-      "source": "priester-beichtspiegel"
+      "source": "priester-beichtspiegel",
+      "confessionText": "Ich feiere die Heilige Messe routiniert oder nachlässig"
     },
     {
       "id": "priester-002",
@@ -1109,9 +1458,12 @@
       "subcategory": "Geistliches Leben",
       "question": "Habe ich das tägliche Stundengebet vernachlässigt oder ausgelassen?",
       "explanation": "Das Stundengebet ist eine schwere Pflicht für jeden Priester und Ordensmann.",
-      "tags": ["priester"],
+      "tags": [
+        "priester"
+      ],
       "severity": "schwer",
-      "source": "priester-beichtspiegel"
+      "source": "priester-beichtspiegel",
+      "confessionText": "Ich habe das tägliche Stundengebet vernachlässigt oder ausgelassen"
     },
     {
       "id": "priester-003",
@@ -1119,9 +1471,12 @@
       "subcategory": "Geistliches Leben",
       "question": "Vernachlässige ich meine persönliche Gebetszeit, geistliche Lesung und Betrachtung?",
       "explanation": "",
-      "tags": ["priester"],
+      "tags": [
+        "priester"
+      ],
       "severity": "normal",
-      "source": "priester-beichtspiegel"
+      "source": "priester-beichtspiegel",
+      "confessionText": "Ich vernachlässige meine persönliche Gebetszeit, geistliche Lesung und Betrachtung"
     },
     {
       "id": "priester-004",
@@ -1129,9 +1484,12 @@
       "subcategory": "Geistliches Leben",
       "question": "Gehe ich selbst zu selten zur Beichte?",
       "explanation": "",
-      "tags": ["priester"],
+      "tags": [
+        "priester"
+      ],
       "severity": "normal",
-      "source": "priester-beichtspiegel"
+      "source": "priester-beichtspiegel",
+      "confessionText": "Ich gehe selbst zu selten zur Beichte"
     },
     {
       "id": "priester-005",
@@ -1139,9 +1497,12 @@
       "subcategory": "Gehorsam und Gemeinschaft",
       "question": "Habe ich mich gegen Anweisungen oder Zurechtweisungen meines Bischofs aufgelehnt?",
       "explanation": "",
-      "tags": ["priester"],
+      "tags": [
+        "priester"
+      ],
       "severity": "normal",
-      "source": "priester-beichtspiegel"
+      "source": "priester-beichtspiegel",
+      "confessionText": "Ich habe mich gegen Anweisungen oder Zurechtweisungen meines Bischofs aufgelehnt"
     },
     {
       "id": "priester-006",
@@ -1149,9 +1510,12 @@
       "subcategory": "Gehorsam und Gemeinschaft",
       "question": "Habe ich das Gebet für den Heiligen Vater vernachlässigt oder mich gegen seine Lehren gestellt?",
       "explanation": "",
-      "tags": ["priester"],
+      "tags": [
+        "priester"
+      ],
       "severity": "normal",
-      "source": "priester-beichtspiegel"
+      "source": "priester-beichtspiegel",
+      "confessionText": "Ich habe das Gebet für den Heiligen Vater vernachlässigt oder mich gegen seine Lehren gestellt"
     },
     {
       "id": "priester-007",
@@ -1159,9 +1523,12 @@
       "subcategory": "Gehorsam und Gemeinschaft",
       "question": "Habe ich meine Mitbrüder im Priesterstand kritisiert statt sie zu unterstützen?",
       "explanation": "",
-      "tags": ["priester"],
+      "tags": [
+        "priester"
+      ],
       "severity": "normal",
-      "source": "priester-beichtspiegel"
+      "source": "priester-beichtspiegel",
+      "confessionText": "Ich habe meine Mitbrüder im Priesterstand kritisiert statt sie zu unterstützen"
     },
     {
       "id": "priester-008",
@@ -1169,9 +1536,12 @@
       "subcategory": "Seelsorge und Dienst",
       "question": "Habe ich die Lehren der Kirche verfälscht oder ihre Verkündigung vernachlässigt?",
       "explanation": "",
-      "tags": ["priester"],
+      "tags": [
+        "priester"
+      ],
       "severity": "normal",
-      "source": "priester-beichtspiegel"
+      "source": "priester-beichtspiegel",
+      "confessionText": "Ich habe die Lehren der Kirche verfälscht oder ihre Verkündigung vernachlässigt"
     },
     {
       "id": "priester-009",
@@ -1179,9 +1549,12 @@
       "subcategory": "Seelsorge und Dienst",
       "question": "Habe ich Menschen abgewiesen, die Rat, ein Beichtgespräch oder Beistand suchten?",
       "explanation": "",
-      "tags": ["priester"],
+      "tags": [
+        "priester"
+      ],
       "severity": "normal",
-      "source": "priester-beichtspiegel"
+      "source": "priester-beichtspiegel",
+      "confessionText": "Ich habe Menschen abgewiesen, die Rat, ein Beichtgespräch oder Beistand suchten"
     },
     {
       "id": "priester-010",
@@ -1189,9 +1562,12 @@
       "subcategory": "Seelsorge und Dienst",
       "question": "Habe ich das Beichtgeheimnis verletzt — in irgendeiner Form?",
       "explanation": "Die Verletzung des Beichtgeheimnisses ist eine der schwersten Sünden eines Priesters und zieht die Exkommunikation nach sich.",
-      "tags": ["priester"],
+      "tags": [
+        "priester"
+      ],
       "severity": "schwer",
-      "source": "priester-beichtspiegel"
+      "source": "priester-beichtspiegel",
+      "confessionText": "Ich habe das Beichtgeheimnis verletzt"
     },
     {
       "id": "priester-011",
@@ -1199,9 +1575,12 @@
       "subcategory": "Armut und Lebensführung",
       "question": "Hänge ich zu sehr an Komfort und materiellem Besitz?",
       "explanation": "",
-      "tags": ["priester"],
+      "tags": [
+        "priester"
+      ],
       "severity": "normal",
-      "source": "priester-beichtspiegel"
+      "source": "priester-beichtspiegel",
+      "confessionText": "Ich hänge zu sehr an Komfort und materiellem Besitz"
     },
     {
       "id": "priester-012",
@@ -1209,9 +1588,12 @@
       "subcategory": "Armut und Lebensführung",
       "question": "War mein Verhalten oder meine Sprache meinem Priesterstand unangemessen?",
       "explanation": "",
-      "tags": ["priester"],
+      "tags": [
+        "priester"
+      ],
       "severity": "normal",
-      "source": "priester-beichtspiegel"
+      "source": "priester-beichtspiegel",
+      "confessionText": "Mein Verhalten oder meine Sprache war meinem Priesterstand unangemessen"
     },
     {
       "id": "priester-013",
@@ -1219,9 +1601,12 @@
       "subcategory": "Armut und Lebensführung",
       "question": "Habe ich gegen den Zölibat verstoßen?",
       "explanation": "",
-      "tags": ["priester"],
+      "tags": [
+        "priester"
+      ],
       "severity": "schwer",
-      "source": "priester-beichtspiegel"
+      "source": "priester-beichtspiegel",
+      "confessionText": "Ich habe gegen den Zölibat verstoßen"
     }
   ]
 }

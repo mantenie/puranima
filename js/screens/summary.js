@@ -19,6 +19,7 @@ export async function render(container) {
   if (!lifeState) { navigate('/welcome'); return; }
 
   const answers = await storage.get('answers') || {};
+  const notes = await storage.get('notes') || '';
   const questions = getFilteredQuestions(lifeState);
   const categories = getCategories();
   const prayers = getPrayers();
@@ -83,7 +84,7 @@ export async function render(container) {
                 ${groupedYes[cat.id].map(q => `
                   <li class="flex gap-2 items-start">
                     <span class="text-amber-500 mt-0.5 shrink-0">&bull;</span>
-                    <span class="text-lg leading-snug">${escapeHtml(stripTrailingQuestion(q.question))}</span>
+                    <span class="text-lg leading-snug">${escapeHtml(q.confessionText || stripTrailingQuestion(q.question))}</span>
                   </li>
                 `).join('')}
               </ul>
@@ -100,10 +101,20 @@ export async function render(container) {
               ${unsureQuestions.map(q => `
                 <li class="flex gap-2 items-start">
                   <span class="text-stone-600 mt-0.5 shrink-0">?</span>
-                  <span class="text-base text-stone-400 leading-snug">${escapeHtml(stripTrailingQuestion(q.question))}</span>
+                  <span class="text-base text-stone-400 leading-snug">${escapeHtml(q.confessionText || stripTrailingQuestion(q.question))}</span>
                 </li>
               `).join('')}
             </ul>
+          </section>
+        ` : ''}
+
+        <!-- Personal Notes -->
+        ${notes ? `
+          <section class="mb-8 mt-8">
+            <h2 class="text-xs font-semibold uppercase tracking-widest text-amber-400 mb-2 pb-1 border-b border-slate-800">
+              Persönliche Notizen
+            </h2>
+            <p class="text-base text-stone-300 leading-relaxed whitespace-pre-line">${escapeHtml(notes)}</p>
           </section>
         ` : ''}
 
