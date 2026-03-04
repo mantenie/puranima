@@ -134,7 +134,7 @@
       ],
       "severity": "normal",
       "source": "youcat",
-      "confessionText": "Ich bin abergläubisch, habe an Horoskope geglaubt oder gependelt"
+      "confessionText": "Ich war abergläubisch, habe an Horoskope geglaubt oder gependelt"
     },
     {
       "id": "gott-006",
@@ -147,7 +147,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich diene den Götzen dieser Welt: Macht, Reichtum, Ansehen"
+      "confessionText": "Ich habe den Götzen dieser Welt gedient: Macht, Reichtum, Ansehen"
     },
     {
       "id": "gott-007",
@@ -173,7 +173,7 @@
       ],
       "severity": "normal",
       "source": "youcat",
-      "confessionText": "Ich tue mich schwer, mich als Christ zu outen"
+      "confessionText": "Ich habe mich schwer damit getan, mich als Christ zu outen"
     },
     {
       "id": "gott-009",
@@ -186,7 +186,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich zweifle an der Barmherzigkeit Gottes"
+      "confessionText": "Ich habe an der Barmherzigkeit Gottes gezweifelt"
     },
     {
       "id": "gott-010",
@@ -199,7 +199,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich vernachlässige das regelmäßige Gebet"
+      "confessionText": "Ich habe das regelmäßige Gebet vernachlässigt"
     },
     {
       "id": "gott-011",
@@ -212,7 +212,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich vertraue mehr auf mich selbst als auf Gott"
+      "confessionText": "Ich habe mehr auf mich selbst als auf Gott vertraut"
     },
     {
       "id": "gott-012",
@@ -225,7 +225,7 @@
       ],
       "severity": "normal",
       "source": "youcat",
-      "confessionText": "Ich bete nur, wenn ich etwas von Gott brauche"
+      "confessionText": "Ich habe nur gebetet, wenn ich etwas von Gott brauchte"
     },
     {
       "id": "gott-013",
@@ -238,7 +238,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich gestalte mein Leben nur nach meinen eigenen Vorstellungen, statt Christus nachzufolgen"
+      "confessionText": "Ich habe mein Leben nur nach meinen eigenen Vorstellungen gestaltet, statt Christus nachzufolgen"
     },
     {
       "id": "gott-014",
@@ -251,7 +251,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich bin verzagt, weil ich zu wenig auf Gott vertraue"
+      "confessionText": "Ich war verzagt, weil ich zu wenig auf Gott vertraut habe"
     },
     {
       "id": "gott-015",
@@ -264,7 +264,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Mir ist Gott gleichgültig"
+      "confessionText": "Mir war Gott gleichgültig"
     },
     {
       "id": "gott-020",
@@ -316,7 +316,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich gehe ungern zur Heiligen Messe"
+      "confessionText": "Ich bin ungern zur Heiligen Messe gegangen"
     },
     {
       "id": "gott-024",
@@ -329,7 +329,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich vernachlässige das Lesen der Heiligen Schrift"
+      "confessionText": "Ich habe das Lesen der Heiligen Schrift vernachlässigt"
     },
     {
       "id": "gott-025",
@@ -342,7 +342,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich kritisiere in liebloser Weise die Kirche, den Papst, die Bischöfe oder die Priester"
+      "confessionText": "Ich habe in liebloser Weise die Kirche, den Papst, die Bischöfe oder die Priester kritisiert"
     },
     {
       "id": "gott-026",
@@ -355,7 +355,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich versäume es, für andere zu beten und sie zum Glauben einzuladen"
+      "confessionText": "Ich habe es versäumt, für andere zu beten und sie zum Glauben einzuladen"
     },
     {
       "id": "gott-027",
@@ -368,7 +368,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich weigere mich, aus Liebe zu Gott Opfer zu bringen oder zu fasten"
+      "confessionText": "Ich habe mich geweigert, aus Liebe zu Gott Opfer zu bringen oder zu fasten"
     },
     {
       "id": "gott-028",
@@ -381,7 +381,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich hadere mit Gott, wenn Leiden und Schmerzen in mein Leben treten"
+      "confessionText": "Ich habe mit Gott gehadert, als Leiden und Schmerzen in mein Leben traten"
     },
     {
       "id": "gott-029",
@@ -420,7 +420,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Es gibt Menschen, die ich verachte"
+      "confessionText": "Ich habe Menschen verachtet"
     },
     {
       "id": "naechste-002",
@@ -433,7 +433,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Es gibt Menschen, denen ich etwas neide"
+      "confessionText": "Ich war neidisch auf andere Menschen"
     },
     {
       "id": "naechste-003",
@@ -446,7 +446,7 @@
       ],
       "severity": "schwer",
       "source": "wallner",
-      "confessionText": "Ich hasse jemanden"
+      "confessionText": "Ich habe jemanden gehasst"
     },
     {
       "id": "naechste-004",
@@ -459,7 +459,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich bin nachtragend und tue mich schwer, anderen zu vergeben"
+      "confessionText": "Ich war nachtragend und habe mich schwer getan, anderen zu vergeben"
     },
     {
       "id": "naechste-005",
@@ -472,7 +472,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich schaue auf andere herab"
+      "confessionText": "Ich habe auf andere herabgeschaut"
     },
     {
       "id": "naechste-006",
@@ -485,7 +485,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich möchte immer der Beste sein und vor den Menschen etwas gelten"
+      "confessionText": "Ich wollte immer der Beste sein und vor den Menschen etwas gelten"
     },
     {
       "id": "naechste-007",
@@ -511,7 +511,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich ärgere absichtlich meine Eltern oder Lehrer"
+      "confessionText": "Ich habe absichtlich meine Eltern oder Lehrer geärgert"
     },
     {
       "id": "naechste-009",
@@ -524,7 +524,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich bin neidisch auf andere"
+      "confessionText": "Ich war neidisch auf andere"
     },
     {
       "id": "naechste-010",
@@ -537,7 +537,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich belüge andere"
+      "confessionText": "Ich habe andere belogen"
     },
     {
       "id": "naechste-011",
@@ -563,7 +563,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich bringe Menschen gegeneinander auf"
+      "confessionText": "Ich habe Menschen gegeneinander aufgebracht"
     },
     {
       "id": "naechste-013",
@@ -576,7 +576,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich bin zynisch und spöttisch"
+      "confessionText": "Ich war zynisch und spöttisch"
     },
     {
       "id": "naechste-014",
@@ -602,7 +602,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich bin angeberisch"
+      "confessionText": "Ich war angeberisch"
     },
     {
       "id": "naechste-016",
@@ -616,7 +616,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich verwende unanständige und ordinäre Ausdrücke"
+      "confessionText": "Ich habe unanständige und ordinäre Ausdrücke verwendet"
     },
     {
       "id": "naechste-020",
@@ -655,7 +655,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich helfe anderen nur, wenn ich eine Gegenleistung erwarte"
+      "confessionText": "Ich habe anderen nur geholfen, wenn ich eine Gegenleistung erwartete"
     },
     {
       "id": "naechste-023",
@@ -668,7 +668,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Es fällt mir schwer, Fehler einzugestehen und um Verzeihung zu bitten"
+      "confessionText": "Es fiel mir schwer, Fehler einzugestehen und um Verzeihung zu bitten"
     },
     {
       "id": "naechste-024",
@@ -733,7 +733,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich streite mit meinen Geschwistern oder Kameraden"
+      "confessionText": "Ich habe mit meinen Geschwistern oder Kameraden gestritten"
     },
     {
       "id": "fam-001",
@@ -746,7 +746,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich weise meinen Ehepartner wegen seiner Fehler und Schwächen zurück"
+      "confessionText": "Ich habe meinen Ehepartner wegen seiner Fehler und Schwächen zurückgewiesen"
     },
     {
       "id": "fam-002",
@@ -798,7 +798,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich verschließe mich dem Geschenk neuen Lebens"
+      "confessionText": "Ich habe mich dem Geschenk neuen Lebens verschlossen"
     },
     {
       "id": "fam-006",
@@ -824,7 +824,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich vernachlässige meine Familie"
+      "confessionText": "Ich habe meine Familie vernachlässigt"
     },
     {
       "id": "fam-010",
@@ -837,7 +837,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Es fehlt meiner Erziehung an Liebe und Geduld"
+      "confessionText": "Es fehlte meiner Erziehung an Liebe und Geduld"
     },
     {
       "id": "fam-011",
@@ -850,7 +850,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich bin zu streng oder verwöhne meine Kinder zu sehr"
+      "confessionText": "Ich war zu streng oder habe meine Kinder zu sehr verwöhnt"
     },
     {
       "id": "fam-012",
@@ -863,7 +863,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich versäume es, meinen Kindern den Glauben zu vermitteln"
+      "confessionText": "Ich habe es versäumt, meinen Kindern den Glauben zu vermitteln"
     },
     {
       "id": "fam-013",
@@ -876,7 +876,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Es fehlt mir als Vorbild im Glauben für meine Kinder"
+      "confessionText": "Es fehlte mir als Vorbild im Glauben für meine Kinder"
     },
     {
       "id": "fam-014",
@@ -889,7 +889,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Meine Kinder müssen unter meinen Launen leiden"
+      "confessionText": "Meine Kinder mussten unter meinen Launen leiden"
     },
     {
       "id": "fam-015",
@@ -902,7 +902,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich sehe meine Kinder als Last statt als Geschenk Gottes"
+      "confessionText": "Ich habe meine Kinder als Last gesehen statt als Geschenk Gottes"
     },
     {
       "id": "fam-020",
@@ -915,7 +915,7 @@
       ],
       "severity": "normal",
       "source": "ramm",
-      "confessionText": "Ich bin meinen Eltern gegenüber undankbar oder respektlos"
+      "confessionText": "Ich war meinen Eltern gegenüber undankbar oder respektlos"
     },
     {
       "id": "fam-021",
@@ -928,7 +928,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich mache meinen Eltern unnötige Sorgen"
+      "confessionText": "Ich habe meinen Eltern unnötige Sorgen gemacht"
     },
     {
       "id": "fam-022",
@@ -941,7 +941,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich bin frech oder respektlos zu meinen Eltern oder Geschwistern"
+      "confessionText": "Ich war frech oder respektlos zu meinen Eltern oder Geschwistern"
     },
     {
       "id": "fam-023",
@@ -954,7 +954,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich bin meinen Eltern ungehorsam"
+      "confessionText": "Ich war meinen Eltern ungehorsam"
     },
     {
       "id": "fam-024",
@@ -967,7 +967,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich vergesse, für meine Eltern zu beten"
+      "confessionText": "Ich habe vergessen, für meine Eltern zu beten"
     },
     {
       "id": "selbst-001",
@@ -980,7 +980,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich halte mich für besser als die anderen"
+      "confessionText": "Ich habe mich für besser als die anderen gehalten"
     },
     {
       "id": "selbst-002",
@@ -993,7 +993,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich halte mich für minderwertig"
+      "confessionText": "Ich habe mich für minderwertig gehalten"
     },
     {
       "id": "selbst-003",
@@ -1006,7 +1006,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich bin egoistisch und möchte gerne im Mittelpunkt stehen"
+      "confessionText": "Ich war egoistisch und wollte gerne im Mittelpunkt stehen"
     },
     {
       "id": "selbst-004",
@@ -1019,7 +1019,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich bin überheblich und stolz"
+      "confessionText": "Ich war überheblich und stolz"
     },
     {
       "id": "selbst-005",
@@ -1032,7 +1032,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich betrüge mich selbst mit Lebenslügen"
+      "confessionText": "Ich habe mich selbst mit Lebenslügen betrogen"
     },
     {
       "id": "selbst-006",
@@ -1045,7 +1045,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich mache mir selbst etwas vor und bin unehrlich, auch mir selbst gegenüber"
+      "confessionText": "Ich habe mir selbst etwas vorgemacht und war unehrlich, auch mir selbst gegenüber"
     },
     {
       "id": "selbst-007",
@@ -1058,7 +1058,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich neige zu Rohheit und Härte"
+      "confessionText": "Ich neigte zu Rohheit und Härte"
     },
     {
       "id": "selbst-008",
@@ -1071,7 +1071,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich gebe leicht auf"
+      "confessionText": "Ich habe leicht aufgegeben"
     },
     {
       "id": "selbst-009",
@@ -1084,7 +1084,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich neige zur Verzweiflung statt zur Hoffnung"
+      "confessionText": "Ich neigte zur Verzweiflung statt zur Hoffnung"
     },
     {
       "id": "selbst-010",
@@ -1097,7 +1097,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich schade meiner Gesundheit durch Unmäßigkeit: übermäßiges Essen, Trinken, Rauchen, Drogen"
+      "confessionText": "Ich habe meiner Gesundheit durch Unmäßigkeit geschadet: übermäßiges Essen, Trinken, Rauchen, Drogen"
     },
     {
       "id": "selbst-011",
@@ -1110,7 +1110,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich lasse mich von meinen Begierden beherrschen"
+      "confessionText": "Ich habe mich von meinen Begierden beherrschen lassen"
     },
     {
       "id": "selbst-012",
@@ -1136,7 +1136,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich möchte nur ein angenehmes Leben haben und die Ewigkeit bei Gott ist mir egal"
+      "confessionText": "Ich wollte nur ein angenehmes Leben haben und die Ewigkeit bei Gott war mir egal"
     },
     {
       "id": "selbst-014",
@@ -1163,7 +1163,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich bin beim Lernen und bei den Hausaufgaben faul oder nachlässig"
+      "confessionText": "Ich war beim Lernen und bei den Hausaufgaben faul oder nachlässig"
     },
     {
       "id": "geschl-001",
@@ -1202,7 +1202,7 @@
       ],
       "severity": "schwer",
       "source": "wallner",
-      "confessionText": "Ich reize meine Phantasie und Begierde durch pornographische Inhalte"
+      "confessionText": "Ich habe meine Phantasie und Begierde durch pornographische Inhalte gereizt"
     },
     {
       "id": "geschl-004",
@@ -1242,7 +1242,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich bin in meinem Benehmen und Reden ordinär"
+      "confessionText": "Ich war in meinem Benehmen und Reden ordinär"
     },
     {
       "id": "geschl-007",
@@ -1268,7 +1268,7 @@
       ],
       "severity": "normal",
       "source": "youcat",
-      "confessionText": "Ich lasse mich von meinen Trieben beherrschen oder benutze andere zur Befriedigung meiner Begierde"
+      "confessionText": "Ich habe mich von meinen Trieben beherrschen lassen oder andere zur Befriedigung meiner Begierde benutzt"
     },
     {
       "id": "beruf-001",
@@ -1281,7 +1281,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich setze mich im Beruf nicht für das Wohl der anderen ein, sondern es geht mir nur um mich selbst"
+      "confessionText": "Ich habe mich im Beruf nicht für das Wohl der anderen eingesetzt, sondern es ging mir nur um mich selbst"
     },
     {
       "id": "beruf-002",
@@ -1294,7 +1294,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich betrüge im Beruf oder in der Arbeit"
+      "confessionText": "Ich habe im Beruf oder in der Arbeit betrogen"
     },
     {
       "id": "beruf-003",
@@ -1307,7 +1307,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich hinterziehe Steuern"
+      "confessionText": "Ich habe Steuern hinterzogen"
     },
     {
       "id": "beruf-004",
@@ -1320,7 +1320,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich gefährde andere im Straßenverkehr durch Missachtung der Sicherheitsregeln"
+      "confessionText": "Ich habe andere im Straßenverkehr durch Missachtung der Sicherheitsregeln gefährdet"
     },
     {
       "id": "beruf-005",
@@ -1333,7 +1333,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich drücke mich vor sozialen Aufgaben und Verantwortung"
+      "confessionText": "Ich habe mich vor sozialen Aufgaben und Verantwortung gedrückt"
     },
     {
       "id": "beruf-006",
@@ -1346,7 +1346,7 @@
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich bin streitsüchtig und rechthaberisch"
+      "confessionText": "Ich war streitsüchtig und rechthaberisch"
     },
     {
       "id": "beruf-007",
@@ -1372,7 +1372,7 @@
       ],
       "severity": "normal",
       "source": "youcat",
-      "confessionText": "Ich lebe gleichgültig gegenüber der Not anderer Menschen"
+      "confessionText": "Ich habe gleichgültig gegenüber der Not anderer Menschen gelebt"
     },
     {
       "id": "jugend-001",
@@ -1398,7 +1398,7 @@
       ],
       "severity": "normal",
       "source": "eigen",
-      "confessionText": "Ich verbringe zu viel Zeit mit Medien auf Kosten meiner Beziehungen und Pflichten"
+      "confessionText": "Ich habe zu viel Zeit mit Medien verbracht auf Kosten meiner Beziehungen und Pflichten"
     },
     {
       "id": "jugend-003",
@@ -1450,7 +1450,7 @@
       ],
       "severity": "normal",
       "source": "priester-beichtspiegel",
-      "confessionText": "Ich feiere die Heilige Messe routiniert oder nachlässig"
+      "confessionText": "Ich habe die Heilige Messe routiniert oder nachlässig gefeiert"
     },
     {
       "id": "priester-002",
@@ -1476,7 +1476,7 @@
       ],
       "severity": "normal",
       "source": "priester-beichtspiegel",
-      "confessionText": "Ich vernachlässige meine persönliche Gebetszeit, geistliche Lesung und Betrachtung"
+      "confessionText": "Ich habe meine persönliche Gebetszeit, geistliche Lesung und Betrachtung vernachlässigt"
     },
     {
       "id": "priester-004",
@@ -1489,7 +1489,7 @@
       ],
       "severity": "normal",
       "source": "priester-beichtspiegel",
-      "confessionText": "Ich gehe selbst zu selten zur Beichte"
+      "confessionText": "Ich bin selbst zu selten zur Beichte gegangen"
     },
     {
       "id": "priester-005",
@@ -1580,7 +1580,7 @@
       ],
       "severity": "normal",
       "source": "priester-beichtspiegel",
-      "confessionText": "Ich hänge zu sehr an Komfort und materiellem Besitz"
+      "confessionText": "Ich hing zu sehr an Komfort und materiellem Besitz"
     },
     {
       "id": "priester-012",

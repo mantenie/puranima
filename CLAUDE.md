@@ -203,4 +203,11 @@ The catalog (`data/questions.json`) is versioned independently from the app.
 All questions are phrased so that "Ja, trifft zu" consistently means "this is something to confess."
 It must be reviewed by a theologically trained priest before production launch.
 
+Each question has a `confessionText` field — a first-person declarative statement shown on the
+Spickzettel (summary screen) instead of the question form. Rules for `confessionText`:
+- **Always use past tense (Vergangenheitsform)** — confession looks back at past actions
+- Perfekt for actions: "Ich habe gelogen", "Ich habe gestohlen"
+- Präteritum for states: "Ich war neidisch", "Ich war überheblich"
+- Never present tense: ~~"Ich lüge"~~, ~~"Ich bin neidisch"~~
+
 See `docs/PRD.md` section 7 for the full catalog specification.
