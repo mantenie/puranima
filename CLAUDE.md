@@ -69,8 +69,9 @@ Source CSS is in `css/app.css`, source JS entry point is `js/app.js`.
 │   │   ├── pin-setup.js    # PIN set/change/remove
 │   │   └── pin-lock.js     # Blocking lock screen on app startup
 │   └── components/
-│       ├── icons.js        # Inline SVG icon components
-│       └── footer.js       # Shared footer (Impressum, Datenschutz, FaithOS)
+│       ├── icons.js            # Inline SVG icon components
+│       ├── header-actions.js   # Shared Home + Lock header buttons
+│       └── footer.js           # Shared footer (Impressum, Datenschutz, FaithOS)
 ├── data/
 │   └── questions.json      # Theological question catalog (versioned)
 ├── dist/                   # Build output (gitignored)
@@ -126,6 +127,22 @@ Persistent = only cleared by panic button.
 - 30-second cooldown after 3 failed attempts
 - PIN is cleared when data is deleted (panic button) — by design
 - Shared utilities in `js/pin.js`: hashPin, verifyPin, numpad UI
+
+## Pre-Commit QA Checklist (Mandatory)
+
+Before every commit, run these checks. **Do not skip any.**
+
+1. **Validate JSON**: `python3 -c "import json; json.load(open('data/questions.json')); print('OK')"`
+   - The question catalog is fetched at runtime — a single invalid character breaks the entire app
+   - Watch out for German quotation marks „ " — the closing `"` (U+201C) looks like ASCII `"` (U+0022) and will break JSON. Use `\u201E` and `\u201C` escapes inside JSON strings.
+2. **Build**: `npm run build` — must complete without errors
+3. **Verify bundle size**: Check that JS/CSS sizes are reasonable (no accidental bloat)
+
+### Common Pitfalls
+
+- **German quotes in JSON**: `„` (U+201E) and `"` (U+201C) must be escaped as `\u201E` / `\u201C` in JSON string values. Editors sometimes auto-correct these to ASCII `"` which silently breaks JSON.
+- **HTML in JSON explanation fields**: The `explanation` field in questions.json is rendered as text, not HTML. Don't use HTML tags there.
+- **Template literal quotes**: When writing HTML in JS template literals, use single quotes for attributes (`class='...'`) or escape properly.
 
 ## Coding Conventions
 
