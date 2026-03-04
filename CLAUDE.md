@@ -104,8 +104,7 @@ Each screen module exports a single `render(container)` function that:
 2. If PIN is set, shows blocking lock screen before router starts
 3. Router dispatches to the correct screen based on URL hash
 4. Screens read/write state via the storage module
-5. Session data auto-wipes after 24 hours
-6. "Panic Button" clears ALL local data instantly (including PIN)
+5. "Panic Button" clears ALL local data instantly (including PIN)
 
 ### Storage Keys
 
@@ -114,10 +113,10 @@ Each screen module exports a single `render(container)` function that:
 | `lifeState` | string | persistent | Selected life state |
 | `answers` | object | session | Map of questionId → 'yes' \| 'unsure' |
 | `currentIndex` | number | session | Current question position |
-| `sessionTimestamp` | number | session | For auto-wipe calculation |
+| `sessionTimestamp` | number | session | When session was started |
 | `pinHash` | string | persistent | SHA-256 hash of PIN (cleared with all data) |
 
-Session = cleared by auto-wipe (24h) or panic button.
+Session = cleared by panic button or explicit user action (e.g. life state change).
 Persistent = only cleared by panic button.
 
 ### PIN Protection

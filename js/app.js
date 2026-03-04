@@ -1,6 +1,6 @@
 /**
  * Main entry point — bootstraps the app.
- * Initializes storage, loads catalog, checks auto-wipe, registers routes.
+ * Initializes storage, loads catalog, registers routes.
  */
 
 import { storage } from './storage.js';
@@ -17,8 +17,6 @@ import { render as renderFaq } from './screens/faq.js';
 import { render as renderPinSetup } from './screens/pin-setup.js';
 import { showPinLock } from './screens/pin-lock.js';
 
-const AUTO_WIPE_HOURS = 24;
-
 async function init() {
   // Show loading state
   const app = document.getElementById('app');
@@ -33,9 +31,6 @@ async function init() {
     storage.init(),
     loadCatalog(),
   ]);
-
-  // Check auto-wipe: clear session data if older than threshold
-  await checkAutoWipe();
 
   // If PIN is set, block until correct PIN is entered
   const pinHash = await storage.get('pinHash');
@@ -68,15 +63,10 @@ async function init() {
   }
 }
 
-async function checkAutoWipe() {
-  const timestamp = await storage.get('sessionTimestamp');
-  if (!timestamp) return;
-
-  const hoursElapsed = (Date.now() - timestamp) / (1000 * 60 * 60);
-  if (hoursElapsed >= AUTO_WIPE_HOURS) {
-    await storage.clearSession();
-  }
-}
+// Prevent pinch-to-zoom (supplement to viewport meta tag)
+document.addEventListener('touchmove', (e) => {
+  if (e.touches.length > 1) e.preventDefault();
+}, { passive: false });
 
 // Register Service Worker for offline capability
 if ('serviceWorker' in navigator) {
