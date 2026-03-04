@@ -124,6 +124,8 @@ self.addEventListener('fetch', (event) => {
 `;
 
   writeFileSync(resolve(DIST, 'sw.js'), sw);
+  // Also write to root so it's served correctly (Cloudflare serves from root)
+  writeFileSync(resolve(ROOT, 'sw.js'), sw);
 }
 
 function buildCSS() {
