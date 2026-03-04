@@ -67,8 +67,19 @@ export function showPinLock(container, pinHash) {
 
       container.querySelector('#btn-forgot').addEventListener('click', () => {
         const msg = container.querySelector('#pin-msg');
-        msg.textContent = 'Browserdaten löschen oder 24h warten.';
+        msg.innerHTML = 'Alle Daten löschen, um die App zurückzusetzen.';
         msg.className = 'text-sm h-5 mb-6 text-center text-stone-500';
+
+        // Replace "PIN vergessen?" with "Alles löschen" button
+        const forgotBtn = container.querySelector('#btn-forgot');
+        forgotBtn.textContent = 'Alles löschen';
+        forgotBtn.className = 'text-sm text-red-500 hover:text-red-700 font-medium transition-colors';
+        forgotBtn.replaceWith(forgotBtn.cloneNode(true));
+        container.querySelector('#btn-forgot').addEventListener('click', async () => {
+          await storage.clearAll();
+          window.location.hash = '';
+          window.location.reload();
+        });
       });
     }
 
