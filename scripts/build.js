@@ -49,6 +49,12 @@ function copyStatic() {
 function generateServiceWorker() {
   const version = `puranima-${Date.now()}`;
 
+  // Collect splash screen files
+  const splashDir = resolve(ROOT, 'assets', 'splash');
+  const splashFiles = existsSync(splashDir)
+    ? readdirSync(splashDir).filter(f => f.endsWith('.png')).map(f => `/assets/splash/${f}`)
+    : [];
+
   const assets = [
     '/',
     '/index.html',
@@ -60,6 +66,7 @@ function generateServiceWorker() {
     '/assets/icons/apple-touch-icon.png',
     '/assets/icons/icon-192.png',
     '/assets/icons/icon-512.png',
+    ...splashFiles,
   ];
 
   const sw = `/**
