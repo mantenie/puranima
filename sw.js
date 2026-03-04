@@ -3,9 +3,9 @@
  * Caches all app assets on install. Updates on new version deployment.
  */
 
-const CACHE_NAME = 'puranima-v2';
+const CACHE_NAME = 'puranima-v3';
 
-const LOCAL_ASSETS = [
+const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
   '/css/app.css',
@@ -19,6 +19,11 @@ const LOCAL_ASSETS = [
   '/js/screens/examination.js',
   '/js/screens/summary.js',
   '/js/screens/completion.js',
+  '/js/screens/impressum.js',
+  '/js/screens/datenschutz.js',
+  '/js/screens/faq.js',
+  '/js/screens/preparation.js',
+  '/js/vendor/tailwind-browser.js',
   '/data/questions.json',
   '/manifest.json',
   '/assets/icons/icon.svg',
@@ -27,21 +32,11 @@ const LOCAL_ASSETS = [
   '/assets/icons/icon-512.png',
 ];
 
-const CDN_ASSETS = [
-  'https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4',
-];
-
-// Install: pre-cache local assets (required), CDN assets (best-effort)
+// Install: pre-cache all local assets
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then(cache =>
-        cache.addAll(LOCAL_ASSETS).then(() =>
-          Promise.allSettled(CDN_ASSETS.map(url =>
-            fetch(url).then(r => r.ok ? cache.put(url, r) : undefined)
-          ))
-        )
-      )
+      .then(cache => cache.addAll(ASSETS_TO_CACHE))
       .then(() => self.skipWaiting())
   );
 });
@@ -61,13 +56,15 @@ self.addEventListener('activate', (event) => {
 
 // Fetch: cache-first, fall back to network
 self.addEventListener('fetch', (event) => {
+  // Don't cache external requests (Simon widget etc.)
+  if (!event.request.url.startsWith(self.location.origin)) return;
+
   event.respondWith(
     caches.match(event.request)
       .then(cached => {
         if (cached) return cached;
 
         return fetch(event.request).then(response => {
-          // Only cache successful same-origin or CDN responses
           if (!response || response.status !== 200) return response;
 
           const responseClone = response.clone();
@@ -79,7 +76,6 @@ self.addEventListener('fetch', (event) => {
         });
       })
       .catch(() => {
-        // Offline fallback for navigation requests
         if (event.request.mode === 'navigate') {
           return caches.match('/index.html');
         }

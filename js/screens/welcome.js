@@ -6,6 +6,7 @@
 import { storage } from '../storage.js';
 import { navigate } from '../router.js';
 import { icons } from '../components/icons.js';
+import { footerHtml, attachFooterListeners } from '../components/footer.js';
 
 const LIFE_STATE_OPTIONS = [
   { id: 'allgemein', label: 'Allgemein', desc: 'Kernfragen des Glaubens' },
@@ -22,9 +23,27 @@ const LIFE_STATE_OPTIONS = [
  */
 export async function render(container) {
   const savedLifeState = await storage.get('lifeState');
+  const hasPin = !!(await storage.get('pinHash'));
 
   container.innerHTML = `
-    <div class="screen-enter min-h-screen flex flex-col px-5 py-6">
+    <div class="screen-enter min-h-screen flex flex-col px-5 py-6 relative">
+
+      <!-- PIN Settings (top-right) -->
+      <div class="absolute top-5 right-4">
+        <button id="btn-pin-settings"
+                class="p-2 ${hasPin ? 'text-amber-600' : 'text-stone-300'} hover:text-stone-500 transition-colors"
+                aria-label="PIN-Einstellungen">
+          ${hasPin ? icons.lock : icons.lockOpen}
+        </button>
+        ${!hasPin ? `
+          <div id="pin-tooltip"
+               class="absolute right-0 top-full mt-1 bg-stone-800 text-white text-xs rounded-lg px-3 py-2
+                      shadow-lg whitespace-nowrap opacity-0 transition-opacity duration-300 pointer-events-none">
+            Schütze Deine Daten mit einem PIN
+            <div class="absolute -top-1 right-3 w-2 h-2 bg-stone-800 rotate-45"></div>
+          </div>
+        ` : ''}
+      </div>
 
       <!-- Logo & Title -->
       <header class="text-center pt-4 pb-6">
@@ -76,7 +95,15 @@ export async function render(container) {
         >
           Gewissenserforschung beginnen
         </button>
+
+        <!-- FAQ Link -->
+        <button id="btn-faq"
+                class="w-full text-center text-sm font-medium text-amber-800 hover:text-amber-900 pt-3 transition-colors underline underline-offset-2">
+          Was ist die Beichte? — Infos &amp; FAQ
+        </button>
       </footer>
+
+      ${footerHtml()}
 
     </div>
   `;
@@ -106,9 +133,17 @@ export async function render(container) {
 
   container.querySelector('#btn-start').addEventListener('click', async () => {
     if (!selectedLifeState) return;
-    await storage.set('currentIndex', 0);
-    await storage.set('answers', {});
-    await storage.set('sessionTimestamp', Date.now());
-    navigate('/examination');
+    navigate('/preparation');
   });
+
+  container.querySelector('#btn-faq').addEventListener('click', () => navigate('/faq'));
+  container.querySelector('#btn-pin-settings').addEventListener('click', () => navigate('/pin-setup'));
+  attachFooterListeners(container);
+
+  // Show tooltip for PIN icon if no PIN is set (auto-fade after 4s)
+  const tooltip = container.querySelector('#pin-tooltip');
+  if (tooltip) {
+    setTimeout(() => { tooltip.style.opacity = '1'; }, 500);
+    setTimeout(() => { tooltip.style.opacity = '0'; }, 4500);
+  }
 }

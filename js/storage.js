@@ -87,7 +87,7 @@ class StorageManager {
     ]);
   }
 
-  /** Clear ALL local data. Used by the Panic Button. */
+  /** Clear ALL local data — including PIN. Used by the Panic Button. */
   async clearAll() {
     if (this.#useLocalStorage) {
       const keys = [];
@@ -96,15 +96,14 @@ class StorageManager {
         if (key.startsWith('puranima_')) keys.push(key);
       }
       keys.forEach(k => localStorage.removeItem(k));
-      return;
+    } else {
+      await new Promise((resolve, reject) => {
+        const tx = this.#db.transaction(STORE_NAME, 'readwrite');
+        const request = tx.objectStore(STORE_NAME).clear();
+        request.onsuccess = () => resolve();
+        request.onerror = () => reject(request.error);
+      });
     }
-
-    return new Promise((resolve, reject) => {
-      const tx = this.#db.transaction(STORE_NAME, 'readwrite');
-      const request = tx.objectStore(STORE_NAME).clear();
-      request.onsuccess = () => resolve();
-      request.onerror = () => reject(request.error);
-    });
   }
 
   /** @private */

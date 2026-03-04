@@ -1,7 +1,23 @@
 /*
- * Custom styles beyond Tailwind utilities.
- * Keep this file minimal — Tailwind handles the heavy lifting.
+ * Main CSS entry point.
+ * Imports Tailwind CSS v4, defines the custom theme, and includes app-specific styles.
+ * Compiled via @tailwindcss/cli → dist/css/app.css
  */
+
+@import "tailwindcss";
+
+/* Tell Tailwind where to scan for class usage */
+@source "../js";
+@source "../index.html";
+
+/* Custom theme tokens */
+@theme {
+  --color-sacred: #92400e;
+  --color-sacred-light: #d97706;
+  --color-sacred-dark: #78350f;
+}
+
+/* --- Custom styles beyond Tailwind utilities --- */
 
 /* Screen transition animation */
 .screen-enter {
@@ -33,8 +49,11 @@
   border-radius: 2px;
 }
 
-/* Prevent overscroll bounce on iOS */
+/* Force light color scheme — prevents OS dark mode from breaking contrast.
+   The summary screen (Spickzettel) handles its own dark background. */
 html {
+  color-scheme: light;
+  background-color: #fffbf5; /* Warm white base — prevents dark canvas bleeding through opacity layers */
   overscroll-behavior: none;
 }
 
@@ -59,4 +78,15 @@ a,
   outline: 2px solid #d97706;
   outline-offset: 2px;
   border-radius: 4px;
+}
+
+/* PIN dots shake animation on wrong input */
+@keyframes pinShake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-8px); }
+  40%, 80% { transform: translateX(8px); }
+}
+
+.pin-shake {
+  animation: pinShake 0.4s ease-out;
 }

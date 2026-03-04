@@ -7,9 +7,15 @@ import { storage } from './storage.js';
 import { registerRoute, startRouter, navigate, getCurrentRoute } from './router.js';
 import { loadCatalog } from './questions.js';
 import { render as renderWelcome } from './screens/welcome.js';
+import { render as renderPreparation } from './screens/preparation.js';
 import { render as renderExamination } from './screens/examination.js';
 import { render as renderSummary } from './screens/summary.js';
 import { render as renderCompletion } from './screens/completion.js';
+import { render as renderImpressum } from './screens/impressum.js';
+import { render as renderDatenschutz } from './screens/datenschutz.js';
+import { render as renderFaq } from './screens/faq.js';
+import { render as renderPinSetup } from './screens/pin-setup.js';
+import { showPinLock } from './screens/pin-lock.js';
 
 const AUTO_WIPE_HOURS = 24;
 
@@ -31,11 +37,22 @@ async function init() {
   // Check auto-wipe: clear session data if older than threshold
   await checkAutoWipe();
 
+  // If PIN is set, block until correct PIN is entered
+  const pinHash = await storage.get('pinHash');
+  if (pinHash) {
+    await showPinLock(app, pinHash);
+  }
+
   // Register routes
   registerRoute('/welcome', renderWelcome);
+  registerRoute('/preparation', renderPreparation);
   registerRoute('/examination', renderExamination);
   registerRoute('/summary', renderSummary);
   registerRoute('/completion', renderCompletion);
+  registerRoute('/impressum', renderImpressum);
+  registerRoute('/datenschutz', renderDatenschutz);
+  registerRoute('/faq', renderFaq);
+  registerRoute('/pin-setup', renderPinSetup);
 
   // Start the router (must happen before any navigate calls)
   startRouter();

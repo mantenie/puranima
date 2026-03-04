@@ -56,7 +56,7 @@ export async function render(container) {
         </header>
 
         <!-- Card Content -->
-        <main class="flex-1 flex flex-col justify-center px-6 py-8" aria-live="polite">
+        <main class="flex-1 px-6 pt-10 pb-6 overflow-y-auto" aria-live="polite">
 
           <!-- Category Label -->
           <p class="text-xs font-semibold uppercase tracking-widest text-amber-700 mb-3">
