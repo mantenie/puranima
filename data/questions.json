@@ -827,6 +827,19 @@
       "confessionText": "Ich habe meine Familie vernachlässigt"
     },
     {
+      "id": "fam-008",
+      "category": "familie",
+      "subcategory": "Eheleben",
+      "question": "Habe ich meine Ehe nur standesamtlich, aber nicht kirchlich geschlossen?",
+      "explanation": "Die Kirche lehrt, dass katholische Christen ihre Ehe vor Gott und der Kirche schließen sollen. Eine rein standesamtliche Ehe wird kirchlich nicht als Sakrament anerkannt.",
+      "tags": [
+        "verheiratet"
+      ],
+      "severity": "schwer",
+      "source": "ramm",
+      "confessionText": "Ich habe meine Ehe nicht kirchlich geschlossen"
+    },
+    {
       "id": "fam-010",
       "category": "familie",
       "subcategory": "Erziehung",
@@ -1256,6 +1269,19 @@
       "severity": "schwer",
       "source": "wallner",
       "confessionText": "Ich habe vorehelichen Geschlechtsverkehr gehabt"
+    },
+    {
+      "id": "geschl-009",
+      "category": "geschlechtlichkeit",
+      "subcategory": "Reinheit",
+      "question": "Lebe ich mit meinem Partner zusammen, ohne verheiratet zu sein?",
+      "explanation": "Die Kirche lehrt, dass das eheliche Zusammenleben seinen Ort in der sakramentalen Ehe hat.",
+      "tags": [
+        "single"
+      ],
+      "severity": "schwer",
+      "source": "ramm",
+      "confessionText": "Ich habe mit meinem Partner zusammengelebt, ohne verheiratet zu sein"
     },
     {
       "id": "geschl-008",
