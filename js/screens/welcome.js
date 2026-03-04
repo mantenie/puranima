@@ -127,8 +127,11 @@ export async function render(container) {
 
   let selectedLifeState = savedLifeState;
 
+  let activeSessionLifeState = hasActiveSession ? savedLifeState : null;
+
   container.querySelectorAll('[data-lifestate]').forEach(btn => {
     btn.addEventListener('click', async () => {
+      const previousLifeState = selectedLifeState;
       selectedLifeState = btn.dataset.lifestate;
       await storage.set('lifeState', selectedLifeState);
 
@@ -142,9 +145,38 @@ export async function render(container) {
         b.setAttribute('aria-pressed', isSelected);
       });
 
-      // Enable start button if no active session
-      const startBtn = container.querySelector('#btn-start');
-      if (startBtn) startBtn.disabled = false;
+      // If life state changed to a different one, reset session data
+      if (activeSessionLifeState && selectedLifeState !== activeSessionLifeState) {
+        await storage.remove('answers');
+        await storage.remove('currentIndex');
+        await storage.remove('sessionTimestamp');
+        activeSessionLifeState = null;
+      }
+
+      // Update action buttons: show/hide "Weiterarbeiten" dynamically
+      const footer = container.querySelector('footer');
+      const canContinue = selectedLifeState === activeSessionLifeState;
+
+      footer.querySelector('#btn-continue')?.remove();
+      const startBtn = footer.querySelector('#btn-start');
+
+      if (canContinue) {
+        // Re-add "Weiterarbeiten" button before start
+        const contBtn = document.createElement('button');
+        contBtn.id = 'btn-continue';
+        contBtn.className = 'w-full py-4 rounded-xl bg-amber-700 text-white font-bold text-lg hover:bg-amber-800 active:bg-amber-900 transition-colors mb-3';
+        contBtn.textContent = 'Weiterarbeiten';
+        contBtn.addEventListener('click', () => navigate('/examination'));
+        footer.insertBefore(contBtn, startBtn);
+        // Make start button secondary
+        startBtn.className = 'w-full py-3 rounded-xl bg-white text-amber-800 font-medium border border-amber-200 hover:bg-amber-50 active:bg-amber-100 transition-colors';
+        startBtn.textContent = 'Neu beginnen';
+      } else {
+        // Primary start button
+        startBtn.className = 'w-full py-4 rounded-xl bg-amber-700 text-white font-bold text-lg transition-opacity duration-150 hover:bg-amber-800 active:bg-amber-900';
+        startBtn.textContent = 'Gewissenserforschung beginnen';
+        startBtn.disabled = false;
+      }
     });
   });
 
