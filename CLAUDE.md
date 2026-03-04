@@ -13,14 +13,35 @@ Privacy-first, offline-capable, zero server communication for user data.
 | Component | Technology | Rationale |
 |-----------|------------|-----------|
 | Markup | HTML5 | Maximum compatibility |
-| Styling | Tailwind CSS v4 (CDN) | Utility-first, no build step |
+| Styling | Tailwind CSS v4 (local build) | Utility-first, compiled via @tailwindcss/cli |
 | Logic | Vanilla JS (ES6+ modules) | No framework overhead, simple caching |
 | Storage | IndexedDB + localStorage fallback | Robust local persistence |
 | Content | Single JSON file | Entire question catalog |
 | PWA | manifest.json + Service Worker | Offline capability, install prompt |
+| Build | Node.js + esbuild + @tailwindcss/cli | CSS compilation + JS bundling |
 
 No React/Vue/Angular — intentional. Framework overhead hurts offline performance
 and adds unnecessary complexity for this app size.
+
+## Build System
+
+```sh
+# Install dependencies
+npm install
+
+# Development build (with watch)
+npm run dev
+
+# Production build
+npm run build
+```
+
+Build outputs go to `dist/` directory:
+- `dist/css/app.css` — compiled Tailwind CSS
+- `dist/js/app.js` — bundled JavaScript
+
+The `index.html` references these compiled files from `dist/`.
+Source CSS is in `css/app.css`, source JS entry point is `js/app.js`.
 
 ## Architecture
 
@@ -28,31 +49,47 @@ and adds unnecessary complexity for this app size.
 
 ```
 ├── index.html              # SPA shell
-├── css/app.css             # Custom styles (minimal)
+├── css/app.css             # Source CSS (Tailwind directives + custom styles)
 ├── js/
 │   ├── app.js              # Entry point, bootstraps app
 │   ├── router.js           # Hash-based SPA router
 │   ├── storage.js          # IndexedDB + localStorage abstraction
 │   ├── questions.js        # Question catalog loader/filter
+│   ├── pin.js              # PIN hashing, verification, numpad utilities
+│   ├── utils.js            # Shared utilities (escapeHtml)
 │   ├── screens/            # One module per view
-│   │   ├── welcome.js      # Onboarding + life state selection
+│   │   ├── welcome.js      # Onboarding + life state selection + PIN icon
+│   │   ├── preparation.js  # Opening prayer before examination
 │   │   ├── examination.js  # Card-based question flow
 │   │   ├── summary.js      # Spickzettel (dark mode cheat sheet)
-│   │   └── completion.js   # Post-confession + donation hint
+│   │   ├── completion.js   # Post-confession + donation hint
+│   │   ├── faq.js          # FAQ about confession
+│   │   ├── impressum.js    # Legal notice
+│   │   ├── datenschutz.js  # Privacy policy
+│   │   ├── pin-setup.js    # PIN set/change/remove
+│   │   └── pin-lock.js     # Blocking lock screen on app startup
 │   └── components/
-│       └── icons.js        # Inline SVG icon components
+│       ├── icons.js        # Inline SVG icon components
+│       └── footer.js       # Shared footer (Impressum, Datenschutz, FaithOS)
 ├── data/
 │   └── questions.json      # Theological question catalog (versioned)
+├── dist/                   # Build output (gitignored)
+│   ├── css/app.css
+│   └── js/app.js
+├── scripts/
+│   └── build.js            # Build script (Tailwind + esbuild)
 ├── manifest.json           # PWA manifest
 ├── sw.js                   # Service Worker (cache-first)
-├── assets/icons/           # PWA icons (SVG)
+├── assets/icons/           # PWA icons (SVG + PNG)
 └── docs/
     └── PRD.md              # Product Requirements Document
 ```
 
 ### Navigation
 
-Hash-based routing: `#/welcome` → `#/examination` → `#/summary` → `#/completion`
+Hash-based routing: `#/welcome` → `#/preparation` → `#/examination` → `#/summary` → `#/completion`
+
+Additional routes: `#/faq`, `#/impressum`, `#/datenschutz`, `#/pin-setup`
 
 Each screen module exports a single `render(container)` function that:
 1. Reads state from storage
@@ -62,11 +99,12 @@ Each screen module exports a single `render(container)` function that:
 
 ### Data Flow
 
-1. `app.js` initializes storage + loads question catalog
-2. Router dispatches to the correct screen based on URL hash
-3. Screens read/write state via the storage module
-4. Session data auto-wipes after 24 hours
-5. "Panic Button" clears ALL local data instantly
+1. `app.js` initializes storage + loads question catalog in parallel
+2. If PIN is set, shows blocking lock screen before router starts
+3. Router dispatches to the correct screen based on URL hash
+4. Screens read/write state via the storage module
+5. Session data auto-wipes after 24 hours
+6. "Panic Button" clears ALL local data instantly (including PIN)
 
 ### Storage Keys
 
@@ -76,9 +114,18 @@ Each screen module exports a single `render(container)` function that:
 | `answers` | object | session | Map of questionId → 'yes' \| 'unsure' |
 | `currentIndex` | number | session | Current question position |
 | `sessionTimestamp` | number | session | For auto-wipe calculation |
+| `pinHash` | string | persistent | SHA-256 hash of PIN (cleared with all data) |
 
 Session = cleared by auto-wipe (24h) or panic button.
 Persistent = only cleared by panic button.
+
+### PIN Protection
+
+- Optional 4-digit PIN with SHA-256 hashing (salt: `puranima_`)
+- Lock screen blocks app on startup when PIN is set
+- 30-second cooldown after 3 failed attempts
+- PIN is cleared when data is deleted (panic button) — by design
+- Shared utilities in `js/pin.js`: hashPin, verifyPin, numpad UI
 
 ## Coding Conventions
 
@@ -90,13 +137,13 @@ Persistent = only cleared by panic button.
 - Template literals for HTML generation
 - Early returns for guard clauses
 - JSDoc comments for exported functions
-- No semicolons (standardjs style) — actually, USE semicolons consistently
+- Use semicolons consistently
 
 ### CSS / Tailwind
 
 - Tailwind utility classes for all styling
 - Custom CSS only for animations and scrollbar styling (`css/app.css`)
-- No inline `style` attributes in JS-generated HTML
+- No inline `style` attributes in JS-generated HTML (exception: dynamic widths like progress bars)
 - Dark mode on summary screen via class-based dark background
 
 ### HTML / Accessibility
@@ -112,20 +159,17 @@ Persistent = only cleared by panic button.
 
 - ZERO server calls for user data
 - No analytics, tracking pixels, cookies, or fingerprinting
-- Only external resource: Tailwind CSS CDN (cached by Service Worker)
+- All assets served locally (no external CDN dependencies)
 - All user data in IndexedDB/localStorage only
 - Open source on GitHub
 
 ## Running Locally
 
 ```sh
-# Any static file server:
-npx serve .
-# or
-python3 -m http.server 8000
+npm install
+npm run dev
+# Open http://localhost:8000
 ```
-
-Open `http://localhost:8000` (or whichever port).
 
 ## Deployment
 
@@ -133,12 +177,13 @@ Target: Cloudflare Pages (free tier)
 
 1. Push to GitHub
 2. Connect Cloudflare Pages to the repository
-3. Build command: (none — no build step)
-4. Output directory: `/` (root)
+3. Build command: `npm run build`
+4. Output directory: `/` (root — index.html references dist/ for compiled assets)
 
 ## Question Catalog
 
 The catalog (`data/questions.json`) is versioned independently from the app.
+All questions are phrased so that "Ja, trifft zu" consistently means "this is something to confess."
 It must be reviewed by a theologically trained priest before production launch.
 
 See `docs/PRD.md` section 7 for the full catalog specification.
