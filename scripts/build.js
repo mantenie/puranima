@@ -34,7 +34,7 @@ function copyStatic() {
   }
 
   // Individual files
-  const files = ['manifest.json'];
+  const files = ['manifest.json', 'robots.txt', 'sitemap.xml', '_redirects'];
   for (const file of files) {
     const src = resolve(ROOT, file);
     if (existsSync(src)) {
