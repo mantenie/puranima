@@ -1,19 +1,19 @@
-# Product Requirements Document (PRD): Puranima
+# Product Requirements Document (PRD): beichtbar
 
-**Version:** 2.1
-**Datum:** 04.03.2026
+**Version:** 2.2
+**Datum:** 06.03.2026
 **Status:** MVP implementiert — theologische Abnahme ausstehend
 
 ---
 
 ## 1. Executive Summary
 
-Puranima ist eine Progressive Web App (PWA) zur katholischen Gewissenserforschung.
+beichtbar ist eine Progressive Web App (PWA) zur katholischen Gewissenserforschung.
 Sie löst das Problem der fehlenden oder veralteten Vorbereitung auf das Sakrament der
 Versöhnung durch eine radikal einfache, diskrete und rein lokal funktionierende Benutzeroberfläche.
 
-Der Name "Puranima" kommt aus dem Sanskrit und bedeutet "Vollmond" — der Moment,
-in dem das Licht die Dunkelheit vollständig überwindet.
+Der Name "beichtbar" bedeutet: Das Leben ist beichtbar. Jede Schuld, jede Sünde, jede Last
+kann in die Beichte getragen werden — nichts ist zu groß oder zu dunkel, um vergeben zu werden.
 
 Das Ziel ist nicht Profit, sondern Mission. Die Monetarisierung erfolgt ausschließlich über
 freiwillige Spenden zur Kostendeckung.
@@ -212,15 +212,18 @@ Theologische Prüfung durch mindestens einen Priester vor Launch erforderlich.
 - [x] Konsistente Frageformulierung (42 Fragen korrigiert)
 - [x] Tailwind CSS lokal statt CDN
 
-### Phase 3: Erweiterungen (ausstehend)
+### Phase 3: Erweiterungen (teilweise fertig)
 
+- [x] PWA Install-Prompt (Welcome-Screen)
+- [x] Service Worker Update-Notification
+- [x] Screen Wake Lock im Spickzettel
+- [x] Keyboard-Shortcuts in der Gewissenserforschung (1/2/3/←/→)
+- [ ] Anpassbare Schriftgröße im Spickzettel
 - [ ] Mehrsprachigkeit
-- [ ] Anpassbare Schriftgröße
 - [ ] QR-Code-Generator für Pfarreien
-- [ ] PWA Install-Prompt
 
 ## 9. Offene Fragen
 
 1. **Theologische Abnahme:** Wer übernimmt das Review des Fragenkatalogs?
-2. **Domain:** puranima.de empfohlen
+2. **Domain:** beichtbar.de
 3. **Gebete:** Aktuell eigene Formulierungen, ggf. Gotteslob-Texte prüfen

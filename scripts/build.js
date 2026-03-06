@@ -78,6 +78,11 @@ const CACHE_NAME = '${version}';
 
 const ASSETS_TO_CACHE = ${JSON.stringify(assets, null, 2)};
 
+// Allow the active tab to trigger immediate activation of a waiting SW
+self.addEventListener('message', (event) => {
+  if (event.data?.type === 'SKIP_WAITING') self.skipWaiting();
+});
+
 // Install: pre-cache all local assets
 self.addEventListener('install', (event) => {
   event.waitUntil(

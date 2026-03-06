@@ -212,6 +212,14 @@ export async function render(container) {
                   class="w-full text-center text-sm text-stone-400 hover:text-purple-700 pt-1 transition-colors">
             Zur Zusammenfassung springen
           </button>
+
+          <!-- Keyboard hints (desktop only) -->
+          <p class="hidden md:block text-center text-xs text-stone-300 pt-1">
+            Tastatur: <kbd class="bg-stone-100 rounded px-1">1</kbd> Ja &nbsp;
+            <kbd class="bg-stone-100 rounded px-1">2</kbd> Nein &nbsp;
+            <kbd class="bg-stone-100 rounded px-1">3</kbd> Unsicher &nbsp;
+            <kbd class="bg-stone-100 rounded px-1">←</kbd> Zurück
+          </p>
         </footer>
 
       </div>
@@ -254,7 +262,20 @@ export async function render(container) {
 
   // Handle keyboard navigation
   function onKeyDown(e) {
-    if (e.key === 'ArrowLeft') goBack();
+    // Don't fire in text inputs (notes card)
+    if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;
+    // Don't fire on notes card (after all questions)
+    if (currentIndex >= questions.length) return;
+
+    if (e.key === 'ArrowLeft') {
+      goBack();
+    } else if (e.key === '1') {
+      handleAnswer('yes');
+    } else if (e.key === '2' || e.key === 'ArrowRight') {
+      handleAnswer('no');
+    } else if (e.key === '3') {
+      handleAnswer('unsure');
+    }
   }
 
   document.addEventListener('keydown', onKeyDown);

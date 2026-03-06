@@ -8,6 +8,7 @@ import { navigate } from '../router.js';
 import { icons } from '../components/icons.js';
 import { footerHtml, attachFooterListeners } from '../components/footer.js';
 import { lockApp } from './pin-lock.js';
+import { isInstallable, promptInstall } from '../install-prompt.js';
 
 const LIFE_STATE_OPTIONS = [
   { id: 'allgemein', label: 'Allgemein', desc: 'Kernfragen des Glaubens' },
@@ -116,6 +117,18 @@ export async function render(container) {
                 class="w-full text-center text-sm font-medium text-purple-800 hover:text-purple-900 pt-3 transition-colors underline underline-offset-2">
           Was ist die Beichte? — Infos &amp; FAQ
         </button>
+
+        <!-- PWA Install Prompt (shown only when browser supports it) -->
+        ${isInstallable() ? `
+          <button id="btn-install"
+                  class="w-full text-center text-xs text-stone-400 hover:text-stone-600 pt-2 transition-colors flex items-center justify-center gap-1.5">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+            </svg>
+            App auf Startbildschirm installieren
+          </button>
+        ` : ''}
       </footer>
 
       ${footerHtml()}
@@ -193,6 +206,13 @@ export async function render(container) {
   });
 
   container.querySelector('#btn-faq').addEventListener('click', () => navigate('/faq'));
+
+  container.querySelector('#btn-install')?.addEventListener('click', async () => {
+    const accepted = await promptInstall();
+    if (accepted) {
+      container.querySelector('#btn-install')?.remove();
+    }
+  });
 
   // Lock icon: instant-lock if PIN set, otherwise go to PIN setup
   container.querySelector('#btn-lock').addEventListener('click', async () => {

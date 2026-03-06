@@ -141,6 +141,22 @@ export async function render(container) {
     </div>
   `;
 
+  // --- Screen Wake Lock (prevent display sleep in confessional) ---
+  let wakeLock = null;
+  async function acquireWakeLock() {
+    if (!('wakeLock' in navigator)) return;
+    try {
+      wakeLock = await navigator.wakeLock.request('screen');
+    } catch (_) {
+      // Silently ignore — not critical
+    }
+  }
+  function onVisibilityChange() {
+    if (document.visibilityState === 'visible') acquireWakeLock();
+  }
+  await acquireWakeLock();
+  document.addEventListener('visibilitychange', onVisibilityChange);
+
   // --- Event Listeners ---
   let panicTimer = null;
 
@@ -163,9 +179,11 @@ export async function render(container) {
     panicTimer = setTimeout(() => navigate('/completion'), 1500);
   });
 
-  // Return cleanup function to clear dangling timer
+  // Return cleanup function to clear dangling timer and release wake lock
   return () => {
     if (panicTimer) clearTimeout(panicTimer);
+    document.removeEventListener('visibilitychange', onVisibilityChange);
+    if (wakeLock) wakeLock.release().catch(() => {});
   };
 }
 

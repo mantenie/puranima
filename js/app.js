@@ -5,6 +5,7 @@
 
 import { storage } from './storage.js';
 import { registerRoute, startRouter, navigate, getCurrentRoute } from './router.js';
+import './install-prompt.js'; // Register beforeinstallprompt handler at startup
 import { loadCatalog } from './questions.js';
 import { render as renderWelcome } from './screens/welcome.js';
 import { render as renderPreparation } from './screens/preparation.js';
@@ -68,9 +69,48 @@ document.addEventListener('touchmove', (e) => {
   if (e.touches.length > 1) e.preventDefault();
 }, { passive: false });
 
+/** Show a toast banner at the top of the screen. */
+function showToast(message, { actionLabel, onAction, duration = 6000 } = {}) {
+  const toast = document.createElement('div');
+  toast.className = [
+    'fixed top-4 left-1/2 -translate-x-1/2 z-50 px-4 py-3 rounded-xl shadow-lg',
+    'bg-slate-800 text-white text-sm flex items-center gap-3',
+    'max-w-sm w-[calc(100%-2rem)]',
+    'animate-[fadeInDown_0.3s_ease]',
+  ].join(' ');
+  toast.innerHTML = `<span class="flex-1">${message}</span>`;
+  if (actionLabel) {
+    const btn = document.createElement('button');
+    btn.className = 'shrink-0 font-semibold text-purple-300 hover:text-purple-200';
+    btn.textContent = actionLabel;
+    btn.addEventListener('click', () => { onAction?.(); toast.remove(); });
+    toast.appendChild(btn);
+  }
+  const dismiss = document.createElement('button');
+  dismiss.className = 'shrink-0 text-stone-400 hover:text-white ml-1';
+  dismiss.innerHTML = '&times;';
+  dismiss.setAttribute('aria-label', 'Schließen');
+  dismiss.addEventListener('click', () => toast.remove());
+  toast.appendChild(dismiss);
+  document.body.appendChild(toast);
+  if (duration > 0) setTimeout(() => toast.remove(), duration);
+}
+
 // Register Service Worker for offline capability
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js').catch(err => {
+  navigator.serviceWorker.register('/sw.js').then(registration => {
+    registration.addEventListener('updatefound', () => {
+      const newWorker = registration.installing;
+      newWorker.addEventListener('statechange', () => {
+        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+          showToast('Neue Version verfügbar.', {
+            actionLabel: 'Jetzt laden',
+            onAction: () => { newWorker.postMessage({ type: 'SKIP_WAITING' }); location.reload(); },
+          });
+        }
+      });
+    });
+  }).catch(err => {
     console.warn('Service Worker registration failed:', err);
   });
 }
