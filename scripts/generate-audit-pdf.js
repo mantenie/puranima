@@ -186,7 +186,7 @@ const LIFESTATE_LABELS = {
 function buildTitlePage(meta) {
   return [
     { text: '\n\n\n\n', fontSize: 30 },
-    { text: 'Puranima', style: 'title' },
+    { text: 'beichtbar', style: 'title' },
     { text: 'Fragenkatalog zur Gewissenserforschung', style: 'subtitle' },
     { text: 'Theologisches Audit-Dokument', style: 'subtitle', fontSize: 11, margin: [0, 5, 0, 0] },
     { text: '\n\n' },
@@ -506,7 +506,7 @@ function buildDocDefinition(catalog, changelog, baselineRef) {
       if (currentPage === 1) return null;
       return {
         columns: [
-          { text: 'Puranima — Fragenkatalog Audit', fontSize: 8, color: C.muted },
+          { text: 'beichtbar — Fragenkatalog Audit', fontSize: 8, color: C.muted },
           { text: `v${meta.version}`, fontSize: 8, color: C.muted, alignment: 'right' },
         ],
         margin: [40, 20, 40, 0],
@@ -591,7 +591,7 @@ async function main() {
   const printer = createPrinter();
   const docDefinition = buildDocDefinition(catalog, changelog, changelogLabel);
 
-  const outputFilename = `puranima-audit-v${catalog.meta.version}-${catalog.meta.date}.pdf`;
+  const outputFilename = `beichtbar-audit-v${catalog.meta.version}-${catalog.meta.date}.pdf`;
   const outputPath = resolve(ROOT, outputFilename);
 
   const size = await generatePdf(printer, docDefinition, outputPath);

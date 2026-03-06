@@ -26,7 +26,7 @@ export async function render(container) {
 
         <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-4">
           <p class="text-sm text-emerald-800 font-medium">
-            Puranima erhebt, speichert und überträgt keinerlei personenbezogene Daten.
+            beichtbar erhebt, speichert und überträgt keinerlei personenbezogene Daten.
             Alles bleibt auf Deinem Gerät.
           </p>
         </div>
@@ -42,7 +42,7 @@ export async function render(container) {
         <section>
           <h2 class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-2">Grundsatz: Privacy by Design</h2>
           <p class="text-stone-600 text-sm leading-relaxed">
-            Puranima wurde von Grund auf so entwickelt, dass keine Nutzerdaten den Browser verlassen.
+            beichtbar wurde von Grund auf so entwickelt, dass keine Nutzerdaten den Browser verlassen.
             Es gibt keinen Server, der Deine Eingaben empfängt, keine Datenbank, kein Analytics,
             kein Tracking und keine Cookies.
           </p>
@@ -83,7 +83,7 @@ export async function render(container) {
         <section>
           <h2 class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-2">Keine externen Dienste</h2>
           <p class="text-stone-600 text-sm leading-relaxed">
-            Puranima lädt keine externen Schriftarten, keine Analyse-Tools, keine Werbung
+            beichtbar lädt keine externen Schriftarten, keine Analyse-Tools, keine Werbung
             und keine Social-Media-Plugins. Die gesamte App (einschließlich des CSS-Frameworks)
             wird lokal ausgeliefert und funktioniert nach dem ersten Laden vollständig offline.
           </p>

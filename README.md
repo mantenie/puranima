@@ -1,4 +1,4 @@
-# Puranima — Beicht-Helfer PWA
+# beichtbar — Beicht-Helfer PWA
 
 Progressive Web App zur katholischen Gewissenserforschung. Datenschutz-orientiert, offline-fähig, keine Server-Kommunikation für Nutzerdaten.
 
@@ -31,7 +31,7 @@ npm run audit-pdf -- --initial
 npm run audit-pdf
 ```
 
-Das erzeugt eine Datei wie `puranima-audit-v1.0.0-2026-03-04.pdf` im Projektroot.
+Das erzeugt eine Datei wie `beichtbar-audit-v1.0.0-2026-03-04.pdf` im Projektroot.
 
 ### Changelog (Änderungen sichtbar machen)
 

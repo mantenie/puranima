@@ -47,7 +47,7 @@ function copyStatic() {
 }
 
 function generateServiceWorker() {
-  const version = `puranima-${Date.now()}`;
+  const version = `beichtbar-${Date.now()}`;
 
   // Collect splash screen files
   const splashDir = resolve(ROOT, 'assets', 'splash');

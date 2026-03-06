@@ -3,7 +3,7 @@
  * All data stays local — zero server communication.
  */
 
-const DB_NAME = 'puranima';
+const DB_NAME = 'beichtbar';
 const DB_VERSION = 1;
 const STORE_NAME = 'appdata';
 
@@ -29,7 +29,7 @@ class StorageManager {
    */
   async get(key) {
     if (this.#useLocalStorage) {
-      const raw = localStorage.getItem(`puranima_${key}`);
+      const raw = localStorage.getItem(`beichtbar_${key}`);
       return raw ? JSON.parse(raw) : null;
     }
 
@@ -48,7 +48,7 @@ class StorageManager {
    */
   async set(key, value) {
     if (this.#useLocalStorage) {
-      localStorage.setItem(`puranima_${key}`, JSON.stringify(value));
+      localStorage.setItem(`beichtbar_${key}`, JSON.stringify(value));
       return;
     }
 
@@ -66,7 +66,7 @@ class StorageManager {
    */
   async remove(key) {
     if (this.#useLocalStorage) {
-      localStorage.removeItem(`puranima_${key}`);
+      localStorage.removeItem(`beichtbar_${key}`);
       return;
     }
 
@@ -93,7 +93,7 @@ class StorageManager {
       const keys = [];
       for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
-        if (key.startsWith('puranima_')) keys.push(key);
+        if (key.startsWith('beichtbar_')) keys.push(key);
       }
       keys.forEach(k => localStorage.removeItem(k));
     } else {

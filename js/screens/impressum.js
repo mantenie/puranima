@@ -68,7 +68,7 @@ export async function render(container) {
 
         <div class="pt-4 border-t border-stone-200">
           <p class="text-stone-400 text-xs">
-            Puranima ist ein
+            beichtbar ist ein
             <a href="https://faithos.de" target="_blank" rel="noopener" class="text-amber-700 underline">FaithOS</a>-Projekt.<br>
             © ${new Date().getFullYear()} FaithOS. Alle Rechte vorbehalten.
           </p>

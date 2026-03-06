@@ -1,4 +1,4 @@
-# Puranima — Beicht-Helfer PWA
+# beichtbar — Beicht-Helfer PWA
 
 ## Overview
 
@@ -122,7 +122,7 @@ Persistent = only cleared by panic button.
 
 ### PIN Protection
 
-- Optional 4-digit PIN with SHA-256 hashing (salt: `puranima_`)
+- Optional 4-digit PIN with SHA-256 hashing (salt: `beichtbar_`)
 - Lock screen blocks app on startup when PIN is set
 - 30-second cooldown after 3 failed attempts
 - PIN is cleared when data is deleted (panic button) — by design

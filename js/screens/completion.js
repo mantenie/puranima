@@ -45,7 +45,7 @@ export async function render(container) {
       <!-- Donation Hint -->
       <div class="max-w-sm bg-amber-50 border border-amber-200 rounded-2xl p-4 text-center">
         <p class="text-sm font-medium text-stone-700 mb-1">
-          Puranima ist kostenlos und werbefrei.
+          beichtbar ist kostenlos und werbefrei.
         </p>
         <p class="text-xs text-stone-500 leading-relaxed">
           Wenn Dir die App geholfen hat, freuen wir uns über eine kleine Spende

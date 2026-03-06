@@ -52,7 +52,7 @@ export async function render(container) {
       <!-- Logo & Title -->
       <header class="text-center pt-4 pb-6">
         <div class="inline-block">${icons.logo}</div>
-        <h1 class="text-3xl font-bold text-stone-800 mt-3 tracking-tight">Puranima</h1>
+        <h1 class="text-3xl font-bold text-stone-800 mt-3 tracking-tight">beichtbar</h1>
         <p class="text-stone-500 mt-1 text-sm">Gewissenserforschung</p>
       </header>
 

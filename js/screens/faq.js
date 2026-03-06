@@ -33,7 +33,7 @@ const FAQ_ITEMS = [
   },
   {
     question: 'Wie läuft eine Beichte ab?',
-    answer: `1. Vorbereitung: Gewissenserforschung (dabei hilft Dir Puranima!)
+    answer: `1. Vorbereitung: Gewissenserforschung (dabei hilft Dir beichtbar!)
       2. Begrüßung: Du trittst zum Priester und bekreuzigst Dich. „Im Namen des Vaters…"
       3. Eröffnung: „Ich bekenne vor Gott dem Allmächtigen und vor Ihnen, Vater, meine Sünden. Meine letzte Beichte war vor…"
       4. Bekenntnis: Du nennst Deine Sünden — ehrlich, aber ohne Romane. Der Spickzettel hilft!
@@ -68,25 +68,25 @@ const FAQ_ITEMS = [
       bevor Du zur Kommunion gehst. Häufige Beichte ist ein kraftvolles Mittel des geistlichen Wachstums.`
   },
   {
-    question: 'Wie hilft mir Puranima?',
-    answer: `Puranima führt Dich durch eine systematische Gewissenserforschung mit theologisch geprüften Fragen.
+    question: 'Wie hilft mir beichtbar?',
+    answer: `beichtbar führt Dich durch eine systematische Gewissenserforschung mit theologisch geprüften Fragen.
       Die Fragen sind nach Lebensstand gefiltert und nach Kategorien geordnet.
       Am Ende erhältst Du einen übersichtlichen Spickzettel im Dark Mode — perfekt für den Beichtstuhl.
       Alles bleibt auf Deinem Gerät. Niemand außer Dir sieht Deine Antworten.`
   },
   {
-    question: 'Ist Puranima ein vollständiger Beichtspiegel?',
-    answer: `Puranima ist ein digitaler Beichtspiegel — eine Hilfe zur Gewissenserforschung. Die Fragen basieren auf bewährten
+    question: 'Ist beichtbar ein vollständiger Beichtspiegel?',
+    answer: `beichtbar ist ein digitaler Beichtspiegel — eine Hilfe zur Gewissenserforschung. Die Fragen basieren auf bewährten
       katholischen Quellen (u.a. Karl Wallner, Gotteslob, YOUCAT), erheben aber keinen Anspruch auf Vollständigkeit.
       Es gibt verschiedene Beichtspiegel mit unterschiedlichen Schwerpunkten. Je nach Lebenssituation, Beruf oder
       geistlichem Weg kann ein anderer Beichtspiegel besser zu Dir passen.
-      Puranima ersetzt kein Seelsorgegespräch. Wenn Du unsicher bist oder tiefere Fragen hast, sprich mit einem Priester —
+      beichtbar ersetzt kein Seelsorgegespräch. Wenn Du unsicher bist oder tiefere Fragen hast, sprich mit einem Priester —
       er kann Dir persönlich weiterhelfen. Die App möchte Dir den Einstieg erleichtern, nicht das persönliche Gespräch ersetzen.`
   },
   {
     question: 'Was ist nach der Beichte?',
     answer: `Nach der Absolution sind Deine Sünden vergeben — wirklich und vollständig.
-      Du kannst Deinen Spickzettel in Puranima löschen, denn Jesus hat Deine Sünden vergessen.
+      Du kannst Deinen Spickzettel in beichtbar löschen, denn Jesus hat Deine Sünden vergessen.
       Es gibt eine berühmte Geschichte: Eine Mystikerin betete und sagte zu Jesus: „Herr, ich habe wieder gesündigt."
       Jesus antwortete: „Welche Sünden?" — Er hatte sie nach der Beichte vergessen.
       So radikal ist Gottes Vergebung. Was gebeichtet und losgesprochen ist, existiert nicht mehr.
@@ -100,10 +100,11 @@ const FAQ_ITEMS = [
       jeder Priester wird sich freuen, wenn jemand beichten möchte.`
   },
   {
-    question: 'Was bedeutet der Name Puranima?',
-    answer: `Puranima kommt vom lateinischen „Pura Anima" — die reine Seele.
-      Genau das ist das Ziel der Beichte: Durch die Lossprechung wird die Seele gereinigt
-      und wieder ganz. Du trittst als neuer Mensch aus dem Beichtstuhl — mit einer Pura Anima.`
+    question: 'Was bedeutet der Name beichtbar?',
+    answer: `beichtbar ist ein deutsches Wort — ganz einfach, ganz direkt.
+      Es bedeutet: Das Leben ist beichtbar. Jede Schuld, jede Sünde, jede Last kann in die Beichte getragen werden.
+      Nichts ist zu groß, zu dunkel oder zu beschämend, um vergeben zu werden.
+      beichtbar steht dafür: Du kannst kommen, wie Du bist.`
   }
 ];
 
