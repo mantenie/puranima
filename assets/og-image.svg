@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#3b0764"/>
+      <stop offset="60%" stop-color="#2e1065"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <radialGradient id="flame-glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#9333ea" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#9333ea" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="edge-vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="60%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="#0f0720" stop-opacity="0.6"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Vignette -->
+  <rect width="1200" height="630" fill="url(#edge-vignette)"/>
+
+  <!-- Scattered decorative crosses (very subtle) -->
+  <g opacity="0.06" stroke="white" stroke-width="1.5" stroke-linecap="round">
+    <line x1="1060" y1="80"  x2="1060" y2="130"/><line x1="1035" y1="105" x2="1085" y2="105"/>
+    <line x1="1140" y1="195" x2="1140" y2="230"/><line x1="1122" y1="212" x2="1158" y2="212"/>
+    <line x1="960"  y1="510" x2="960"  y2="560"/><line x1="935"  y1="535" x2="985"  y2="535"/>
+    <line x1="1110" y1="460" x2="1110" y2="500"/><line x1="1090" y1="480" x2="1130" y2="480"/>
+    <line x1="520"  y1="55"  x2="520"  y2="88" /><line x1="503"  y1="71"  x2="537"  y2="71"/>
+  </g>
+
+  <!-- Flame glow halo -->
+  <ellipse cx="238" cy="318" rx="235" ry="295" fill="url(#flame-glow)"/>
+
+  <!-- Flame with cross cutout, centred at (238, 318) in OG space
+       Original 512×512 flame, center ≈ (256, 224). Scale 0.88:
+       scaled center ≈ (225, 197) → translate(13, 121) -->
+  <g transform="translate(13, 121) scale(0.88)">
+    <path fill-rule="evenodd"
+      d="M256 400 C190 385 140 330 148 262 C156 194 196 158 220 108 C236 70 250 48 256 48
+         C262 48 276 70 292 108 C316 158 356 194 364 262 C372 330 322 385 256 400Z
+         M237 152 L275 152 L275 206 L312 206 L312 244 L275 244 L275 370
+         L237 370 L237 244 L200 244 L200 206 L237 206 Z"
+      fill="white" opacity="0.95"/>
+  </g>
+
+  <!-- Vertical separator -->
+  <rect x="432" y="108" width="1" height="414" fill="rgba(255,255,255,0.1)"/>
+
+  <!-- App name -->
+  <text x="478" y="300"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="108" font-weight="bold"
+    fill="white" opacity="0.97"
+    letter-spacing="-1">beichtbar</text>
+
+  <!-- Tagline -->
+  <text x="482" y="368"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="26" fill="#e9d5ff" letter-spacing="0.5">
+    Gewissenserforschung für Katholiken
+  </text>
+
+  <!-- Feature pills -->
+  <text x="482" y="424"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="20" fill="#c4b5fd" opacity="0.7">
+    Kostenlos · Offline · Privat
+  </text>
+
+  <!-- Thin accent line above URL -->
+  <rect x="482" y="460" width="180" height="1" fill="rgba(167,139,250,0.25)"/>
+
+  <!-- URL -->
+  <text x="482" y="496"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="19" fill="#a78bfa" letter-spacing="2.5">
+    beichtbar.de
+  </text>
+</svg>
