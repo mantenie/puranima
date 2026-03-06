@@ -54,7 +54,7 @@ export async function render(container) {
 
         <!-- Opening Prayer -->
         <section class="text-center mb-8 pt-2">
-          <p class="text-xs font-semibold uppercase tracking-widest text-amber-400 mb-2">
+          <p class="text-xs font-semibold uppercase tracking-widest text-purple-400 mb-2">
             ${escapeHtml(prayers.opening.title)}
           </p>
           <p class="text-sm text-stone-400 leading-relaxed italic max-w-sm mx-auto">
@@ -77,13 +77,13 @@ export async function render(container) {
           .filter(cat => groupedYes[cat.id])
           .map(cat => `
             <section class="mb-6">
-              <h2 class="text-xs font-semibold uppercase tracking-widest text-amber-400 mb-2 pb-1 border-b border-slate-800">
+              <h2 class="text-xs font-semibold uppercase tracking-widest text-purple-400 mb-2 pb-1 border-b border-slate-800">
                 ${escapeHtml(cat.label)}
               </h2>
               <ul class="space-y-2">
                 ${groupedYes[cat.id].map(q => `
                   <li class="flex gap-2 items-start">
-                    <span class="text-amber-500 mt-0.5 shrink-0">&bull;</span>
+                    <span class="text-purple-500 mt-0.5 shrink-0">&bull;</span>
                     <span class="text-lg leading-snug">${escapeHtml(q.confessionText || stripTrailingQuestion(q.question))}</span>
                   </li>
                 `).join('')}
@@ -111,7 +111,7 @@ export async function render(container) {
         <!-- Personal Notes -->
         ${notes ? `
           <section class="mb-8 mt-8">
-            <h2 class="text-xs font-semibold uppercase tracking-widest text-amber-400 mb-2 pb-1 border-b border-slate-800">
+            <h2 class="text-xs font-semibold uppercase tracking-widest text-purple-400 mb-2 pb-1 border-b border-slate-800">
               Persönliche Notizen
             </h2>
             <p class="text-base text-stone-300 leading-relaxed whitespace-pre-line">${escapeHtml(notes)}</p>
@@ -120,7 +120,7 @@ export async function render(container) {
 
         <!-- Contrition Prayer -->
         <section class="text-center mt-10 mb-10">
-          <p class="text-xs font-semibold uppercase tracking-widest text-amber-400 mb-2">
+          <p class="text-xs font-semibold uppercase tracking-widest text-purple-400 mb-2">
             ${escapeHtml(prayers.contrition.title)}
           </p>
           <p class="text-base text-stone-300 leading-relaxed italic max-w-sm mx-auto">

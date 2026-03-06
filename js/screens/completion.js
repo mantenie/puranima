@@ -27,7 +27,7 @@ export async function render(container) {
 
       <!-- Thanksgiving Prayer -->
       <section class="max-w-sm text-center mb-10">
-        <p class="text-xs font-semibold uppercase tracking-widest text-amber-700 mb-2">
+        <p class="text-xs font-semibold uppercase tracking-widest text-purple-700 mb-2">
           ${escapeHtml(prayers.thanksgiving.title)}
         </p>
         <p class="text-sm text-stone-600 leading-relaxed italic">
@@ -37,13 +37,13 @@ export async function render(container) {
 
       <!-- Restart Button -->
       <button id="btn-restart"
-              class="px-10 py-4 rounded-xl bg-amber-700 text-white font-bold text-lg
-                     hover:bg-amber-800 active:bg-amber-900 transition-colors mb-6">
+              class="px-10 py-4 rounded-xl bg-purple-700 text-white font-bold text-lg
+                     hover:bg-purple-800 active:bg-purple-900 transition-colors mb-6">
         Neue Gewissenserforschung
       </button>
 
       <!-- Donation Hint -->
-      <div class="max-w-sm bg-amber-50 border border-amber-200 rounded-2xl p-4 text-center">
+      <div class="max-w-sm bg-purple-50 border border-purple-200 rounded-2xl p-4 text-center">
         <p class="text-sm font-medium text-stone-700 mb-1">
           beichtbar ist kostenlos und werbefrei.
         </p>

@@ -12,9 +12,9 @@
 
 /* Custom theme tokens */
 @theme {
-  --color-sacred: #92400e;
-  --color-sacred-light: #d97706;
-  --color-sacred-dark: #78350f;
+  --color-sacred: #6b21a8;
+  --color-sacred-light: #9333ea;
+  --color-sacred-dark: #581c87;
 }
 
 /* --- Custom styles beyond Tailwind utilities --- */
@@ -53,7 +53,7 @@
    The summary screen (Spickzettel) handles its own dark background. */
 html {
   color-scheme: light;
-  background-color: #fffbf5; /* Warm white base — prevents dark canvas bleeding through opacity layers */
+  background-color: #fdfaff; /* Cool white base with purple tint — prevents dark canvas bleeding through opacity layers */
   overscroll-behavior: none;
 }
 
@@ -86,7 +86,7 @@ body {
 }
 
 :focus-visible {
-  outline: 2px solid #d97706;
+  outline: 2px solid #9333ea;
   outline-offset: 2px;
   border-radius: 4px;
 }

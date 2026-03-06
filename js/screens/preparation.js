@@ -34,7 +34,7 @@ export async function render(container) {
 
         <!-- Opening Prayer -->
         <section class="text-center mb-10">
-          <p class="text-xs font-semibold uppercase tracking-widest text-amber-700 mb-3">
+          <p class="text-xs font-semibold uppercase tracking-widest text-purple-700 mb-3">
             ${escapeHtml(prayers.opening.title)}
           </p>
           <p class="text-base text-stone-700 leading-relaxed italic max-w-sm mx-auto">
@@ -49,21 +49,21 @@ export async function render(container) {
           </h2>
           <ul class="space-y-3">
             <li class="flex gap-3 items-start">
-              <span class="bg-amber-100 text-amber-800 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">1</span>
+              <span class="bg-purple-100 text-purple-800 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">1</span>
               <p class="text-sm text-stone-700 leading-relaxed">
                 <strong>Fragen beantworten</strong> — Du siehst eine Frage nach der anderen.
                 Antworte ehrlich mit „Ja", „Nein" oder „Unsicher".
               </p>
             </li>
             <li class="flex gap-3 items-start">
-              <span class="bg-amber-100 text-amber-800 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">2</span>
+              <span class="bg-purple-100 text-purple-800 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">2</span>
               <p class="text-sm text-stone-700 leading-relaxed">
                 <strong>Spickzettel</strong> — Am Ende erhältst Du eine übersichtliche Liste
                 Deiner markierten Punkte — im Dark Mode, perfekt für den Beichtstuhl.
               </p>
             </li>
             <li class="flex gap-3 items-start">
-              <span class="bg-amber-100 text-amber-800 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">3</span>
+              <span class="bg-purple-100 text-purple-800 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">3</span>
               <p class="text-sm text-stone-700 leading-relaxed">
                 <strong>Alles löschen</strong> — Nach der Beichte löschst Du alles
                 mit einem Tap. Deine Daten verlassen nie Dein Gerät.
@@ -77,8 +77,8 @@ export async function render(container) {
       <!-- Start Button -->
       <footer class="pt-2 pb-2">
         <button id="btn-start"
-                class="w-full py-4 rounded-xl bg-amber-700 text-white font-bold text-lg
-                       hover:bg-amber-800 active:bg-amber-900 transition-colors">
+                class="w-full py-4 rounded-xl bg-purple-700 text-white font-bold text-lg
+                       hover:bg-purple-800 active:bg-purple-900 transition-colors">
           Gewissenserforschung beginnen
         </button>
         <p class="text-center text-xs text-stone-400 mt-3">

@@ -32,7 +32,7 @@ export function dotsHtml(filled) {
   return `<div class="pin-dots flex gap-3.5 justify-center">
     ${[0, 1, 2, 3].map(i => `
       <div class="w-3.5 h-3.5 rounded-full transition-all duration-150
-                  ${i < filled ? 'bg-amber-600 scale-110' : 'bg-stone-300'}"></div>
+                  ${i < filled ? 'bg-purple-600 scale-110' : 'bg-stone-300'}"></div>
     `).join('')}
   </div>`;
 }

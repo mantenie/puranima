@@ -37,7 +37,7 @@ export async function render(container) {
           <h2 class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-2">Kontakt</h2>
           <p class="text-stone-700 leading-relaxed">
             Telefon: 089 24881108<br>
-            E-Mail: <a href="mailto:stefan@faithos.de" class="text-amber-700 underline">stefan@faithos.de</a>
+            E-Mail: <a href="mailto:stefan@faithos.de" class="text-purple-700 underline">stefan@faithos.de</a>
           </p>
         </section>
 
@@ -69,7 +69,7 @@ export async function render(container) {
         <div class="pt-4 border-t border-stone-200">
           <p class="text-stone-400 text-xs">
             beichtbar ist ein
-            <a href="https://faithos.de" target="_blank" rel="noopener" class="text-amber-700 underline">FaithOS</a>-Projekt.<br>
+            <a href="https://faithos.de" target="_blank" rel="noopener" class="text-purple-700 underline">FaithOS</a>-Projekt.<br>
             © ${new Date().getFullYear()} FaithOS. Alle Rechte vorbehalten.
           </p>
         </div>

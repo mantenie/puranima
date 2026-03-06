@@ -53,7 +53,7 @@ export async function render(container) {
 
         <!-- Notes Content -->
         <main class="flex-1 px-6 pt-10 pb-6 overflow-y-auto">
-          <p class="text-xs font-semibold uppercase tracking-widest text-amber-700 mb-3">
+          <p class="text-xs font-semibold uppercase tracking-widest text-purple-700 mb-3">
             Persönliche Notizen
           </p>
           <p class="text-sm text-stone-400 mb-6">
@@ -61,8 +61,8 @@ export async function render(container) {
           </p>
           <textarea id="notes-input"
                     class="w-full rounded-xl border border-stone-200 bg-stone-50 p-4 text-stone-800
-                           text-base leading-relaxed resize-none focus:outline-none focus:border-amber-400
-                           focus:ring-1 focus:ring-amber-400"
+                           text-base leading-relaxed resize-none focus:outline-none focus:border-purple-400
+                           focus:ring-1 focus:ring-purple-400"
                     rows="5"
                     placeholder="z.B. Vorsätze, Umstände, Häufigkeit...">${escapeHtml(savedNotes)}</textarea>
         </main>
@@ -70,8 +70,8 @@ export async function render(container) {
         <!-- Action Button -->
         <footer class="px-6 pb-6 space-y-3">
           <button id="btn-to-summary"
-                  class="w-full py-4 rounded-xl bg-amber-700 text-white font-semibold text-lg
-                         hover:bg-amber-800 active:bg-amber-900 transition-colors">
+                  class="w-full py-4 rounded-xl bg-purple-700 text-white font-semibold text-lg
+                         hover:bg-purple-800 active:bg-purple-900 transition-colors">
             Zum Spickzettel
           </button>
 
@@ -79,7 +79,7 @@ export async function render(container) {
           <div class="pt-2" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
                aria-label="Alle Fragen beantwortet">
             <div class="h-1.5 bg-stone-100 rounded-full overflow-hidden">
-              <div class="h-full bg-amber-600 rounded-full" style="width: 100%"></div>
+              <div class="h-full bg-purple-600 rounded-full" style="width: 100%"></div>
             </div>
           </div>
         </footer>
@@ -140,7 +140,7 @@ export async function render(container) {
         <main class="flex-1 px-6 pt-10 pb-6 overflow-y-auto" aria-live="polite">
 
           <!-- Category Label -->
-          <p class="text-xs font-semibold uppercase tracking-widest text-amber-700 mb-3">
+          <p class="text-xs font-semibold uppercase tracking-widest text-purple-700 mb-3">
             ${escapeHtml(categoryLabel)}
           </p>
 
@@ -180,8 +180,8 @@ export async function render(container) {
         <!-- Action Buttons -->
         <footer class="px-6 pb-6 space-y-3">
           <button id="btn-yes"
-                  class="w-full py-4 rounded-xl bg-amber-700 text-white font-semibold text-lg
-                         hover:bg-amber-800 active:bg-amber-900 transition-colors">
+                  class="w-full py-4 rounded-xl bg-purple-700 text-white font-semibold text-lg
+                         hover:bg-purple-800 active:bg-purple-900 transition-colors">
             Ja, trifft zu
           </button>
 
@@ -192,8 +192,8 @@ export async function render(container) {
               Nein
             </button>
             <button id="btn-unsure"
-                    class="flex-1 py-3.5 rounded-xl bg-amber-50 text-amber-800 font-medium border border-amber-200
-                           hover:bg-amber-100 active:bg-amber-200 transition-colors">
+                    class="flex-1 py-3.5 rounded-xl bg-purple-50 text-purple-800 font-medium border border-purple-200
+                           hover:bg-purple-100 active:bg-purple-200 transition-colors">
               Unsicher
             </button>
           </div>
@@ -202,14 +202,14 @@ export async function render(container) {
           <div class="pt-2" role="progressbar" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100"
                aria-label="Fortschritt: ${currentIndex + 1} von ${questions.length} Fragen">
             <div class="h-1.5 bg-stone-100 rounded-full overflow-hidden">
-              <div class="h-full bg-amber-600 rounded-full transition-all duration-300 ease-out"
+              <div class="h-full bg-purple-600 rounded-full transition-all duration-300 ease-out"
                    style="width: ${progress}%"></div>
             </div>
           </div>
 
           <!-- Jump to Summary -->
           <button id="btn-summary-link"
-                  class="w-full text-center text-sm text-stone-400 hover:text-amber-700 pt-1 transition-colors">
+                  class="w-full text-center text-sm text-stone-400 hover:text-purple-700 pt-1 transition-colors">
             Zur Zusammenfassung springen
           </button>
         </footer>

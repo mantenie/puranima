@@ -45,7 +45,7 @@ export function showPinLock(container, pinHash) {
         <div class="min-h-screen flex flex-col">
           <!-- Top: icon, title, dots -->
           <div class="flex-1 flex flex-col items-center justify-center pb-4">
-            <div class="text-amber-600 mb-5">${LOCK_ICON}</div>
+            <div class="text-purple-600 mb-5">${LOCK_ICON}</div>
             <h1 class="text-xl font-bold text-stone-800 mb-1">PIN eingeben</h1>
             <p id="pin-msg" class="text-sm h-5 mb-6 text-center text-stone-400"></p>
             <div id="pin-dots">${dotsHtml(0)}</div>

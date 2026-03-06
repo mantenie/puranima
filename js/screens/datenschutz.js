@@ -35,7 +35,7 @@ export async function render(container) {
           <h2 class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-2">Verantwortlicher</h2>
           <p class="text-stone-700 text-sm leading-relaxed">
             Stefan Verhey, Korbinianstr. 5 a, 80807 München<br>
-            E-Mail: <a href="mailto:stefan@faithos.de" class="text-amber-700 underline">stefan@faithos.de</a>
+            E-Mail: <a href="mailto:stefan@faithos.de" class="text-purple-700 underline">stefan@faithos.de</a>
           </p>
         </section>
 
@@ -66,7 +66,7 @@ export async function render(container) {
             auszuliefern. Wir haben keinen Zugriff auf diese Daten und erheben keine eigenen
             Statistiken. Cloudflare verarbeitet diese Daten gemäß der eigenen
             <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener"
-               class="text-amber-700 underline">Datenschutzerklärung</a>.
+               class="text-purple-700 underline">Datenschutzerklärung</a>.
           </p>
         </section>
 
@@ -74,7 +74,7 @@ export async function render(container) {
           <h2 class="text-xs font-semibold uppercase tracking-widest text-stone-400 mb-2">Simon-Widget</h2>
           <p class="text-stone-600 text-sm leading-relaxed">
             Für Spenden, Feedback und Projektinformationen wird das Simon-Widget von
-            <a href="https://faithos.de" target="_blank" rel="noopener" class="text-amber-700 underline">FaithOS</a>
+            <a href="https://faithos.de" target="_blank" rel="noopener" class="text-purple-700 underline">FaithOS</a>
             eingebunden (simon.faithos.de). Dieses Widget wird ebenfalls über Cloudflare ausgeliefert.
             Es werden keine personenbezogenen Daten erhoben oder an Dritte weitergegeben.
           </p>
@@ -95,7 +95,7 @@ export async function render(container) {
             Da wir keine personenbezogenen Daten erheben, gibt es keine Daten, auf die sich
             Auskunfts-, Berichtigungs- oder Löschungsansprüche beziehen könnten.
             Solltest Du dennoch Fragen haben, kannst Du Dich jederzeit an uns wenden:
-            <a href="mailto:stefan@faithos.de" class="text-amber-700 underline">stefan@faithos.de</a>.
+            <a href="mailto:stefan@faithos.de" class="text-purple-700 underline">stefan@faithos.de</a>.
           </p>
         </section>
 

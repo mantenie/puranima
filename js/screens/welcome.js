@@ -35,7 +35,7 @@ export async function render(container) {
       <!-- Lock/PIN (top-right) -->
       <div class="absolute top-5 right-4">
         <button id="btn-lock"
-                class="p-2 ${hasPin ? 'text-amber-600' : 'text-stone-300'} hover:text-stone-500 transition-colors"
+                class="p-2 ${hasPin ? 'text-purple-600' : 'text-stone-300'} hover:text-stone-500 transition-colors"
                 aria-label="${hasPin ? 'App sperren' : 'PIN festlegen'}">
           ${hasPin ? icons.lock : icons.lockOpen}
         </button>
@@ -57,7 +57,7 @@ export async function render(container) {
       </header>
 
       <!-- Privacy Promise -->
-      <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 mb-6">
+      <div class="bg-purple-50 border border-purple-200 rounded-2xl p-4 mb-6">
         <p class="text-sm text-stone-700 leading-relaxed">
           <strong class="text-stone-800">Deine Sünden verlassen Dein Gerät nie.</strong><br>
           Alle Daten bleiben ausschließlich lokal gespeichert.
@@ -76,7 +76,7 @@ export async function render(container) {
               data-lifestate="${opt.id}"
               class="w-full text-left px-4 py-3 rounded-xl border-2 transition-colors duration-150
                 ${savedLifeState === opt.id
-                  ? 'border-amber-500 bg-amber-50'
+                  ? 'border-purple-500 bg-purple-50'
                   : 'border-stone-200 bg-white hover:border-stone-300'}"
               aria-pressed="${savedLifeState === opt.id}"
             >
@@ -91,21 +91,21 @@ export async function render(container) {
       <footer class="pt-6 pb-2">
         ${hasActiveSession ? `
           <button id="btn-continue"
-                  class="w-full py-4 rounded-xl bg-amber-700 text-white font-bold text-lg
-                         hover:bg-amber-800 active:bg-amber-900 transition-colors mb-3">
+                  class="w-full py-4 rounded-xl bg-purple-700 text-white font-bold text-lg
+                         hover:bg-purple-800 active:bg-purple-900 transition-colors mb-3">
             Weiterarbeiten
           </button>
           <button id="btn-start"
-                  class="w-full py-3 rounded-xl bg-white text-amber-800 font-medium border border-amber-200
-                         hover:bg-amber-50 active:bg-amber-100 transition-colors">
+                  class="w-full py-3 rounded-xl bg-white text-purple-800 font-medium border border-purple-200
+                         hover:bg-purple-50 active:bg-purple-100 transition-colors">
             Neu beginnen
           </button>
         ` : `
           <button id="btn-start"
-                  class="w-full py-4 rounded-xl bg-amber-700 text-white font-bold text-lg
+                  class="w-full py-4 rounded-xl bg-purple-700 text-white font-bold text-lg
                          transition-opacity duration-150
                          disabled:opacity-30 disabled:cursor-not-allowed
-                         hover:bg-amber-800 active:bg-amber-900"
+                         hover:bg-purple-800 active:bg-purple-900"
                   ${!savedLifeState ? 'disabled' : ''}>
             Gewissenserforschung beginnen
           </button>
@@ -113,7 +113,7 @@ export async function render(container) {
 
         <!-- FAQ Link -->
         <button id="btn-faq"
-                class="w-full text-center text-sm font-medium text-amber-800 hover:text-amber-900 pt-3 transition-colors underline underline-offset-2">
+                class="w-full text-center text-sm font-medium text-purple-800 hover:text-purple-900 pt-3 transition-colors underline underline-offset-2">
           Was ist die Beichte? — Infos &amp; FAQ
         </button>
       </footer>
@@ -138,8 +138,8 @@ export async function render(container) {
       // Update visual selection
       container.querySelectorAll('[data-lifestate]').forEach(b => {
         const isSelected = b.dataset.lifestate === selectedLifeState;
-        b.classList.toggle('border-amber-500', isSelected);
-        b.classList.toggle('bg-amber-50', isSelected);
+        b.classList.toggle('border-purple-500', isSelected);
+        b.classList.toggle('bg-purple-50', isSelected);
         b.classList.toggle('border-stone-200', !isSelected);
         b.classList.toggle('bg-white', !isSelected);
         b.setAttribute('aria-pressed', isSelected);
@@ -164,16 +164,16 @@ export async function render(container) {
         // Re-add "Weiterarbeiten" button before start
         const contBtn = document.createElement('button');
         contBtn.id = 'btn-continue';
-        contBtn.className = 'w-full py-4 rounded-xl bg-amber-700 text-white font-bold text-lg hover:bg-amber-800 active:bg-amber-900 transition-colors mb-3';
+        contBtn.className = 'w-full py-4 rounded-xl bg-purple-700 text-white font-bold text-lg hover:bg-purple-800 active:bg-purple-900 transition-colors mb-3';
         contBtn.textContent = 'Weiterarbeiten';
         contBtn.addEventListener('click', () => navigate('/examination'));
         footer.insertBefore(contBtn, startBtn);
         // Make start button secondary
-        startBtn.className = 'w-full py-3 rounded-xl bg-white text-amber-800 font-medium border border-amber-200 hover:bg-amber-50 active:bg-amber-100 transition-colors';
+        startBtn.className = 'w-full py-3 rounded-xl bg-white text-purple-800 font-medium border border-purple-200 hover:bg-purple-50 active:bg-purple-100 transition-colors';
         startBtn.textContent = 'Neu beginnen';
       } else {
         // Primary start button
-        startBtn.className = 'w-full py-4 rounded-xl bg-amber-700 text-white font-bold text-lg transition-opacity duration-150 hover:bg-amber-800 active:bg-amber-900';
+        startBtn.className = 'w-full py-4 rounded-xl bg-purple-700 text-white font-bold text-lg transition-opacity duration-150 hover:bg-purple-800 active:bg-purple-900';
         startBtn.textContent = 'Gewissenserforschung beginnen';
         startBtn.disabled = false;
       }

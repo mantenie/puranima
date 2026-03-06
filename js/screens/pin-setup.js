@@ -59,7 +59,7 @@ export async function render(container) {
           </header>
 
           <div class="flex-1 flex flex-col items-center justify-center gap-4">
-            <div class="text-amber-600 mb-4">
+            <div class="text-purple-600 mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
@@ -69,8 +69,8 @@ export async function render(container) {
             <p class="text-stone-600 text-sm text-center mb-4">Dein PIN ist aktiv.</p>
 
             <button id="btn-change-pin"
-                    class="w-full max-w-xs py-3.5 rounded-xl bg-amber-700 text-white font-semibold
-                           hover:bg-amber-800 active:bg-amber-900 transition-colors">
+                    class="w-full max-w-xs py-3.5 rounded-xl bg-purple-700 text-white font-semibold
+                           hover:bg-purple-800 active:bg-purple-900 transition-colors">
               PIN ändern
             </button>
             <button id="btn-remove-pin"

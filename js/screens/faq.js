@@ -95,7 +95,7 @@ const FAQ_ITEMS = [
   {
     question: 'Wo finde ich Beichtgelegenheiten?',
     answer: `Die meisten Pfarreien bieten feste Beichtzeiten an (oft samstags vor der Vorabendmesse).
-      Auf <a href="https://go.source-and-summit.de" target="_blank" rel="noopener" class="text-amber-700 underline underline-offset-2 hover:text-amber-900">Source&nbsp;&&nbsp;Summit</a> findest Du Beichtgelegenheiten, Messen, Anbetung und Rosenkranzgebete in Deiner Nähe — mit Bewertungen und Empfehlungen.
+      Auf <a href="https://go.source-and-summit.de" target="_blank" rel="noopener" class="text-purple-700 underline underline-offset-2 hover:text-purple-900">Source&nbsp;&&nbsp;Summit</a> findest Du Beichtgelegenheiten, Messen, Anbetung und Rosenkranzgebete in Deiner Nähe — mit Bewertungen und Empfehlungen.
       Im Zweifelsfall ruf einfach im Pfarrbüro an oder sprich den Priester nach der Messe an —
       jeder Priester wird sich freuen, wenn jemand beichten möchte.`
   },
@@ -146,8 +146,8 @@ export async function render(container) {
 
       <footer class="mt-8 pt-4 border-t border-stone-200 text-center">
         <button id="btn-start-examination"
-                class="w-full py-3 rounded-xl bg-amber-700 text-white font-semibold
-                       hover:bg-amber-800 active:bg-amber-900 transition-colors">
+                class="w-full py-3 rounded-xl bg-purple-700 text-white font-semibold
+                       hover:bg-purple-800 active:bg-purple-900 transition-colors">
           Gewissenserforschung starten
         </button>
       </footer>
