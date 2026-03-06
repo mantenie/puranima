@@ -152,12 +152,7 @@ export async function render(container) {
             ${escapeHtml(q.question)}
           </p>
 
-          <!-- Severity indicator -->
-          ${q.severity === 'schwer' ? `
-            <p class="text-xs font-medium text-red-700 bg-red-50 inline-block px-2 py-1 rounded mb-4">
-              Schwerwiegend
-            </p>
-          ` : ''}
+          <!-- Severity indicator intentionally hidden -->
 
           <!-- Explanation (expandable) -->
           ${q.explanation ? `
