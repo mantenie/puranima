@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "1.2.0",
+    "version": "1.2.1",
     "date": "2026-03-07",
     "sources": [
       "Karl Wallner, Beichtspiegel Stift Heiligenkreuz (10. Auflage, 2001, kirchl. Druckerlaubnis)",
@@ -127,14 +127,14 @@
       "id": "gott-005",
       "category": "gottesverhältnis",
       "subcategory": "Ehrfurcht vor Gott",
-      "question": "Bin ich abergläubisch? Habe ich an Horoskope geglaubt oder gependelt?",
+      "question": "Bin ich abergläubisch? Habe ich an Horoskope oder Wahrsagerei geglaubt?",
       "explanation": "",
       "tags": [
         "allgemein"
       ],
       "severity": "normal",
       "source": "youcat",
-      "confessionText": "Ich war abergläubisch, habe an Horoskope geglaubt oder gependelt"
+      "confessionText": "Ich war abergläubisch, habe an Horoskope oder Wahrsagerei geglaubt"
     },
     {
       "id": "gott-006",
@@ -1191,19 +1191,6 @@
       "confessionText": "Ich war egoistisch und wollte gerne im Mittelpunkt stehen"
     },
     {
-      "id": "selbst-004",
-      "category": "selbst",
-      "subcategory": "Charakter und Haltung",
-      "question": "Bin ich überheblich und stolz?",
-      "explanation": "",
-      "tags": [
-        "allgemein"
-      ],
-      "severity": "normal",
-      "source": "wallner",
-      "confessionText": "Ich war überheblich und stolz"
-    },
-    {
       "id": "selbst-005",
       "category": "selbst",
       "subcategory": "Charakter und Haltung",
@@ -1215,19 +1202,6 @@
       "severity": "normal",
       "source": "wallner",
       "confessionText": "Ich habe mich selbst mit Lebenslügen betrogen"
-    },
-    {
-      "id": "selbst-006",
-      "category": "selbst",
-      "subcategory": "Charakter und Haltung",
-      "question": "Mache ich mir selbst etwas vor? Bin ich unehrlich — auch mir selbst gegenüber?",
-      "explanation": "",
-      "tags": [
-        "allgemein"
-      ],
-      "severity": "normal",
-      "source": "wallner",
-      "confessionText": "Ich habe mir selbst etwas vorgemacht und war unehrlich, auch mir selbst gegenüber"
     },
     {
       "id": "selbst-007",
@@ -1490,19 +1464,6 @@
       "severity": "schwer",
       "source": "eigen",
       "confessionText": "Ich habe homosexuelle Handlungen vollzogen"
-    },
-    {
-      "id": "geschl-012",
-      "category": "geschlechtlichkeit",
-      "subcategory": "Reinheit",
-      "question": "Habe ich in früheren Beziehungen den anderen zur Sünde verleitet oder ihn in seiner Keuschheit verletzt?",
-      "explanation": "",
-      "tags": [
-        "single"
-      ],
-      "severity": "schwer",
-      "source": "eigen",
-      "confessionText": "Ich habe in früheren Beziehungen den anderen zur Sünde verleitet oder ihn in seiner Keuschheit verletzt"
     },
     {
       "id": "single-001",

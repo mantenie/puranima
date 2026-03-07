@@ -146,6 +146,18 @@ function computeChangelog(current, baseline, initial = false) {
   return { added, removed, changed };
 }
 
+// --- Life state filtering (mirrors questions.js logic) ---
+
+const SELECTABLE_STATES = ['single', 'verheiratet', 'jugendlich', 'kinder', 'priester'];
+const CHILD_STATES = ['kinder', 'jugendlich'];
+
+function getAppearsIn(q) {
+  return SELECTABLE_STATES.filter(state => {
+    if (CHILD_STATES.includes(state)) return q.tags.includes(state);
+    return q.tags.includes('allgemein') || q.tags.includes(state);
+  });
+}
+
 // --- Readable labels ---
 
 const FIELD_LABELS = {
@@ -231,15 +243,6 @@ function buildStatisticsSection(catalog) {
     ]);
   }
 
-  // Severity stats
-  const sevCounts = { normal: 0, schwer: 0 };
-  for (const q of qs) sevCounts[q.severity]++;
-
-  const sevBody = [
-    tableHeader(['Schweregrad', 'Anzahl', 'Anteil']),
-    ['Normal', { text: String(sevCounts.normal), alignment: 'center' }, { text: `${((sevCounts.normal / qs.length) * 100).toFixed(1)}%`, alignment: 'center' }],
-    [{ text: 'Schwere Sünde', color: C.schwer, bold: true }, { text: String(sevCounts.schwer), alignment: 'center' }, { text: `${((sevCounts.schwer / qs.length) * 100).toFixed(1)}%`, alignment: 'center' }],
-  ];
 
   // Source stats
   const srcCounts = {};
@@ -267,9 +270,6 @@ function buildStatisticsSection(catalog) {
 
     { text: 'Verteilung nach Kategorie', style: 'h2' },
     { table: { headerRows: 1, widths: ['*', 50, 50], body: catBody }, layout: 'lightHorizontalLines', margin: [0, 0, 0, 15] },
-
-    { text: 'Verteilung nach Schweregrad', style: 'h2' },
-    { table: { headerRows: 1, widths: ['*', 50, 50], body: sevBody }, layout: 'lightHorizontalLines', margin: [0, 0, 0, 15] },
 
     { text: 'Verteilung nach Quelle', style: 'h2' },
     { table: { headerRows: 1, widths: ['*', 50], body: srcBody }, layout: 'lightHorizontalLines', margin: [0, 0, 0, 15] },
@@ -447,14 +447,13 @@ function buildQuestionsSection(catalog) {
 function buildQuestionBlock(q, num) {
   const stack = [];
 
-  // Question header: number + ID + severity badge
+  // Question header: number + ID + severity badge + life states
   const headerParts = [
     { text: `${num}. `, bold: true, fontSize: 10, color: C.primary },
     { text: q.question, bold: true, fontSize: 10 },
   ];
-  if (q.severity === 'schwer') {
-    headerParts.push({ text: '  SCHWER', bold: true, fontSize: 7, color: C.schwer });
-  }
+  const appearsIn = getAppearsIn(q).map(t => LIFESTATE_LABELS[t] || t).join(' · ');
+  headerParts.push({ text: `  [${appearsIn}]`, fontSize: 8, color: C.accent, bold: false });
   stack.push({ text: headerParts });
 
   // Confession text
@@ -478,7 +477,6 @@ function buildQuestionBlock(q, num) {
   // Metadata line
   const metaParts = [
     q.id,
-    `Tags: ${q.tags.map(t => LIFESTATE_LABELS[t] || t).join(', ')}`,
     `Quelle: ${SOURCE_LABELS[q.source] || q.source}`,
   ];
   stack.push({
