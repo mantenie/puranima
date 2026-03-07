@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "1.2.1",
+    "version": "1.3.0",
     "date": "2026-03-07",
     "sources": [
       "Karl Wallner, Beichtspiegel Stift Heiligenkreuz (10. Auflage, 2001, kirchl. Druckerlaubnis)",
@@ -309,14 +309,14 @@
       "id": "gott-023",
       "category": "gottesverhältnis",
       "subcategory": "Sakramente und Kirche",
-      "question": "Gehst Du ungern zur Heiligen Messe?",
-      "explanation": "",
+      "question": "Bist Du sonntags oder an Feiertagen ohne guten Grund nicht zur Heiligen Messe gegangen?",
+      "explanation": "Die Teilnahme an der Sonntagsmesse ist eine schwere Pflicht für Katholiken (KKK 2180–2181). \u201EUngern gehen\u201C ist kein Beichtpunkt \u2014 das Fernbleiben ohne triftigen Grund schon.",
       "tags": [
         "kinder"
       ],
-      "severity": "normal",
+      "severity": "schwer",
       "source": "wallner",
-      "confessionText": "Ich bin ungern zur Heiligen Messe gegangen"
+      "confessionText": "Ich bin sonntags oder an Feiertagen ohne guten Grund nicht zur Heiligen Messe gegangen"
     },
     {
       "id": "gott-024",
@@ -374,8 +374,8 @@
       "id": "gott-028",
       "category": "gottesverhältnis",
       "subcategory": "Sakramente und Kirche",
-      "question": "Hadere ich mit Gott, wenn Leiden und Schmerzen in mein Leben treten?",
-      "explanation": "",
+      "question": "Habe ich in Zeiten des Leidens an Gottes Güte verzweifelt oder ihn innerlich verworfen?",
+      "explanation": "Klagen und Ringen mit Gott \u2014 wie in den Klagepsalmen \u2014 sind kein Beichtpunkt. S\u00fcnde ist die Verzweiflung (KKK 2091) oder die bewusste Abkehr von Gott als Reaktion auf Leiden.",
       "tags": [
         "allgemein"
       ],
@@ -525,19 +525,6 @@
       "severity": "normal",
       "source": "wallner",
       "confessionText": "Ich wollte immer der Beste sein und vor den Menschen etwas gelten"
-    },
-    {
-      "id": "naechste-007",
-      "category": "nächstenliebe",
-      "subcategory": "Liebe und Achtung",
-      "question": "Warst Du zu jemandem gemein?",
-      "explanation": "",
-      "tags": [
-        "kinder"
-      ],
-      "severity": "normal",
-      "source": "wallner",
-      "confessionText": "Ich war zu jemandem gemein"
     },
     {
       "id": "naechste-008",
@@ -1168,14 +1155,14 @@
       "id": "selbst-002",
       "category": "selbst",
       "subcategory": "Charakter und Haltung",
-      "question": "Oder halte ich mich für minderwertig?",
-      "explanation": "Auch die Verachtung der eigenen Würde widerspricht Gottes Plan. Er hat dich als sein geliebtes Kind geschaffen.",
+      "question": "Lehne ich es ab, meine eigene W\u00fcrde als Gottes Kind anzunehmen \u2014 zweifle ich daran, dass er mich liebt?",
+      "explanation": "Das Gef\u00fchl, minderwertig zu sein, ist h\u00e4ufig psychologisch bedingt und kein Beichtpunkt. S\u00fcnde ist der bewusste, willentliche Widerstand gegen Gottes Liebe \u2014 wenn man seine eigene W\u00fcrde als Gotteskind aktiv verweigert (Kleinmut als Laster, KKK 1828).",
       "tags": [
         "allgemein"
       ],
       "severity": "normal",
       "source": "wallner",
-      "confessionText": "Ich habe mich für minderwertig gehalten"
+      "confessionText": "Ich habe es abgelehnt, meine W\u00fcrde als Gottes Kind anzunehmen, und an seiner Liebe f\u00fcr mich gezweifelt"
     },
     {
       "id": "selbst-003",
@@ -1956,7 +1943,7 @@
         "kinder"
       ],
       "severity": "normal",
-      "source": "gotteslob",
+      "source": "eigen",
       "confessionText": "Ich habe nur gebetet, wenn ich etwas von Gott wollte, und ihn vergessen, wenn es mir gut ging"
     },
     {
@@ -1997,19 +1984,6 @@
       "severity": "normal",
       "source": "gotteslob",
       "confessionText": "Ich habe anderen nicht geholfen, obwohl ich es gekonnt hätte"
-    },
-    {
-      "id": "kinder-naechste-004",
-      "category": "nächstenliebe",
-      "subcategory": "Taten der Barmherzigkeit",
-      "question": "Hast Du jemanden absichtlich körperlich verletzt oder ihm wehgetan?",
-      "explanation": "",
-      "tags": [
-        "kinder"
-      ],
-      "severity": "normal",
-      "source": "gotteslob",
-      "confessionText": "Ich habe jemanden absichtlich körperlich verletzt oder ihm wehgetan"
     },
     {
       "id": "kinder-naechste-005",
@@ -2073,7 +2047,7 @@
         "kinder"
       ],
       "severity": "normal",
-      "source": "gotteslob",
+      "source": "eigen",
       "confessionText": "Ich habe leicht aufgegeben, wenn etwas schwierig wurde"
     },
     {
@@ -2099,8 +2073,138 @@
         "kinder"
       ],
       "severity": "normal",
-      "source": "eigen",
+      "source": "gotteslob",
       "confessionText": "Ich habe zu viel Zeit am Handy oder vor dem Bildschirm verbracht, sodass anderes zu kurz kam"
+    },
+    {
+      "id": "kinder-selbst-005",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "Gehst Du nachlässig mit Deinen Sachen oder dem Eigentum anderer um?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich bin nachlässig mit meinen Sachen oder dem Eigentum anderer umgegangen"
+    },
+    {
+      "id": "kinder-selbst-006",
+      "category": "nächstenliebe",
+      "subcategory": "Taten der Barmherzigkeit",
+      "question": "Hast Du Tieren absichtlich wehgetan?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich habe Tieren absichtlich wehgetan"
+    },
+    {
+      "id": "kinder-fam-003",
+      "category": "familie",
+      "subcategory": "Eltern und Familie",
+      "question": "Schiebst Du die Schuld auf Deine Geschwister oder andere, statt eigene Fehler zuzugeben?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich habe die Schuld auf andere geschoben, statt eigene Fehler zuzugeben"
+    },
+    {
+      "id": "kinder-fam-004",
+      "category": "familie",
+      "subcategory": "Eltern und Familie",
+      "question": "Teilst Du ungern, was Du hast?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich habe ungern geteilt, was ich habe"
+    },
+    {
+      "id": "kinder-schule-001",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "Hast Du im Unterricht gestört oder andere abgelenkt?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich habe im Unterricht gestört oder andere abgelenkt"
+    },
+    {
+      "id": "kinder-naechste-007",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "Wirst Du leicht zornig und verletzt dabei andere mit Worten oder Taten?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich bin leicht zornig geworden und habe dabei andere verletzt"
+    },
+    {
+      "id": "kinder-naechste-008",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "Hast Du andere ausgeschlossen, benachteiligt oder ausgetrickst?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich habe andere ausgeschlossen, benachteiligt oder ausgetrickst"
+    },
+    {
+      "id": "kinder-naechste-009",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "Hast Du andere dazu verleitet, etwas Böses oder Falsches zu tun?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich habe andere dazu verleitet, etwas Böses oder Falsches zu tun"
+    },
+    {
+      "id": "kinder-naechste-010",
+      "category": "nächstenliebe",
+      "subcategory": "Wahrhaftigkeit",
+      "question": "Hast Du andere mit Worten beschimpft oder beleidigt?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich habe andere mit Worten beschimpft oder beleidigt"
+    },
+    {
+      "id": "kinder-naechste-006",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "Hast Du mitgemacht, wenn andere Böses getan haben — obwohl Du wusstest, dass es falsch ist?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich habe mitgemacht, wenn andere Böses taten, obwohl ich wusste, dass es falsch ist"
     },
     {
       "id": "jugend-gott-001",

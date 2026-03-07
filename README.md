@@ -71,3 +71,18 @@ Das generierte PDF enthält:
 5. **Fragenkatalog** — Alle Fragen, gruppiert nach Kategorie und Unterkategorie
 
 Pro Frage wird angezeigt: Fragetext, Beichttext (Spickzettel-Formulierung), Erklärung, Schweregrad, Lebensstände und Quelle.
+
+## Quellen des Fragenkatalogs
+
+Der Fragenkatalog (`data/questions.json`) stützt sich auf folgende veröffentlichte Beichtspiegel:
+
+| Quell-ID | Publikation | Link |
+|----------|-------------|------|
+| `wallner` | Karl Wallner OCist, *Beichtspiegel Stift Heiligenkreuz* (10. Auflage, 2001, kirchl. Druckerlaubnis) | [stift-heiligenkreuz.org](https://www.stift-heiligenkreuz.org/) |
+| `ramm` | P. Martin Ramm FSSP, *Praktische Beichthilfe für Erwachsene* (9./11. Auflage, Thalwil, kirchl. Druckerlaubnis Bistum Chur) | [petrusverlag.de](https://petrusverlag.de/?kategorie=Beichte) · [PDF (11. Auflage)](https://pfarreiengemeinschaft-kirchroth.de/wp-content/uploads/2022/01/Beichtspiegel-11-Auflage-2019-09-02-1.pdf) |
+| `youcat` | YOUCAT-Beichtspiegel (Verlag Pattloch / YOUCAT Foundation) | [youcat.org/de/credopedia/beichtspiegel](https://youcat.org/de/credopedia/beichtspiegel/) |
+| `gotteslob` | Gotteslob Nr. 598–601: *Hilfen zur Gewissenserforschung* (Deutsche Bischofskonferenz, 2013) | Gedrucktes Gesangbuch — keine Online-Ausgabe |
+| `priester-beichtspiegel` | *Beichtspiegel für Priester*, nach: Kongregation für den Klerus, *Der Priester, Diener der göttlichen Barmherzigkeit* (2011) | [katholisch-informiert.ch](http://katholisch-informiert.ch/2012/06/beichtspiegel-fur-priester/) |
+| `eigen` | Eigenformuliert auf Basis des KKK und allgemeiner katholischer Morallehre | — |
+
+Alle Fragen folgen dem Grundsatz: **"Ja" = Beichtpunkt.** Der Katalog steht noch unter theologischem Vorbehalt (Priester-Abnahme ausstehend).
