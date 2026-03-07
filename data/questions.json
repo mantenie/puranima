@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "date": "2026-03-04",
     "sources": [
       "Karl Wallner, Beichtspiegel Stift Heiligenkreuz (10. Auflage, 2001, kirchl. Druckerlaubnis)",
@@ -1763,6 +1763,721 @@
       "severity": "schwer",
       "source": "priester-beichtspiegel",
       "confessionText": "Ich habe gegen den Zölibat verstoßen"
+    },
+    {
+      "id": "kinder-gott-001",
+      "category": "gottesverhältnis",
+      "subcategory": "Gebet und persönliche Beziehung",
+      "question": "Vergisst Du oft, morgens oder abends zu beten?",
+      "explanation": "Das Gebet ist das Gespräch mit Gott. Es hilft uns, nah bei ihm zu bleiben.",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich habe oft vergessen, morgens oder abends zu beten"
+    },
+    {
+      "id": "kinder-gott-002",
+      "category": "gottesverhältnis",
+      "subcategory": "Ehrfurcht vor Gott",
+      "question": "Hast Du den Namen Gottes oder Jesu leichtfertig benutzt oder geflucht?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich habe den Namen Gottes oder Jesu leichtfertig benutzt oder geflucht"
+    },
+    {
+      "id": "kinder-gott-003",
+      "category": "gottesverhältnis",
+      "subcategory": "Ehrfurcht vor Gott",
+      "question": "Hast Du Dich vor anderen f\u00fcr Deinen Glauben oder den Kirchgang gesch\u00e4mt?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich habe mich vor anderen f\u00fcr meinen Glauben oder den Kirchgang gesch\u00e4mt"
+    },
+    {
+      "id": "kinder-gott-004",
+      "category": "gottesverhältnis",
+      "subcategory": "Gebet und persönliche Beziehung",
+      "question": "Betest Du nur, wenn Du etwas von Gott m\u00f6chtest \u2014 und vergisst Du ihn, wenn es Dir gut geht?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich habe nur gebetet, wenn ich etwas von Gott wollte, und ihn vergessen, wenn es mir gut ging"
+    },
+    {
+      "id": "kinder-naechste-001",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "Hast Du jemanden geh\u00e4nselt, ausgelacht oder verspottet?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich habe jemanden geh\u00e4nselt, ausgelacht oder verspottet"
+    },
+    {
+      "id": "kinder-naechste-002",
+      "category": "nächstenliebe",
+      "subcategory": "Taten der Barmherzigkeit",
+      "question": "Hast Du etwas Geliehenes nicht zur\u00fcckgegeben oder etwas besch\u00e4digt und es verschwiegen?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich habe etwas Geliehenes nicht zur\u00fcckgegeben oder etwas besch\u00e4digt und es verschwiegen"
+    },
+    {
+      "id": "kinder-naechste-003",
+      "category": "nächstenliebe",
+      "subcategory": "Taten der Barmherzigkeit",
+      "question": "Hast Du anderen nicht geholfen, obwohl Du es gekonnt h\u00e4ttest?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich habe anderen nicht geholfen, obwohl ich es gekonnt h\u00e4tte"
+    },
+    {
+      "id": "kinder-naechste-004",
+      "category": "nächstenliebe",
+      "subcategory": "Taten der Barmherzigkeit",
+      "question": "Hast Du jemanden absichtlich k\u00f6rperlich verletzt oder ihm wehgetan?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich habe jemanden absichtlich k\u00f6rperlich verletzt oder ihm wehgetan"
+    },
+    {
+      "id": "kinder-naechste-005",
+      "category": "nächstenliebe",
+      "subcategory": "Taten der Barmherzigkeit",
+      "question": "Hast Du Dich nicht entschuldigt, obwohl Du etwas falsch gemacht hast?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich habe mich nicht entschuldigt, obwohl ich etwas falsch gemacht habe"
+    },
+    {
+      "id": "kinder-fam-001",
+      "category": "familie",
+      "subcategory": "Eltern und Familie",
+      "question": "Hilfst Du zu Hause, wenn Hilfe gebraucht wird \u2014 oder dr\u00fcckst Du Dich davor?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich habe mich davor gedr\u00fcckt, zu Hause zu helfen, wenn Hilfe gebraucht wurde"
+    },
+    {
+      "id": "kinder-fam-002",
+      "category": "familie",
+      "subcategory": "Eltern und Familie",
+      "question": "Bist Du undankbar f\u00fcr das, was Deine Eltern und andere f\u00fcr Dich tun?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich war undankbar f\u00fcr das, was meine Eltern und andere f\u00fcr mich getan haben"
+    },
+    {
+      "id": "kinder-selbst-001",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "Willst Du immer der Beste sein und schaust deswegen auf andere herab?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich wollte immer der Beste sein und habe deswegen auf andere herabgeschaut"
+    },
+    {
+      "id": "kinder-selbst-002",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "Gibst Du leicht auf, wenn etwas schwierig wird?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich habe leicht aufgegeben, wenn etwas schwierig wurde"
+    },
+    {
+      "id": "kinder-selbst-003",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "Bist Du oft unzufrieden und n\u00f6rgelst viel, obwohl es Dir eigentlich gut geht?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "gotteslob",
+      "confessionText": "Ich war oft unzufrieden und habe viel gen\u00f6rgelt, obwohl es mir eigentlich gut ging"
+    },
+    {
+      "id": "kinder-selbst-004",
+      "category": "selbst",
+      "subcategory": "Gesundheit und Mäßigung",
+      "question": "Verbringst Du zu viel Zeit am Handy oder vor dem Bildschirm, sodass anderes zu kurz kommt?",
+      "explanation": "",
+      "tags": [
+        "kinder"
+      ],
+      "severity": "normal",
+      "source": "eigen",
+      "confessionText": "Ich habe zu viel Zeit am Handy oder vor dem Bildschirm verbracht, sodass anderes zu kurz kam"
+    },
+    {
+      "id": "jugend-gott-001",
+      "category": "gottesverhältnis",
+      "subcategory": "Gebet und persönliche Beziehung",
+      "question": "Habe ich meine Beziehung zu Gott aufgeschoben \u2014 gibt es Dinge, die mir wichtiger sind als er?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe meine Beziehung zu Gott aufgeschoben und andere Dinge wichtiger gemacht als ihn"
+    },
+    {
+      "id": "jugend-gott-002",
+      "category": "gottesverhältnis",
+      "subcategory": "Gebet und persönliche Beziehung",
+      "question": "Bete ich nur, wenn ich von Gott etwas brauche \u2014 oder auch um Danke zu sagen und einfach bei ihm zu sein?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe nur gebetet, wenn ich von Gott etwas brauchte"
+    },
+    {
+      "id": "jugend-gott-003",
+      "category": "gottesverhältnis",
+      "subcategory": "Sakramente und Kirche",
+      "question": "Gehe ich sonntags zur Heiligen Messe \u2014 oder suche ich Ausreden, um wegzubleiben?",
+      "explanation": "Die Teilnahme an der Sonntagsmesse ist f\u00fcr Katholiken eine schwere Pflicht.",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "schwer",
+      "source": "youcat",
+      "confessionText": "Ich habe die Sonntagsmesse ohne triftigen Grund vers\u00e4umt"
+    },
+    {
+      "id": "jugend-gott-004",
+      "category": "gottesverhältnis",
+      "subcategory": "Ehrfurcht vor Gott",
+      "question": "Habe ich den Namen Gottes leichtfertig benutzt, geflucht oder \u00fcber Gott gespottet?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe den Namen Gottes leichtfertig benutzt, geflucht oder \u00fcber Gott gespottet"
+    },
+    {
+      "id": "jugend-gott-005",
+      "category": "gottesverhältnis",
+      "subcategory": "Ehrfurcht vor Gott",
+      "question": "War ich abergl\u00e4ubisch oder habe ich an Horoskope, Wahrsagerei oder Okkultismus geglaubt?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich war abergl\u00e4ubisch oder habe an Horoskope, Wahrsagerei oder Okkultismus geglaubt"
+    },
+    {
+      "id": "jugend-gott-006",
+      "category": "gottesverhältnis",
+      "subcategory": "Ehrfurcht vor Gott",
+      "question": "Habe ich Menschen oder Dinge \u2014 Influencer, Likes, Erfolg, Geld \u2014 zu Idolen gemacht?",
+      "explanation": "Was im Leben den ersten Platz einnimmt, wird zum Gott.",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe Menschen oder Dinge wie Influencer, Likes, Erfolg oder Geld zu Idolen gemacht"
+    },
+    {
+      "id": "jugend-gott-007",
+      "category": "gottesverhältnis",
+      "subcategory": "Gebet und persönliche Beziehung",
+      "question": "Zweifle ich daran, dass Gott mir wirklich helfen kann \u2014 verliere ich die Hoffnung, wenn es mir schlecht geht?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe daran gezweifelt, dass Gott mir helfen kann, und die Hoffnung verloren"
+    },
+    {
+      "id": "jugend-gott-008",
+      "category": "gottesverhältnis",
+      "subcategory": "Sakramente und Kirche",
+      "question": "Bin ich leichtsinnig zur Kommunion gegangen, obwohl ich mir einer schweren S\u00fcnde bewusst war?",
+      "explanation": "Wer sich einer schweren S\u00fcnde bewusst ist, darf die Kommunion nicht empfangen, ohne vorher gebeichtet zu haben (CIC can. 916).",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "schwer",
+      "source": "youcat",
+      "confessionText": "Ich bin leichtsinnig zur Kommunion gegangen, obwohl ich mir einer schweren S\u00fcnde bewusst war"
+    },
+    {
+      "id": "jugend-fam-001",
+      "category": "familie",
+      "subcategory": "Eltern und Familie",
+      "question": "Wie ist mein Verh\u00e4ltnis zu meinen Eltern \u2014 bin ich respektlos, undankbar oder gleichg\u00fcltig ihnen gegen\u00fcber?",
+      "explanation": "Das vierte Gebot ruft uns auf, Vater und Mutter zu ehren.",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich war meinen Eltern gegen\u00fcber respektlos, undankbar oder gleichg\u00fcltig"
+    },
+    {
+      "id": "jugend-fam-002",
+      "category": "familie",
+      "subcategory": "Eltern und Familie",
+      "question": "Vergesse ich, f\u00fcr meine Eltern und meine Familie zu beten?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe vergessen, f\u00fcr meine Eltern und meine Familie zu beten"
+    },
+    {
+      "id": "jugend-naechste-001",
+      "category": "nächstenliebe",
+      "subcategory": "Taten der Barmherzigkeit",
+      "question": "Habe ich jemanden durch Worte oder Taten verletzt?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "schwer",
+      "source": "youcat",
+      "confessionText": "Ich habe jemanden durch Worte oder Taten verletzt"
+    },
+    {
+      "id": "jugend-naechste-002",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "War ich nachtragend oder rachsüchtig \u2014 fällt es mir schwer, jemandem zu vergeben?",
+      "explanation": "Vergebung ist ein Kernst\u00fcck des christlichen Lebens.",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich war nachtragend oder rachsüchtig und es fiel mir schwer, jemandem zu vergeben"
+    },
+    {
+      "id": "jugend-naechste-003",
+      "category": "nächstenliebe",
+      "subcategory": "Wahrhaftigkeit",
+      "question": "Habe ich gelogen oder jemanden get\u00e4uscht?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe gelogen oder jemanden get\u00e4uscht"
+    },
+    {
+      "id": "jugend-naechste-004",
+      "category": "nächstenliebe",
+      "subcategory": "Wahrhaftigkeit",
+      "question": "Habe ich \u00fcber jemanden gel\u00e4stert, Ger\u00fcchte verbreitet oder ihn schlechtgemacht \u2014 auch online?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe \u00fcber jemanden gel\u00e4stert, Ger\u00fcchte verbreitet oder ihn schlechtgemacht"
+    },
+    {
+      "id": "jugend-naechste-005",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "War ich neidisch auf andere \u2014 auf ihr Aussehen, ihren Erfolg oder ihre Beliebtheit?",
+      "explanation": "Neid vergiftet das Herz und zerst\u00f6rt die Freude an dem, was wir selbst haben.",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich war neidisch auf andere \u2014 auf ihr Aussehen, ihren Erfolg oder ihre Beliebtheit"
+    },
+    {
+      "id": "jugend-naechste-006",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "Schaue ich auf andere herab \u2014 wegen ihres Aussehens, ihrer Herkunft oder ihrer Schw\u00e4chen?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe auf andere herabgeschaut \u2014 wegen ihres Aussehens, ihrer Herkunft oder ihrer Schw\u00e4chen"
+    },
+    {
+      "id": "jugend-naechste-007",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "Habe ich geschwiegen, als jemand ausgeschlossen oder ungerecht behandelt wurde?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe geschwiegen, als jemand ausgeschlossen oder ungerecht behandelt wurde"
+    },
+    {
+      "id": "jugend-naechste-008",
+      "category": "nächstenliebe",
+      "subcategory": "Taten der Barmherzigkeit",
+      "question": "Helfe ich anderen nur, wenn ich selbst davon profitiere?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe anderen nur geholfen, wenn ich selbst davon profitierte"
+    },
+    {
+      "id": "jugend-naechste-009",
+      "category": "nächstenliebe",
+      "subcategory": "Taten der Barmherzigkeit",
+      "question": "Habe ich gestohlen oder gefundene und geliehene Sachen nicht zur\u00fcckgegeben?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "schwer",
+      "source": "youcat",
+      "confessionText": "Ich habe gestohlen oder gefundene und geliehene Sachen nicht zur\u00fcckgegeben"
+    },
+    {
+      "id": "jugend-naechste-010",
+      "category": "nächstenliebe",
+      "subcategory": "Liebe und Achtung",
+      "question": "Habe ich andere durch mein schlechtes Vorbild oder meine Worte zu b\u00f6sen Taten verleitet?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe andere durch mein schlechtes Vorbild oder meine Worte zu b\u00f6sen Taten verleitet"
+    },
+    {
+      "id": "jugend-selbst-001",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "Denke ich meistens nur an mich \u2014 bin ich egoistisch?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe meistens nur an mich gedacht und war egoistisch"
+    },
+    {
+      "id": "jugend-selbst-002",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "Halte ich mich f\u00fcr besser als andere \u2014 muss ich immer recht haben oder im Mittelpunkt stehen?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe mich f\u00fcr besser als andere gehalten und musste immer recht haben"
+    },
+    {
+      "id": "jugend-selbst-003",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "Mache ich mir selbst etwas vor \u2014 rede ich mir ein, mein Verhalten sei okay, obwohl ich es besser wei\u00df?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe mir selbst etwas vorgemacht und mir eingeredet, mein Verhalten sei okay"
+    },
+    {
+      "id": "jugend-selbst-004",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "Dr\u00fccke ich mich vor Verantwortung \u2014 in der Schule, zu Hause oder in der Gemeinschaft?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe mich vor Verantwortung gedr\u00fcckt \u2014 in der Schule, zu Hause oder in der Gemeinschaft"
+    },
+    {
+      "id": "jugend-selbst-005",
+      "category": "selbst",
+      "subcategory": "Gesundheit und Mäßigung",
+      "question": "Habe ich mein Leben leichtsinnig aufs Spiel gesetzt \u2014 durch Alkohol, Drogen oder bewusste Risikobereitschaft?",
+      "explanation": "Der K\u00f6rper ist ein Geschenk Gottes. Ihn leichtsinnig zu gef\u00e4hrden widerspricht seiner W\u00fcrde.",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe mein Leben leichtsinnig aufs Spiel gesetzt \u2014 durch Alkohol, Drogen oder bewusste Risikobereitschaft"
+    },
+    {
+      "id": "jugend-selbst-006",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "Bin ich oft undankbar oder unzufrieden mit dem, was ich habe?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich war undankbar f\u00fcr das, was ich habe, und immer unzufrieden"
+    },
+    {
+      "id": "jugend-selbst-007",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "Lasse ich mich von Angst, Scham oder Niedergeschlagenheit l\u00e4hmen \u2014 statt auf Gott zu vertrauen?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich lie\u00df mich von Angst, Scham oder Niedergeschlagenheit l\u00e4hmen statt auf Gott zu vertrauen"
+    },
+    {
+      "id": "jugend-geschl-001",
+      "category": "geschlechtlichkeit",
+      "subcategory": "Reinheit",
+      "question": "Habe ich mich bei unreinen Gedanken oder Fantasien aufgehalten?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe mich bei unreinen Gedanken oder Fantasien aufgehalten"
+    },
+    {
+      "id": "jugend-geschl-002",
+      "category": "geschlechtlichkeit",
+      "subcategory": "Reinheit",
+      "question": "Habe ich sexuelle Erregung in Filmen, Serien oder im Internet gesucht \u2014 oder Pornografie angeschaut?",
+      "explanation": "Pornographie verletzt die W\u00fcrde der Menschen und macht unf\u00e4hig zu echter Liebe.",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "schwer",
+      "source": "youcat",
+      "confessionText": "Ich habe sexuelle Erregung in Medien gesucht oder Pornografie angeschaut"
+    },
+    {
+      "id": "jugend-geschl-003",
+      "category": "geschlechtlichkeit",
+      "subcategory": "Reinheit",
+      "question": "Fehlt es mir an Respekt gegen\u00fcber dem anderen Geschlecht \u2014 in Worten, Blicken oder Nachrichten?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich war nicht respektvoll gegen\u00fcber dem anderen Geschlecht \u2014 in Worten, Blicken oder Nachrichten"
+    },
+    {
+      "id": "jugend-geschl-004",
+      "category": "geschlechtlichkeit",
+      "subcategory": "Reinheit",
+      "question": "Bin ich mir bewusst, dass Sexualit\u00e4t der Liebe dient \u2014 oder missbrauche ich sie zur eigenen Befriedigung?",
+      "explanation": "Sexualit\u00e4t ist ein Geschenk Gottes. Sie entfaltet ihre Sch\u00f6nheit in der selbstlosen Hingabe, nicht im Gebrauch des anderen.",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe Sexualit\u00e4t missbraucht und sie nicht der Liebe dienen lassen"
+    },
+    {
+      "id": "jugend-gott-009",
+      "category": "gottesverhältnis",
+      "subcategory": "Sakramente und Kirche",
+      "question": "Habe ich die Kirche lieblos kritisiert \u2014 ohne mir bewusst zu sein, dass ich als Getaufter selbst Teil von ihr bin?",
+      "explanation": "Kritik an der Kirche darf sein \u2014 aber sie sollte aufbauend sein, nicht destruktiv.",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe die Kirche lieblos kritisiert"
+    },
+    {
+      "id": "jugend-fam-003",
+      "category": "familie",
+      "subcategory": "Eltern und Familie",
+      "question": "F\u00e4llt es mir schwer, meinen Eltern oder Geschwistern zu vergeben, wenn sie mich entt\u00e4uscht haben?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Es fiel mir schwer, meinen Eltern oder Geschwistern zu vergeben, wenn sie mich entt\u00e4uscht haben"
+    },
+    {
+      "id": "jugend-fam-004",
+      "category": "familie",
+      "subcategory": "Eltern und Familie",
+      "question": "Bin ich respektlos gegen\u00fcber Lehrern, Ausbildern oder anderen Verantwortungspersonen?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich war respektlos gegen\u00fcber Lehrern, Ausbildern oder anderen Verantwortungspersonen"
+    },
+    {
+      "id": "jugend-naechste-011",
+      "category": "nächstenliebe",
+      "subcategory": "Wahrhaftigkeit",
+      "question": "Urteile ich vorschnell \u00fcber andere \u2014 ohne mir ein vollst\u00e4ndiges Bild zu machen?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe vorschnell \u00fcber andere geurteilt"
+    },
+    {
+      "id": "jugend-naechste-012",
+      "category": "nächstenliebe",
+      "subcategory": "Wahrhaftigkeit",
+      "question": "Habe ich das Vertrauen anderer gebrochen \u2014 Geheimnisse verraten oder Versprechen nicht gehalten?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe das Vertrauen anderer gebrochen \u2014 Geheimnisse verraten oder Versprechen nicht gehalten"
+    },
+    {
+      "id": "jugend-naechste-013",
+      "category": "nächstenliebe",
+      "subcategory": "Taten der Barmherzigkeit",
+      "question": "Lebe ich gleichg\u00fcltig gegen\u00fcber der Not anderer \u2014 bin ich zu wenig gro\u00dfz\u00fcgig?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich habe gleichg\u00fcltig gegen\u00fcber der Not anderer gelebt und war zu wenig gro\u00dfz\u00fcgig"
+    },
+    {
+      "id": "jugend-selbst-008",
+      "category": "selbst",
+      "subcategory": "Gesundheit und Mäßigung",
+      "question": "War ich geizig oder verschwenderisch mit Geld und Besitz \u2014 oder respektlos mit fremdem Eigentum?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich war geizig oder verschwenderisch mit Geld und Besitz, oder respektlos mit fremdem Eigentum"
+    },
+    {
+      "id": "jugend-selbst-009",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "Bin ich streitsüchtig \u2014 muss ich immer das letzte Wort haben?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Ich war streits\u00fcchtig und musste immer das letzte Wort haben"
+    },
+    {
+      "id": "jugend-selbst-010",
+      "category": "selbst",
+      "subcategory": "Charakter und Haltung",
+      "question": "F\u00e4llt es mir schwer, auf etwas zu verzichten \u2014 auch wenn es gut f\u00fcr mich oder andere w\u00e4re?",
+      "explanation": "",
+      "tags": [
+        "jugendlich"
+      ],
+      "severity": "normal",
+      "source": "youcat",
+      "confessionText": "Es fiel mir schwer, auf etwas zu verzichten"
     }
   ]
 }

@@ -29,8 +29,15 @@ export function getFilteredQuestions(lifeState) {
     catalog.meta.categories.map(c => [c.id, c.order])
   );
 
+  // kinder and jugendlich have their own curated question sets — don't mix in adult allgemein questions
+  const childSpecificStates = ['kinder', 'jugendlich'];
   return catalog.questions
-    .filter(q => q.tags.includes('allgemein') || q.tags.includes(lifeState))
+    .filter(q => {
+      if (childSpecificStates.includes(lifeState)) {
+        return q.tags.includes(lifeState);
+      }
+      return q.tags.includes('allgemein') || q.tags.includes(lifeState);
+    })
     .sort((a, b) => (categoryOrder[a.category] || 99) - (categoryOrder[b.category] || 99));
 }
 
