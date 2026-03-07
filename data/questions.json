@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "1.3.0",
+    "version": "1.3.1",
     "date": "2026-03-07",
     "sources": [
       "Karl Wallner, Beichtspiegel Stift Heiligenkreuz (10. Auflage, 2001, kirchl. Druckerlaubnis)",
@@ -2119,14 +2119,14 @@
       "id": "kinder-fam-004",
       "category": "familie",
       "subcategory": "Eltern und Familie",
-      "question": "Teilst Du ungern, was Du hast?",
+      "question": "H\u00e4ttest Du mit anderen teilen k\u00f6nnen und hast es nicht getan?",
       "explanation": "",
       "tags": [
         "kinder"
       ],
       "severity": "normal",
-      "source": "gotteslob",
-      "confessionText": "Ich habe ungern geteilt, was ich habe"
+      "source": "eigen",
+      "confessionText": "Ich h\u00e4tte mit anderen teilen k\u00f6nnen und habe es nicht getan"
     },
     {
       "id": "kinder-schule-001",
