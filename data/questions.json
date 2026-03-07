@@ -869,7 +869,7 @@
       "id": "fam-004",
       "category": "familie",
       "subcategory": "Eheleben",
-      "question": "Bin ich dem Ehepartner im ehelichen Umgang mit Achtung und Liebe begegnet — oder habe ich nur meine eigene Lust gesucht?",
+      "question": "Habe ich im ehelichen Umgang nur meine eigene Lust gesucht, statt dem Ehepartner mit Achtung und Liebe zu begegnen?",
       "explanation": "",
       "tags": [
         "verheiratet"
@@ -1495,7 +1495,7 @@
       "id": "beruf-001",
       "category": "beruf",
       "subcategory": "Arbeit und Gerechtigkeit",
-      "question": "Setze ich mich im Beruf für das Wohl der anderen ein — oder geht es mir nur um mich selbst?",
+      "question": "Geht es mir im Beruf nur um mich selbst, statt mich für das Wohl der anderen einzusetzen?",
       "explanation": "",
       "tags": [
         "allgemein"
@@ -2002,7 +2002,7 @@
       "id": "kinder-fam-001",
       "category": "familie",
       "subcategory": "Eltern und Familie",
-      "question": "Hilfst Du zu Hause, wenn Hilfe gebraucht wird — oder drückst Du Dich davor?",
+      "question": "Drückst Du Dich davor, zu Hause zu helfen, wenn Hilfe gebraucht wird?",
       "explanation": "",
       "tags": [
         "kinder"
@@ -2236,7 +2236,7 @@
       "id": "jugend-gott-003",
       "category": "gottesverhältnis",
       "subcategory": "Sakramente und Kirche",
-      "question": "Gehe ich sonntags zur Heiligen Messe — oder suche ich Ausreden, um wegzubleiben?",
+      "question": "Suche ich Ausreden, um sonntags nicht zur Heiligen Messe zu gehen?",
       "explanation": "Die Teilnahme an der Sonntagsmesse ist für Katholiken eine schwere Pflicht.",
       "tags": [
         "jugendlich"
@@ -2600,7 +2600,7 @@
       "id": "jugend-geschl-004",
       "category": "geschlechtlichkeit",
       "subcategory": "Reinheit",
-      "question": "Bin ich mir bewusst, dass Sexualität der Liebe dient — oder missbrauche ich sie zur eigenen Befriedigung?",
+      "question": "Missbrauche ich Sexualität zur eigenen Befriedigung, statt sie als Ausdruck der Liebe zu verstehen?",
       "explanation": "Sexualität ist ein Geschenk Gottes. Sie entfaltet ihre Schönheit in der selbstlosen Hingabe, nicht im Gebrauch des anderen.",
       "tags": [
         "jugendlich"
