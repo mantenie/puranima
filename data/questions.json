@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "1.3.1",
+    "version": "1.3.2",
     "date": "2026-03-07",
     "sources": [
       "Karl Wallner, Beichtspiegel Stift Heiligenkreuz (10. Auflage, 2001, kirchl. Druckerlaubnis)",
@@ -1090,7 +1090,7 @@
       "id": "fam-026",
       "category": "familie",
       "subcategory": "Eltern und Familie",
-      "question": "Habe ich dafür gesorgt, dass der Sonntag in meiner Familie ein Tag der Ruhe und der Gemeinschaft war?",
+      "question": "Habe ich es versäumt, den Sonntag in meiner Familie als Tag der Ruhe und der Gemeinschaft zu pflegen?",
       "explanation": "Eltern tragen Verantwortung dafür, dass der Sonntag als Tag des Herrn in der Familie gepflegt wird — durch gemeinsamen Gottesdienstbesuch, Ruhe und Familienzeit.",
       "tags": [
         "verheiratet"
@@ -1612,7 +1612,7 @@
       "id": "beruf-010",
       "category": "beruf",
       "subcategory": "Arbeit und Gerechtigkeit",
-      "question": "Habe ich nach meinen Möglichkeiten zum Unterhalt der Kirche und zur Hilfe für die Armen beigetragen?",
+      "question": "Habe ich es versäumt, nach meinen Möglichkeiten zum Unterhalt der Kirche und zur Hilfe für die Armen beizutragen?",
       "explanation": "Die Gläubigen sind verpflichtet, für die Bedürfnisse der Kirche beizutragen und die Armen zu unterstützen (CIC can. 222).",
       "tags": [
         "allgemein"
