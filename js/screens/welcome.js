@@ -11,7 +11,6 @@ import { lockApp } from './pin-lock.js';
 import { isInstallable, promptInstall } from '../install-prompt.js';
 
 const LIFE_STATE_OPTIONS = [
-  { id: 'allgemein', label: 'Allgemein', desc: 'Kernfragen des Glaubens' },
   { id: 'single', label: 'Ledig', desc: 'Ledige Erwachsene' },
   { id: 'verheiratet', label: 'Verheiratet', desc: 'Eheleute und Familien' },
   { id: 'jugendlich', label: 'Jugendlich', desc: 'Firmkandidaten und junge Erwachsene' },

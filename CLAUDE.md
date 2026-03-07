@@ -210,4 +210,56 @@ Spickzettel (summary screen) instead of the question form. Rules for `confession
 - Präteritum for states: "Ich war neidisch", "Ich war überheblich"
 - Never present tense: ~~"Ich lüge"~~, ~~"Ich bin neidisch"~~
 
+### Question Formulation Rules
+
+**"Ja = Sünde" is non-negotiable.** Every question must be phrased so that answering "Ja" unambiguously indicates something to confess. Test every new question:
+- ✅ "Habe ich gelogen?" → Ja = gesündigt
+- ✅ "Vernachlässige ich das Gebet?" → Ja = gesündigt
+- ❌ "Habe ich ernsthaft gebetet?" → Ja = gut = WRONG direction
+- ❌ "Bringe ich meinen Schwiegereltern Achtung entgegen?" → Ja = gut = WRONG direction
+
+Common trap: questions about positive duties phrased in the affirmative ("Habe ich X getan?") must be negated ("Habe ich X vernachlässigt?" or "Habe ich es versäumt, X zu tun?").
+
+### Theological Perspective
+
+Questions are written from a **conservative Catholic theological standpoint**, aligned with:
+- Katechismus der Katholischen Kirche (KKK)
+- Traditional beichtspiegels (Wallner/Heiligenkreuz, Ramm FSSP, Gotteslob)
+- The Ten Commandments as the structural backbone
+- Natural law ethics in sexuality and family
+
+This means questions may address topics that are pastorally sensitive but theologically clear in the Catholic tradition (e.g., artificial contraception, premarital sex, homosexual acts). Explanations should cite KKK references where appropriate and maintain pastoral dignity.
+
+### Source Attribution
+
+The `source` field indicates the origin. Known source IDs:
+- `wallner` — Karl Wallner, Beichtspiegel Stift Heiligenkreuz (10. Auflage, 2001)
+- `ramm` — Martin Ramm FSSP, Praktische Beichthilfe für Erwachsene (9. Auflage, 2013)
+- `youcat` — YOUCAT-Beichtspiegel
+- `gotteslob` — Gotteslob Nr. 598–601 (Hilfen zur Gewissenserforschung)
+- `priester-beichtspiegel` — Beichtspiegel für Priester (katholisch-informiert.ch)
+- `eigen` — self-authored, not directly from a specific published source
+
+**Do not hallucinate source attributions.** If a question is written independently (e.g., synthesized from general Catholic teaching or KKK), always use `eigen`. Only use a named source if the question is directly derived from that specific publication.
+
+### Audit-PDF generieren
+
+```sh
+# Changelog seit v1.0.0 (Basis für Priester-Review):
+node scripts/generate-audit-pdf.js --baseline 994b7ed
+
+# Changelog gegen vorherigen Commit:
+node scripts/generate-audit-pdf.js
+
+# Alle Fragen als Erstversion:
+node scripts/generate-audit-pdf.js --initial
+```
+
+**Version history (questions.json):**
+| Version | Commit    | Inhalt |
+|---------|-----------|--------|
+| 1.0.0   | `994b7ed` | Erwachsenen-Fragen (allgemein, single, verheiratet, priester) |
+| 1.1.0   | `982714c` | +kinder, +jugendlich (standesspezifische Fragensätze) |
+| 1.2.0   | aktuell   | +14 Fragen (allgemein/single/verheiratet/priester erweitert); allgemein als Lebensstand entfernt; Trennkarte UI |
+
 See `docs/PRD.md` section 7 for the full catalog specification.

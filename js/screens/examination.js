@@ -24,6 +24,18 @@ export async function render(container) {
   const answers = await storage.get('answers') || {};
   let currentIndex = await storage.get('currentIndex') || 0;
 
+  // Determine where life-state-specific questions begin (for transition card)
+  const LIFE_STATE_LABELS = {
+    single: 'Ledige',
+    verheiratet: 'Verheiratete',
+    priester: 'Priester und Ordensleute',
+  };
+  const childStates = ['kinder', 'jugendlich'];
+  const transitionIndex = (!childStates.includes(lifeState) && LIFE_STATE_LABELS[lifeState])
+    ? questions.findIndex(q => !q.tags.includes('allgemein'))
+    : -1;
+  let pendingTransition = false;
+
   // Guard against out-of-bounds index (e.g. after catalog update)
   // Allow questions.length for the notes card (shown after all questions)
   if (currentIndex > questions.length) currentIndex = 0;
@@ -104,9 +116,90 @@ export async function render(container) {
     attachHeaderActions(container);
   }
 
+  function renderTransitionCard() {
+    const lifeStateLabel = LIFE_STATE_LABELS[lifeState];
+    const specificCount = questions.length - transitionIndex;
+    const progress = Math.round((transitionIndex / questions.length) * 100);
+
+    container.innerHTML = `
+      <div class="screen-enter min-h-screen flex flex-col bg-white">
+
+        <!-- Header -->
+        <header class="flex items-center justify-between px-4 py-3 border-b border-stone-100">
+          <button id="btn-back" class="p-2 -ml-2 text-stone-400 hover:text-stone-600"
+                  aria-label="Zurück">
+            ${icons.arrowLeft}
+          </button>
+          <span class="text-sm font-medium text-stone-400">
+            ${transitionIndex} / ${questions.length}
+          </span>
+          <div class="flex items-center">
+            <button id="btn-to-summary" class="p-2 text-stone-400 hover:text-stone-600"
+                    aria-label="Zur Zusammenfassung">
+              ${icons.list}
+            </button>
+            ${headerActionsHtml({ showHome: true, showLock: true })}
+          </div>
+        </header>
+
+        <!-- Transition Content -->
+        <main class="flex-1 px-6 pt-10 pb-6 overflow-y-auto">
+          <div class="rounded-2xl border-2 border-purple-200 bg-purple-50 p-6">
+            <p class="text-xs font-semibold uppercase tracking-widest text-purple-600 mb-3">
+              Standesspezifische Fragen
+            </p>
+            <p class="text-xl font-semibold text-stone-800 leading-snug mb-3">
+              Ab hier: Fragen für ${escapeHtml(lifeStateLabel)}
+            </p>
+            <p class="text-sm text-stone-500 leading-relaxed">
+              Die folgenden ${specificCount} Fragen richten sich speziell an ${escapeHtml(lifeStateLabel)}.
+            </p>
+          </div>
+        </main>
+
+        <!-- Action Button -->
+        <footer class="px-6 pb-6 space-y-3">
+          <button id="btn-continue"
+                  class="w-full py-4 rounded-xl bg-purple-700 text-white font-semibold text-lg
+                         hover:bg-purple-800 active:bg-purple-900 transition-colors">
+            Weiter
+          </button>
+
+          <!-- Progress Bar -->
+          <div class="pt-2" role="progressbar" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100"
+               aria-label="Fortschritt: ${transitionIndex} von ${questions.length} Fragen">
+            <div class="h-1.5 bg-stone-100 rounded-full overflow-hidden">
+              <div class="h-full bg-purple-600 rounded-full transition-all duration-300 ease-out"
+                   style="width: ${progress}%"></div>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    `;
+
+    container.querySelector('#btn-back').addEventListener('click', () => {
+      pendingTransition = false;
+      currentIndex--;
+      storage.set('currentIndex', currentIndex);
+      renderCard();
+    });
+    container.querySelector('#btn-continue').addEventListener('click', () => {
+      pendingTransition = false;
+      renderCard();
+    });
+    container.querySelector('#btn-to-summary').addEventListener('click', () => navigate('/summary'));
+    attachHeaderActions(container);
+  }
+
   function renderCard() {
     if (currentIndex >= questions.length) {
       renderNotesCard();
+      return;
+    }
+
+    if (pendingTransition) {
+      renderTransitionCard();
       return;
     }
 
@@ -244,8 +337,13 @@ export async function render(container) {
     }
     await storage.set('answers', answers);
 
+    const prevIndex = currentIndex;
     currentIndex++;
     await storage.set('currentIndex', currentIndex);
+
+    if (transitionIndex !== -1 && prevIndex === transitionIndex - 1) {
+      pendingTransition = true;
+    }
 
     renderCard();
   }
