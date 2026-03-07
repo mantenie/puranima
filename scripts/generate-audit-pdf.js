@@ -293,12 +293,12 @@ function buildChangelogSection(changelog, baselineRef) {
   const total = added.length + removed.length + changed.length;
 
   const isInitial = baselineRef === 'Erstversion';
+  if (isInitial) return [];
+
   const content = [
-    { text: isInitial ? 'Alle Fragen (Erstversion)' : 'Changelog', style: 'h1' },
+    { text: 'Changelog', style: 'h1' },
     {
-      text: isInitial
-        ? 'Vollständiger Katalog — alle Fragen zur theologischen Erstprüfung'
-        : `Vergleich gegen: ${baselineRef}`,
+      text: `Vergleich gegen: ${baselineRef}`,
       fontSize: 9, color: C.muted, margin: [0, 0, 0, 10],
     },
   ];
