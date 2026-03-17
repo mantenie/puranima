@@ -6,17 +6,23 @@ import { navigate } from '../router.js';
 import { icons } from '../components/icons.js';
 import { footerHtml, attachFooterListeners } from '../components/footer.js';
 import { headerActionsHtml, attachHeaderActions } from '../components/header-actions.js';
+import { updateMeta } from '../meta.js';
 
 export async function render(container) {
+  updateMeta({
+    title: 'Impressum — beichtbar',
+    description: 'Impressum und Anbieterkennzeichnung für beichtbar, die kostenlose katholische Beicht-App von FaithOS.',
+    path: '/impressum',
+  });
   container.innerHTML = `
     <div class="screen-enter min-h-screen flex flex-col px-5 py-6">
 
       <header class="flex items-center justify-between mb-6">
         <div class="flex items-center gap-3">
-          <button id="btn-back" class="p-2 -ml-2 text-stone-400 hover:text-stone-600"
+          <a href="/" id="btn-back" class="p-2 -ml-2 text-stone-400 hover:text-stone-600"
                   aria-label="Zurück">
             ${icons.arrowLeft}
-          </button>
+          </a>
           <h1 class="text-xl font-bold text-stone-800">Impressum</h1>
         </div>
         ${headerActionsHtml()}
@@ -80,7 +86,10 @@ export async function render(container) {
     </div>
   `;
 
-  container.querySelector('#btn-back').addEventListener('click', () => navigate('/welcome'));
+  container.querySelector('#btn-back').addEventListener('click', (e) => {
+    e.preventDefault();
+    navigate('/welcome');
+  });
   attachHeaderActions(container);
   attachFooterListeners(container);
 }

@@ -53,9 +53,9 @@ async function init() {
   // Start the router (must happen before any navigate calls)
   startRouter();
 
-  // If no route is set, determine the correct starting screen
+  // If on the homepage with no explicit route, check for active session
   const currentRoute = getCurrentRoute();
-  if (currentRoute === '/welcome' && !window.location.hash) {
+  if (currentRoute === '/welcome' && !window.location.hash && window.location.pathname === '/') {
     const lifeState = await storage.get('lifeState');
     const sessionTimestamp = await storage.get('sessionTimestamp');
     if (lifeState && sessionTimestamp) {

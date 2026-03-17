@@ -9,6 +9,7 @@ import { icons } from '../components/icons.js';
 import { footerHtml, attachFooterListeners } from '../components/footer.js';
 import { lockApp } from './pin-lock.js';
 import { isInstallable, promptInstall } from '../install-prompt.js';
+import { updateMeta } from '../meta.js';
 
 const LIFE_STATE_OPTIONS = [
   { id: 'single', label: 'Ledig', desc: 'Ledige Erwachsene' },
@@ -23,6 +24,12 @@ const LIFE_STATE_OPTIONS = [
  * @param {HTMLElement} container
  */
 export async function render(container) {
+  updateMeta({
+    title: 'beichtbar — Beichte vorbereiten & Gewissenserforschung',
+    description: 'Kostenlose Beicht-App für Katholiken. Gewissenserforschung mit Beichtspiegel, geführt durch alle Lebenssituationen. 100 % privat, offline, keine Daten verlassen Dein Gerät.',
+    path: '/',
+  });
+
   const savedLifeState = await storage.get('lifeState');
   const hasPin = !!(await storage.get('pinHash'));
   const sessionTimestamp = await storage.get('sessionTimestamp');
@@ -112,10 +119,10 @@ export async function render(container) {
         `}
 
         <!-- FAQ Link -->
-        <button id="btn-faq"
-                class="w-full text-center text-sm font-medium text-purple-800 hover:text-purple-900 pt-3 transition-colors underline underline-offset-2">
+        <a href="/faq" id="btn-faq"
+                class="block w-full text-center text-sm font-medium text-purple-800 hover:text-purple-900 pt-3 transition-colors underline underline-offset-2">
           Was ist die Beichte? — Infos &amp; FAQ
-        </button>
+        </a>
 
         <!-- PWA Install Prompt (shown only when browser supports it) -->
         ${isInstallable() ? `
@@ -204,7 +211,10 @@ export async function render(container) {
     navigate('/preparation');
   });
 
-  container.querySelector('#btn-faq').addEventListener('click', () => navigate('/faq'));
+  container.querySelector('#btn-faq').addEventListener('click', (e) => {
+    e.preventDefault();
+    navigate('/faq');
+  });
 
   container.querySelector('#btn-install')?.addEventListener('click', async () => {
     const accepted = await promptInstall();

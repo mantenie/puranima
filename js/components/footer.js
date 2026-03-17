@@ -6,14 +6,15 @@ import { navigate } from '../router.js';
 
 /**
  * Return the footer HTML string.
+ * Uses <a> tags for crawlable links to public pages.
  * @returns {string}
  */
 export function footerHtml() {
   return `
     <nav class="app-footer flex items-center justify-center gap-4 pt-4 pb-2 text-xs text-stone-400">
-      <button data-nav="/impressum" class="hover:text-stone-600 transition-colors">Impressum</button>
+      <a href="/impressum" class="hover:text-stone-600 transition-colors">Impressum</a>
       <span class="text-stone-300">&middot;</span>
-      <button data-nav="/datenschutz" class="hover:text-stone-600 transition-colors">Datenschutz</button>
+      <a href="/datenschutz" class="hover:text-stone-600 transition-colors">Datenschutz</a>
       <span class="text-stone-300">&middot;</span>
       <a href="https://faithos.de" target="_blank" rel="noopener" class="hover:text-stone-600 transition-colors">FaithOS</a>
     </nav>
@@ -21,11 +22,15 @@ export function footerHtml() {
 }
 
 /**
- * Attach click listeners for footer navigation buttons inside a container.
+ * Attach click listeners for footer navigation links inside a container.
+ * Intercepts clicks for SPA navigation via pushState.
  * @param {HTMLElement} container
  */
 export function attachFooterListeners(container) {
-  container.querySelectorAll('.app-footer [data-nav]').forEach(btn => {
-    btn.addEventListener('click', () => navigate(btn.dataset.nav));
+  container.querySelectorAll('.app-footer a[href^="/"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      navigate(link.getAttribute('href'));
+    });
   });
 }
