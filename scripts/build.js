@@ -226,8 +226,8 @@ function generatePublicPages() {
   const faqDir = resolve(DIST, 'faq');
   mkdirSync(faqDir, { recursive: true });
   writeFileSync(resolve(faqDir, 'index.html'), generatePageHtml({
-    title: 'Häufige Fragen zur Beichte — beichtbar',
-    description: 'Alles über die katholische Beichte: Ablauf, Vorbereitung, häufige Fragen. Was muss ich beichten? Wie oft? Was ist, wenn ich mich schäme?',
+    title: 'Häufige Fragen zur Beichte & Gewissenserforschung | beichtbar',
+    description: 'Antworten auf die häufigsten Fragen: Wie bereite ich mich auf die Beichte vor? Was ist ein Beichtspiegel? Was soll ich beichten?',
     path: '/faq',
     content: faqContent,
     jsonLd: faqJsonLd,

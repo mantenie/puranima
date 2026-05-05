@@ -1,54 +1,82 @@
 [
   {
+    "question": "Was ist beichtbar?",
+    "answer": "beichtbar ist eine kostenlose digitale Beichthilfe f\u00fcr Katholiken. Die App f\u00fchrt Dich Schritt f\u00fcr Schritt durch die Gewissenserforschung mit einem vollst\u00e4ndigen Beichtspiegel \u2014 100\u00a0% privat, offline und ohne dass Daten Dein Ger\u00e4t verlassen. Entwickelt von FaithOS f\u00fcr alle, die sich auf das Sakrament der Beichte vorbereiten m\u00f6chten."
+  },
+  {
+    "question": "Wie bereite ich mich mit beichtbar auf die Beichte vor?",
+    "answer": "\u00d6ffne beichtbar und w\u00e4hle Deinen Lebensstand (ledig, verheiratet, Priester, Kind oder Jugendliche/r). Die App stellt Dir gezielt Fragen aus einem theologisch gepr\u00fcften Beichtspiegel. Beantworte sie ehrlich \u2014 Du erh\u00e4ltst am Ende einen pers\u00f6nlichen Spickzettel f\u00fcr den Beichtstuhl, der alle Punkte zusammenfasst, die Du beichten m\u00f6chtest."
+  },
+  {
+    "question": "Was ist ein Beichtspiegel?",
+    "answer": "Ein Beichtspiegel ist eine strukturierte Liste von Fragen und Gewissenspunkten, die dabei helfen, S\u00fcnden f\u00fcr die Beichte zu erkennen. Klassische Beichtspiegel sind nach den Zehn Geboten gegliedert. beichtbar kombiniert bew\u00e4hrte Beichtspiegel verschiedener Quellen (u.\u00a0a. Stift Heiligenkreuz, YOUCAT, Gotteslob) zu einer modernen digitalen Form."
+  },
+  {
+    "question": "Was ist eine Gewissenserforschung?",
+    "answer": "Die Gewissenserforschung (auch Examen oder Selbstpr\u00fcfung) ist der erste Schritt zur Beichte. Dabei reflektierst Du Dein Verhalten seit der letzten Beichte und erkennst, wo Du gefehlt hast. beichtbar unterst\u00fctzt Dich dabei mit gezielten Fragen \u2014 ehrlich, geordnet und ohne Angst."
+  },
+  {
+    "question": "Sind meine Daten sicher?",
+    "answer": "Ja, vollst\u00e4ndig. beichtbar erhebt, speichert und \u00fcbermittelt keinerlei personenbezogene Daten. Deine Antworten bleiben ausschlie\u00dflich in der IndexedDB Deines Ger\u00e4ts \u2014 kein Server, kein Tracking, kein Analytics. Du kannst alle Daten jederzeit per \u201eAlles l\u00f6schen\u201c sofort entfernen. Optionaler PIN-Schutz sch\u00fctzt die App zus\u00e4tzlich vor fremdem Zugriff."
+  },
+  {
+    "question": "Ist beichtbar kostenlos?",
+    "answer": "Ja, beichtbar ist vollst\u00e4ndig kostenlos \u2014 ohne Abonnement, ohne Werbung und ohne versteckte Kosten. Die App ist ein Dienst von FaithOS f\u00fcr die Kirche. Wenn Du die Arbeit unterst\u00fctzen m\u00f6chtest, kannst Du \u00fcber das Simon-Widget auf der Startseite spenden."
+  },
+  {
+    "question": "F\u00fcr wen ist beichtbar geeignet?",
+    "answer": "beichtbar richtet sich an alle get\u00e4uften Katholiken ab dem Kommunionalter. Es gibt separate Fragensätze f\u00fcr Kinder, Jugendliche, Ledige, Verheiratete und Priester. Die App eignet sich sowohl f\u00fcr Menschen, die regelm\u00e4\u00dfig beichten, als auch f\u00fcr Wiederkehrer, die lange nicht mehr gebeichtet haben."
+  },
+  {
     "question": "Was ist die Beichte?",
-    "answer": "Die Beichte (Sakrament der Versöhnung) ist eines der sieben Sakramente der katholischen Kirche. In ihr bekennt der Gläubige seine Sünden vor einem Priester, empfängt die Lossprechung (Absolution) und wird so mit Gott und der Kirche versöhnt. Jesus selbst hat den Aposteln die Vollmacht gegeben, Sünden zu vergeben (Joh 20,22\u201323)."
+    "answer": "Die Beichte (Sakrament der Vers\u00f6hnung) ist eines der sieben Sakramente der katholischen Kirche. In ihr bekennt der Gl\u00e4ubige seine S\u00fcnden vor einem Priester, empf\u00e4ngt die Lossprechung (Absolution) und wird so mit Gott und der Kirche vers\u00f6hnt. Jesus selbst hat den Aposteln die Vollmacht gegeben, S\u00fcnden zu vergeben (Joh 20,22\u201323)."
   },
   {
     "question": "Wer darf beichten?",
-    "answer": "Jeder getaufte Katholik darf und soll regelmäßig beichten. Ab der Erstkommunion (ca. 8\u20139 Jahre) sind Kinder zur Beichte eingeladen. Es gibt keine Obergrenze \u2014 auch wer seit Jahren oder Jahrzehnten nicht mehr gebeichtet hat, ist herzlich willkommen. Der Priester wird Dir helfen."
+    "answer": "Jeder get\u00e4ufte Katholik darf und soll regelm\u00e4\u00dfig beichten. Ab der Erstkommunion (ca. 8\u20139 Jahre) sind Kinder zur Beichte eingeladen. Es gibt keine Obergrenze \u2014 auch wer seit Jahren oder Jahrzehnten nicht mehr gebeichtet hat, ist herzlich willkommen. Der Priester wird Dir helfen."
   },
   {
     "question": "Warum soll ich beichten?",
-    "answer": "Die Beichte ist ein Geschenk, keine Strafe. Sie schenkt: inneren Frieden und Entlastung vom Gewissen, echte Vergebung durch Gott (nicht nur ein gutes Gefühl), die Gnade, es beim nächsten Mal besser zu machen, und die Wiederherstellung der vollen Gemeinschaft mit Gott und der Kirche. Papst Franziskus sagt: \u201EGott wird nie müde zu vergeben. Wir sind es, die müde werden, um Vergebung zu bitten.\u201C"
+    "answer": "Die Beichte ist ein Geschenk, keine Strafe. Sie schenkt: inneren Frieden und Entlastung vom Gewissen, echte Vergebung durch Gott (nicht nur ein gutes Gef\u00fchl), die Gnade, es beim n\u00e4chsten Mal besser zu machen, und die Wiederherstellung der vollen Gemeinschaft mit Gott und der Kirche. Papst Franziskus sagt: \u201eGott wird nie m\u00fcde zu vergeben. Wir sind es, die m\u00fcde werden, um Vergebung zu bitten.\u201c"
   },
   {
-    "question": "Wie läuft eine Beichte ab?",
-    "answer": "1. Vorbereitung: Gewissenserforschung (dabei hilft Dir beichtbar!)\n2. Begrüßung: Du trittst zum Priester und bekreuzigst Dich. \u201EIm Namen des Vaters\u2026\u201C\n3. Eröffnung: \u201EIch bekenne vor Gott dem Allmächtigen und vor Ihnen, Vater, meine Sünden. Meine letzte Beichte war vor\u2026\u201C\n4. Bekenntnis: Du nennst Deine Sünden \u2014 ehrlich, aber ohne Romane. Der Spickzettel hilft!\n5. Gespräch: Der Priester gibt Dir ggf. einen geistlichen Rat.\n6. Reue und Buße: Du betest das Reuegebet, der Priester gibt Dir eine Buße auf.\n7. Lossprechung: Der Priester spricht die Absolution. Deine Sünden sind vergeben!\n8. Dank: Ein kurzes Dankgebet nach der Beichte."
+    "question": "Wie l\u00e4uft eine Beichte ab?",
+    "answer": "1. Vorbereitung: Gewissenserforschung (dabei hilft Dir beichtbar!)\n2. Begr\u00fc\u00dfung: Du trittst zum Priester und bekreuzigst Dich. \u201eIm Namen des Vaters\u2026\u201c\n3. Er\u00f6ffnung: \u201eIch bekenne vor Gott dem Allm\u00e4chtigen und vor Ihnen, Vater, meine S\u00fcnden. Meine letzte Beichte war vor\u2026\u201c\n4. Bekenntnis: Du nennst Deine S\u00fcnden \u2014 ehrlich, aber ohne Romane. Der Spickzettel hilft!\n5. Gespr\u00e4ch: Der Priester gibt Dir ggf. einen geistlichen Rat.\n6. Reue und Bu\u00dfe: Du betest das Reuegebet, der Priester gibt Dir eine Bu\u00dfe auf.\n7. Lossprechung: Der Priester spricht die Absolution. Deine S\u00fcnden sind vergeben!\n8. Dank: Ein kurzes Dankgebet nach der Beichte."
   },
   {
     "question": "Was muss ich beichten?",
-    "answer": "Du musst alle schweren Sünden (Todsünden) beichten, die Dir bewusst sind \u2014 mit Art und Anzahl. Lässliche Sünden müssen nicht gebeichtet werden, es ist aber sehr empfehlenswert. Wenn Du unsicher bist, ob etwas eine Sünde ist, sprich es einfach an \u2014 der Priester hilft Dir."
+    "answer": "Du musst alle schweren S\u00fcnden (Todss\u00fcnden) beichten, die Dir bewusst sind \u2014 mit Art und Anzahl. L\u00e4ssliche S\u00fcnden m\u00fcssen nicht gebeichtet werden, es ist aber sehr empfehlenswert. Wenn Du unsicher bist, ob etwas eine S\u00fcnde ist, sprich es einfach an \u2014 der Priester hilft Dir."
   },
   {
     "question": "Was ist, wenn ich etwas vergessen habe?",
-    "answer": "Keine Sorge! Wenn Du ehrlich Dein Gewissen erforscht hast und trotzdem etwas vergisst, ist es dennoch vergeben. Fällt es Dir später ein, kannst Du es bei der nächsten Beichte nennen. Wichtig ist nur, dass Du nichts bewusst verschweigst."
+    "answer": "Keine Sorge! Wenn Du ehrlich Dein Gewissen erforscht hast und trotzdem etwas vergisst, ist es dennoch vergeben. F\u00e4llt es Dir sp\u00e4ter ein, kannst Du es bei der n\u00e4chsten Beichte nennen. Wichtig ist nur, dass Du nichts bewusst verschweigst."
   },
   {
-    "question": "Ich schäme mich zu sehr. Was soll ich tun?",
-    "answer": "Scham ist ganz normal und sogar ein gutes Zeichen \u2014 sie zeigt, dass Dein Gewissen lebendig ist. Denk daran: Der Priester hat schon alles gehört. Er wird Dich nicht verurteilen. Er ist an das Beichtgeheimnis gebunden \u2014 das Strengste Verschwiegenheitsgebot, das es gibt. Und: Je größer die Scham, desto größer die Erleichterung danach."
+    "question": "Ich sch\u00e4me mich zu sehr. Was soll ich tun?",
+    "answer": "Scham ist ganz normal und sogar ein gutes Zeichen \u2014 sie zeigt, dass Dein Gewissen lebendig ist. Denk daran: Der Priester hat schon alles geh\u00f6rt. Er wird Dich nicht verurteilen. Er ist an das Beichtgeheimnis gebunden \u2014 das Strengste Verschwiegenheitsgebot, das es gibt. Und: Je gr\u00f6\u00dfer die Scham, desto gr\u00f6\u00dfer die Erleichterung danach."
   },
   {
     "question": "Wie oft soll ich beichten?",
-    "answer": "Die Kirche empfiehlt die regelmäßige Beichte, mindestens einmal im Jahr (Osterbeichte). Viele Gläubige beichten monatlich. Bei schweren Sünden solltest Du möglichst bald beichten, bevor Du zur Kommunion gehst. Häufige Beichte ist ein kraftvolles Mittel des geistlichen Wachstums."
+    "answer": "Die Kirche empfiehlt die regelm\u00e4\u00dfige Beichte, mindestens einmal im Jahr (Osterbeichte). Viele Gl\u00e4ubige beichten monatlich. Bei schweren S\u00fcnden solltest Du m\u00f6glichst bald beichten, bevor Du zur Kommunion gehst. H\u00e4ufige Beichte ist ein kraftvolles Mittel des geistlichen Wachstums."
   },
   {
     "question": "Wie hilft mir beichtbar?",
-    "answer": "beichtbar führt Dich durch eine systematische Gewissenserforschung mit theologisch geprüften Fragen. Die Fragen sind nach Lebensstand gefiltert und nach Kategorien geordnet. Am Ende erhältst Du einen übersichtlichen Spickzettel im Dark Mode \u2014 perfekt für den Beichtstuhl. Alles bleibt auf Deinem Gerät. Niemand außer Dir sieht Deine Antworten."
+    "answer": "beichtbar f\u00fchrt Dich durch eine systematische Gewissenserforschung mit theologisch gepr\u00fcften Fragen. Die Fragen sind nach Lebensstand gefiltert und nach Kategorien geordnet. Am Ende erh\u00e4ltst Du einen \u00fcbersichtlichen Spickzettel im Dark Mode \u2014 perfekt f\u00fcr den Beichtstuhl. Alles bleibt auf Deinem Ger\u00e4t. Niemand au\u00dfer Dir sieht Deine Antworten."
   },
   {
-    "question": "Ist beichtbar ein vollständiger Beichtspiegel?",
-    "answer": "beichtbar ist ein digitaler Beichtspiegel \u2014 eine Hilfe zur Gewissenserforschung. Die Fragen basieren auf bewährten katholischen Quellen (u.a. Karl Wallner, Gotteslob, YOUCAT), erheben aber keinen Anspruch auf Vollständigkeit. Es gibt verschiedene Beichtspiegel mit unterschiedlichen Schwerpunkten. Je nach Lebenssituation, Beruf oder geistlichem Weg kann ein anderer Beichtspiegel besser zu Dir passen. beichtbar ersetzt kein Seelsorgegespräch. Wenn Du unsicher bist oder tiefere Fragen hast, sprich mit einem Priester \u2014 er kann Dir persönlich weiterhelfen. Die App möchte Dir den Einstieg erleichtern, nicht das persönliche Gespräch ersetzen."
+    "question": "Ist beichtbar ein vollst\u00e4ndiger Beichtspiegel?",
+    "answer": "beichtbar ist ein digitaler Beichtspiegel \u2014 eine Hilfe zur Gewissenserforschung. Die Fragen basieren auf bew\u00e4hrten katholischen Quellen (u.a. Karl Wallner, Gotteslob, YOUCAT), erheben aber keinen Anspruch auf Vollst\u00e4ndigkeit. Es gibt verschiedene Beichtspiegel mit unterschiedlichen Schwerpunkten. Je nach Lebenssituation, Beruf oder geistlichem Weg kann ein anderer Beichtspiegel besser zu Dir passen. beichtbar ersetzt kein Seelsorggespr\u00e4ch. Wenn Du unsicher bist oder tiefere Fragen hast, sprich mit einem Priester \u2014 er kann Dir pers\u00f6nlich weiterhelfen. Die App m\u00f6chte Dir den Einstieg erleichtern, nicht das pers\u00f6nliche Gespr\u00e4ch ersetzen."
   },
   {
     "question": "Was ist nach der Beichte?",
-    "answer": "Nach der Absolution sind Deine Sünden vergeben \u2014 wirklich und vollständig. Du kannst Deinen Spickzettel in beichtbar löschen, denn Jesus hat Deine Sünden vergessen. Es gibt eine berühmte Geschichte: Eine Mystikerin betete und sagte zu Jesus: \u201EHerr, ich habe wieder gesündigt.\u201C Jesus antwortete: \u201EWelche Sünden?\u201C \u2014 Er hatte sie nach der Beichte vergessen. So radikal ist Gottes Vergebung. Was gebeichtet und losgesprochen ist, existiert nicht mehr. Vergib auch Dir selbst \u2014 und beginne mit Freude neu."
+    "answer": "Nach der Absolution sind Deine S\u00fcnden vergeben \u2014 wirklich und vollst\u00e4ndig. Du kannst Deinen Spickzettel in beichtbar l\u00f6schen, denn Jesus hat Deine S\u00fcnden vergessen. Es gibt eine ber\u00fchmte Geschichte: Eine Mystikerin betete und sagte zu Jesus: \u201eHerr, ich habe wieder ges\u00fcndigt.\u201c Jesus antwortete: \u201eWelche S\u00fcnden?\u201c \u2014 Er hatte sie nach der Beichte vergessen. So radikal ist Gottes Vergebung. Was gebeichtet und losgesprochen ist, existiert nicht mehr. Vergib auch Dir selbst \u2014 und beginne mit Freude neu."
   },
   {
     "question": "Wo finde ich Beichtgelegenheiten?",
-    "answer": "Die meisten Pfarreien bieten feste Beichtzeiten an (oft samstags vor der Vorabendmesse). Auf Source & Summit (go.source-and-summit.de) findest Du Beichtgelegenheiten, Messen, Anbetung und Rosenkranzgebete in Deiner Nähe \u2014 mit Bewertungen und Empfehlungen. Im Zweifelsfall ruf einfach im Pfarrbüro an oder sprich den Priester nach der Messe an \u2014 jeder Priester wird sich freuen, wenn jemand beichten möchte."
+    "answer": "Die meisten Pfarreien bieten feste Beichtzeiten an (oft samstags vor der Vorabendmesse). Auf Source & Summit (go.source-and-summit.de) findest Du Beichtgelegenheiten, Messen, Anbetung und Rosenkranzgebete in Deiner N\u00e4he \u2014 mit Bewertungen und Empfehlungen. Im Zweifelsfall ruf einfach im Pfarrb\u00fcro an oder sprich den Priester nach der Messe an \u2014 jeder Priester wird sich freuen, wenn jemand beichten m\u00f6chte."
   },
   {
     "question": "Was bedeutet der Name beichtbar?",
-    "answer": "beichtbar ist ein deutsches Wort \u2014 ganz einfach, ganz direkt. Es bedeutet: Das Leben ist beichtbar. Jede Schuld, jede Sünde, jede Last kann in die Beichte getragen werden. Nichts ist zu groß, zu dunkel oder zu beschämend, um vergeben zu werden. beichtbar steht dafür: Du kannst kommen, wie Du bist."
+    "answer": "beichtbar ist ein deutsches Wort \u2014 ganz einfach, ganz direkt. Es bedeutet: Das Leben ist beichtbar. Jede Schuld, jede S\u00fcnde, jede Last kann in die Beichte getragen werden. Nichts ist zu gro\u00df, zu dunkel oder zu besch\u00e4mend, um vergeben zu werden. beichtbar steht daf\u00fcr: Du kannst kommen, wie Du bist."
   }
 ]
