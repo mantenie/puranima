@@ -143,6 +143,26 @@ function generatePageHtml({ title, description, path, content, jsonLd }) {
       "url": "https://faithos.de"
     }
   }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Startseite",
+        "item": "${BASE_URL}/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "${escapeHtml(title.replace(/ — beichtbar$/, '').replace(/^.*\\| /, ''))}",
+        "item": "${url}"
+      }
+    ]
+  }
   </script>${jsonLdBlock}
 
   <!-- Compiled Tailwind CSS + custom styles (built via @tailwindcss/cli) -->
