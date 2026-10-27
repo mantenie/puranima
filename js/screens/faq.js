@@ -9,7 +9,7 @@ import { footerHtml, attachFooterListeners } from '../components/footer.js';
 import { headerActionsHtml, attachHeaderActions } from '../components/header-actions.js';
 import { updateMeta } from '../meta.js';
 
-/** @type {Array<{question: string, answer: string}>|null} */
+/** @type {Array<{question: string, answer: string, link?: {intro: string, label: string, href: string}}>|null} */
 let faqItems = null;
 
 /** Load FAQ data (cached after first load). */
@@ -59,6 +59,13 @@ export async function render(container) {
             </summary>
             <div class="px-4 pb-4 pt-1">
               <p class="text-sm text-stone-600 leading-relaxed whitespace-pre-line">${item.answer.trim()}</p>
+              ${item.link ? `
+                <p class="mt-3 text-sm text-stone-600 leading-relaxed">
+                  ${item.link.intro}
+                  <a href="${item.link.href}" target="_blank" rel="noopener"
+                     class="text-purple-700 underline">${item.link.label}</a>
+                </p>
+              ` : ''}
             </div>
           </details>
         `).join('')}

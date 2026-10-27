@@ -210,6 +210,7 @@ function generatePublicPages() {
             </summary>
             <div class="px-4 pb-4 pt-1">
               <p class="text-sm text-stone-600 leading-relaxed whitespace-pre-line">${escapeHtml(item.answer)}</p>
+              ${item.link ? `<p class="mt-3 text-sm text-stone-600 leading-relaxed">${escapeHtml(item.link.intro)} <a href="${escapeHtml(item.link.href)}" target="_blank" rel="noopener" class="text-purple-700 underline">${escapeHtml(item.link.label)}</a></p>` : ''}
             </div>
           </details>
         `).join('')}
